@@ -20,10 +20,15 @@ interface LearnersByMoveId {
   [key: string]: string[];
 }
 
+export interface PathStep {
+  digimonId: string;
+  learnedMoves: string[];
+}
+
 interface PathState {
   digimonId: string;
   learnedMoves: Set<string>;
-  path: string[];
+  path: PathStep[];
 }
 
 const typedDigimonDb = digimonDb as DigimonDb;
@@ -33,7 +38,7 @@ export const findPath = (
   originDigimon: Digimon,
   targetDigimon: Digimon,
   skills: string[]
-): string[] | null => {
+): PathStep[] | null => {
   // If no skills required, just find shortest path
   if (skills.length === 0) {
     return findShortestPath(
@@ -47,7 +52,7 @@ export const findPath = (
     {
       digimonId: originDigimon.id.toString(),
       learnedMoves: new Set(),
-      path: [originDigimon.id.toString()],
+      path: [{ digimonId: originDigimon.id.toString(), learnedMoves: [] }],
     },
   ];
 
@@ -62,23 +67,34 @@ export const findPath = (
     if (visited.has(stateKey)) continue;
     visited.add(stateKey);
 
-    // Check if we've reached the target with all required moves
-    if (
-      current.digimonId === targetDigimon.id.toString() &&
-      skills.every((move) => current.learnedMoves.has(move))
-    ) {
-      return current.path;
-    }
-
     // Get current digimon's data
     const currentDigimon = typedDigimonDb[current.digimonId];
 
     // Check if current digimon can learn any of the required moves
     const newLearnedMoves = new Set(current.learnedMoves);
+    const movesLearnedHere: string[] = [];
     for (const moveId of skills) {
       if (typedLearnersByMoveId[moveId]?.includes(current.digimonId)) {
         newLearnedMoves.add(moveId);
+        movesLearnedHere.push(moveId);
       }
+    }
+
+    // Create new path step with moves learned at current digimon
+    const newPath = [...current.path];
+    if (movesLearnedHere.length > 0) {
+      newPath[newPath.length - 1] = {
+        digimonId: current.digimonId,
+        learnedMoves: movesLearnedHere,
+      };
+    }
+
+    // Check if we've reached the target with all required moves
+    if (
+      current.digimonId === targetDigimon.id.toString() &&
+      skills.every((move) => newLearnedMoves.has(move))
+    ) {
+      return newPath;
     }
 
     // Explore next digimon in evolution line
@@ -86,7 +102,7 @@ export const findPath = (
       queue.push({
         digimonId: nextId,
         learnedMoves: new Set(newLearnedMoves),
-        path: [...current.path, nextId],
+        path: [...newPath, { digimonId: nextId, learnedMoves: [] }],
       });
     }
 
@@ -95,7 +111,7 @@ export const findPath = (
       queue.push({
         digimonId: prevId,
         learnedMoves: new Set(newLearnedMoves),
-        path: [...current.path, prevId],
+        path: [...newPath, { digimonId: prevId, learnedMoves: [] }],
       });
     }
   }
@@ -105,11 +121,14 @@ export const findPath = (
 };
 
 // Helper function to find shortest path without move requirements
-function findShortestPath(originId: string, targetId: string): string[] | null {
-  const queue: { digimonId: string; path: string[] }[] = [
+function findShortestPath(
+  originId: string,
+  targetId: string
+): PathStep[] | null {
+  const queue: { digimonId: string; path: PathStep[] }[] = [
     {
       digimonId: originId,
-      path: [originId],
+      path: [{ digimonId: originId, learnedMoves: [] }],
     },
   ];
   const visited = new Set<string>();
@@ -129,14 +148,14 @@ function findShortestPath(originId: string, targetId: string): string[] | null {
     for (const nextId of currentDigimon.neighBours.next) {
       queue.push({
         digimonId: nextId,
-        path: [...current.path, nextId],
+        path: [...current.path, { digimonId: nextId, learnedMoves: [] }],
       });
     }
 
     for (const prevId of currentDigimon.neighBours.prev) {
       queue.push({
         digimonId: prevId,
-        path: [...current.path, prevId],
+        path: [...current.path, { digimonId: prevId, learnedMoves: [] }],
       });
     }
   }

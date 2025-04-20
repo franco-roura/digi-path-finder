@@ -1,13 +1,14 @@
 import { useState } from "react";
 import "./App.css";
 import dbJson from "@/db/db.json";
+import skillNames from "@/db/moveNames.json";
 import { ThemeProvider } from "./components/theme-provider";
 import { ThemeToggle } from "./components/theme-toggle";
 import { Button } from "./components/ui/button";
 import { AutoComplete } from "./components/ui/autocomplete";
 import { Digimon } from "./types";
 import SkillsSelector from "./components/skills-selector";
-import { findPath } from "./lib/path-finder";
+import { findPath, PathStep } from "./lib/path-finder";
 import { ArrowRightIcon } from "lucide-react";
 
 const digimonDb = dbJson as Record<string, Digimon>;
@@ -19,7 +20,7 @@ function App() {
   const [targetSearchValue, setTargetSearchValue] = useState("");
   const [skills, setSkills] = useState<string[]>([]);
 
-  const [path, setPath] = useState<string[] | null>(null);
+  const [path, setPath] = useState<PathStep[] | null>(null);
 
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
@@ -147,20 +148,34 @@ function App() {
             <div className="mt-4">
               <h2>Path</h2>
               <div className="flex items-center gap-2 flex-wrap">
-                {path.map((digimonId, index) => (
+                {path.map((step, index) => (
                   <>
                     <div
-                      key={`${digimonId}-${index}`}
-                      className="flex items-center gap-2 border rounded-t-md pr-2 overflow-hidden"
+                      key={`${step.digimonId}-${index}`}
+                      className="flex flex-col items-center gap-2 border rounded-t-md pr-2 overflow-hidden"
                     >
-                      <a href={digimonDb[digimonId].url} target="_blank">
-                        <img
-                          src={`/avatars/${digimonId}.png`}
-                          alt={digimonDb[digimonId].name}
-                          className="w-16 h-16"
-                        />
-                      </a>
-                      {digimonDb[digimonId].name}
+                      <div className="flex items-center gap-2">
+                        <a href={digimonDb[step.digimonId].url} target="_blank">
+                          <img
+                            src={`/avatars/${step.digimonId}.png`}
+                            alt={digimonDb[step.digimonId].name}
+                            className="w-16 h-16"
+                          />
+                        </a>
+                        {digimonDb[step.digimonId].name}
+                      </div>
+                      {step.learnedMoves.length > 0 && (
+                        <ul className="text-sm">
+                          {step.learnedMoves.map((move) => (
+                            <li key={move}>
+                              Can learn{" "}
+                              <span className="font-bold">
+                                {skillNames[move as keyof typeof skillNames]}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                     {index < path.length - 1 && (
                       <ArrowRightIcon className="w-4 h-4" />
