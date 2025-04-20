@@ -9,6 +9,7 @@ import SkillsSelector from "./components/skills-selector";
 import { findPath, PathStep } from "./lib/path-finder";
 import { ArrowRightIcon } from "lucide-react";
 import { DigimonSelector } from "./components/digimon-selector";
+import EvolutionPath from "./components/evolution-path";
 
 const digimonDb = dbJson as Record<string, Digimon>;
 
@@ -67,48 +68,7 @@ function App() {
               </Button>
             </div>
           </div>
-          <div></div>
-          {path && (
-            <div className="mt-4">
-              <h2>Path</h2>
-              <div className="flex items-center gap-2 flex-wrap">
-                {path.map((step, index) => (
-                  <>
-                    <div
-                      key={`${step.digimonId}-${index}`}
-                      className="flex flex-col items-center gap-2 border rounded-t-md pr-2 overflow-hidden"
-                    >
-                      <div className="flex items-center gap-2">
-                        <a href={digimonDb[step.digimonId].url} target="_blank">
-                          <img
-                            src={`/avatars/${step.digimonId}.png`}
-                            alt={digimonDb[step.digimonId].name}
-                            className="w-16 h-16"
-                          />
-                        </a>
-                        {digimonDb[step.digimonId].name}
-                      </div>
-                      {step.learnedMoves.length > 0 && (
-                        <ul className="text-sm">
-                          {step.learnedMoves.map((move) => (
-                            <li key={move}>
-                              Can learn{" "}
-                              <span className="font-bold">
-                                {skillNames[move as keyof typeof skillNames]}
-                              </span>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
-                    {index < path.length - 1 && (
-                      <ArrowRightIcon className="w-4 h-4" />
-                    )}
-                  </>
-                ))}
-              </div>
-            </div>
-          )}
+          {path && <EvolutionPath path={path} />}
         </div>
       </div>
     </ThemeProvider>
