@@ -1,6 +1,7 @@
 import { PathStep } from "@/lib/path-finder";
 import EvolutionPathStep from "./evolution-path-step";
 import { useEffect } from "react";
+import { ArrowRightIcon } from "lucide-react";
 
 type Props = {
   path: PathStep[];
@@ -19,9 +20,14 @@ const EvolutionPath = (props: Props) => {
           Evolution Path
         </h2>
         <div className="w-full overflow-x-auto pb-4">
-          <div className="flex flex-nowrap min-w-max gap-2 md:gap-4">
-            {props.path.map((step) => {
-              return <EvolutionPathStep key={step.digimonId} step={step} />;
+          <div className="flex items-center flex-nowrap min-w-max gap-2 md:gap-4">
+            {props.path.map((step, index) => {
+              return (
+                <>
+                  {index > 0 && <ArrowRightIcon className="w-8 h-8" />}
+                  <EvolutionPathStep key={step.digimonId} step={step} />
+                </>
+              );
             })}
           </div>
         </div>
