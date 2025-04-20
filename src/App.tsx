@@ -42,40 +42,56 @@ function App() {
               Edit <code>src/App.tsx</code> and save to test HMR
             </p>
           </div>
-          <AutoComplete
-            selectedValue={originDigimon?.name ?? ""}
-            onSelectedValueChange={(id) => {
-              setOriginDigimon(digimonDb[id]);
-            }}
-            searchValue={originSearchValue}
-            onSearchValueChange={setOriginSearchValue}
-            items={Object.values(digimonDb)
-              .filter((digimon) =>
-                digimon.name.toLowerCase().includes(originSearchValue.toLowerCase())
-              )
-              .map((digimon) => ({
-                value: digimon.id.toString(),
-                label: digimon.name,
-              }))
-              .slice(0, 10)}
-          />
-          <AutoComplete
-            selectedValue={targetDigimon?.name ?? ""}
-            onSelectedValueChange={(id) => {
-              setTargetDigimon(digimonDb[id]);
-            }}
-            searchValue={targetSearchValue}
-            onSearchValueChange={setTargetSearchValue}
-            items={Object.values(digimonDb)
-              .filter((digimon) =>
-                digimon.name.toLowerCase().includes(targetSearchValue.toLowerCase())
-              )
-              .map((digimon) => ({
-                value: digimon.id.toString(),
-                label: digimon.name,
-              }))
-              .slice(0, 10)}
-          />
+          <div className="flex w-full space-x-4">
+            <div>
+              <label className="block mb-2 text-left" htmlFor="originDigimon">
+                Origin Digimon
+              </label>
+              <AutoComplete
+                selectedValue={originDigimon?.name ?? ""}
+                onSelectedValueChange={(id) => {
+                  setOriginDigimon(digimonDb[id]);
+                }}
+                searchValue={originSearchValue}
+                onSearchValueChange={setOriginSearchValue}
+                items={Object.values(digimonDb)
+                  .filter((digimon) =>
+                    digimon.name
+                      .toLowerCase()
+                      .includes(originSearchValue.toLowerCase())
+                  )
+                  .map((digimon) => ({
+                    value: digimon.id.toString(),
+                    label: digimon.name,
+                  }))
+                  .slice(0, 10)}
+              />
+            </div>
+            <div>
+              <label className="block mb-2 text-left" htmlFor="targetDigimon">
+                Target Digimon
+              </label>
+              <AutoComplete
+                selectedValue={targetDigimon?.name ?? ""}
+                onSelectedValueChange={(id) => {
+                  setTargetDigimon(digimonDb[id]);
+                }}
+                searchValue={targetSearchValue}
+                onSearchValueChange={setTargetSearchValue}
+                items={Object.values(digimonDb)
+                  .filter((digimon) =>
+                    digimon.name
+                      .toLowerCase()
+                      .includes(targetSearchValue.toLowerCase())
+                  )
+                  .map((digimon) => ({
+                    value: digimon.id.toString(),
+                    label: digimon.name,
+                  }))
+                  .slice(0, 10)}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </ThemeProvider>

@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
-import {Input} from "./input";
+import { Input } from "./input";
 import {
   Command,
   CommandEmpty,
@@ -36,9 +36,9 @@ export const AutoComplete = <T extends string>(props: Props<T>) => {
           acc[item.value] = item.label;
           return acc;
         },
-        {} as Record<string, string>,
+        {} as Record<string, string>
       ),
-    [props.items],
+    [props.items]
   );
 
   const reset = () => {
@@ -47,6 +47,7 @@ export const AutoComplete = <T extends string>(props: Props<T>) => {
   };
 
   const onInputBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+    setOpen(false);
     if (
       !e.relatedTarget?.hasAttribute("cmdk-list") &&
       !e.relatedTarget?.hasAttribute("cmdk-input") &&
@@ -68,12 +69,19 @@ export const AutoComplete = <T extends string>(props: Props<T>) => {
 
   return (
     <div className="flex items-center">
-      <Popover open={open} onOpenChange={(newOpen) => {
-        setOpen(newOpen);
-        if (!newOpen && props.selectedValue && labels[props.selectedValue] !== props.searchValue) {
-          props.onSearchValueChange(labels[props.selectedValue] ?? "");
-        }
-      }}>
+      <Popover
+        open={open}
+        onOpenChange={(newOpen) => {
+          setOpen(newOpen);
+          if (
+            !newOpen &&
+            props.selectedValue &&
+            labels[props.selectedValue] !== props.searchValue
+          ) {
+            props.onSearchValueChange(labels[props.selectedValue] ?? "");
+          }
+        }}
+      >
         <Command shouldFilter={false}>
           <PopoverAnchor asChild>
             <CommandPrimitive.Input
@@ -126,7 +134,7 @@ export const AutoComplete = <T extends string>(props: Props<T>) => {
                           "mr-2 h-4 w-4",
                           props.selectedValue === option.value
                             ? "opacity-100"
-                            : "opacity-0",
+                            : "opacity-0"
                         )}
                       />
                       {option.label}
