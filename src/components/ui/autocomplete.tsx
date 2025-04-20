@@ -71,11 +71,7 @@ export const AutoComplete = <T extends string>(props: Props<T>) => {
         open={open}
         onOpenChange={(newOpen) => {
           setOpen(newOpen);
-          if (
-            !newOpen &&
-            props.selectedValue &&
-            labels[props.selectedValue] !== props.searchValue
-          ) {
+          if (!newOpen && props.selectedValue && labels[props.selectedValue]) {
             props.onSearchValueChange(labels[props.selectedValue] ?? "");
           }
         }}
