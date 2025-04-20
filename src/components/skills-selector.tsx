@@ -37,40 +37,48 @@ const SkillsSelector = ({
   };
 
   return (
-    <div className="space-y-2">
-      <AutoComplete
-        selectedValue={selectedValue}
-        onSelectedValueChange={(value) => {
-          setSelectedValue(value);
-          if (value) {
-            handleSelect(value);
-          }
-        }}
-        searchValue={searchValue}
-        onSearchValueChange={setSearchValue}
-        items={skillOptions.filter((skill) =>
-          skill.label.toLowerCase().includes(searchValue.toLowerCase())
-        )}
-        placeholder="Search skills..."
-      />
-      <div className="flex flex-wrap gap-2">
-        {selectedSkills.map((skillId) => (
-          <Badge
-            key={skillId}
-            variant="secondary"
-            className="flex items-center gap-1"
-          >
-            {skillNames[skillId as keyof typeof skillNames]}
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-4 w-4 hover:bg-transparent cursor-pointer"
-              onClick={() => handleRemoveSkill(skillId)}
+    <div>
+      <label
+        className="block mb-2 text-sm font-medium text-accent-foreground"
+        htmlFor="skills"
+      >
+        Skills to Learn
+      </label>
+      <div className="space-y-2">
+        <AutoComplete
+          selectedValue={selectedValue}
+          onSelectedValueChange={(value) => {
+            setSelectedValue(value);
+            if (value) {
+              handleSelect(value);
+            }
+          }}
+          searchValue={searchValue}
+          onSearchValueChange={setSearchValue}
+          items={skillOptions.filter((skill) =>
+            skill.label.toLowerCase().includes(searchValue.toLowerCase())
+          )}
+          placeholder="Search skills..."
+        />
+        <div className="flex flex-wrap gap-2">
+          {selectedSkills.map((skillId) => (
+            <Badge
+              key={skillId}
+              variant="secondary"
+              className="flex items-center gap-1"
             >
-              <X className="h-3 w-3" />
-            </Button>
-          </Badge>
-        ))}
+              {skillNames[skillId as keyof typeof skillNames]}
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-4 w-4 hover:bg-transparent cursor-pointer"
+                onClick={() => handleRemoveSkill(skillId)}
+              >
+                <X className="h-3 w-3" />
+              </Button>
+            </Badge>
+          ))}
+        </div>
       </div>
     </div>
   );
