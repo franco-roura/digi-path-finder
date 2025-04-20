@@ -1,8 +1,5 @@
 import { Command as CommandPrimitive } from "cmdk";
-import { Check } from "lucide-react";
 import { useMemo, useState } from "react";
-
-import { cn } from "@/lib/utils";
 
 import { Input } from "./input";
 import {
@@ -24,6 +21,7 @@ type Props<T extends string> = {
   isLoading?: boolean;
   emptyMessage?: string;
   placeholder?: string;
+  renderLabel?: (value: T) => React.ReactNode;
 };
 
 export const AutoComplete = <T extends string>(props: Props<T>) => {
@@ -129,15 +127,9 @@ export const AutoComplete = <T extends string>(props: Props<T>) => {
                       onMouseDown={(e) => e.preventDefault()}
                       onSelect={onSelectItem}
                     >
-                      <Check
-                        className={cn(
-                          "mr-2 h-4 w-4",
-                          props.selectedValue === option.value
-                            ? "opacity-100"
-                            : "opacity-0"
-                        )}
-                      />
-                      {option.label}
+                      {props.renderLabel
+                        ? props.renderLabel(option.value)
+                        : option.label}
                     </CommandItem>
                   ))}
                 </CommandGroup>

@@ -54,6 +54,19 @@ function App() {
                 }}
                 searchValue={originSearchValue}
                 onSearchValueChange={setOriginSearchValue}
+                renderLabel={(id) => {
+                  const digimon = digimonDb[id];
+                  return (
+                    <div className="flex items-center gap-2">
+                      <img
+                        src={`/icons/${id}.png`}
+                        alt={digimon.name}
+                        className="w-8 h-8"
+                      />
+                      {digimon.name}
+                    </div>
+                  );
+                }}
                 items={Object.values(digimonDb)
                   .filter((digimon) =>
                     digimon.name
@@ -66,6 +79,13 @@ function App() {
                   }))
                   .slice(0, 10)}
               />
+              {originDigimon?.id && (
+                <img
+                  src={`/avatars/${originDigimon.id}.png`}
+                  alt={originDigimon.name}
+                  className="w-16 h-16"
+                />
+              )}
             </div>
             <div>
               <label className="block mb-2 text-left" htmlFor="targetDigimon">
@@ -78,6 +98,19 @@ function App() {
                 }}
                 searchValue={targetSearchValue}
                 onSearchValueChange={setTargetSearchValue}
+                renderLabel={(id) => {
+                  const digimon = digimonDb[id];
+                  return (
+                    <div className="flex items-center gap-2">
+                      <img
+                        src={`/icons/${id}.png`}
+                        alt={digimon.name}
+                        className="w-8 h-8"
+                      />
+                      {digimon.name}
+                    </div>
+                  );
+                }}
                 items={Object.values(digimonDb)
                   .filter((digimon) =>
                     digimon.name
@@ -90,6 +123,13 @@ function App() {
                   }))
                   .slice(0, 10)}
               />
+              {targetDigimon?.id && (
+                <img
+                  src={`/avatars/${targetDigimon.id}.png`}
+                  alt={targetDigimon.name}
+                  className="w-16 h-16"
+                />
+              )}
             </div>
           </div>
         </div>
