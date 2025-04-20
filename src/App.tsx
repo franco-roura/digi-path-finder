@@ -1,17 +1,12 @@
 import { useState } from "react";
-import dbJson from "@/db/db.json";
-import skillNames from "@/db/moveNames.json";
 import { ThemeProvider } from "./components/theme-provider";
 import { ThemeToggle } from "./components/theme-toggle";
 import { Button } from "./components/ui/button";
 import { Digimon } from "./types";
 import SkillsSelector from "./components/skills-selector";
 import { findPath, PathStep } from "./lib/path-finder";
-import { ArrowRightIcon } from "lucide-react";
 import { DigimonSelector } from "./components/digimon-selector";
 import EvolutionPath from "./components/evolution-path";
-
-const digimonDb = dbJson as Record<string, Digimon>;
 
 function App() {
   const [originDigimon, setOriginDigimon] = useState<Digimon | null>(null);
