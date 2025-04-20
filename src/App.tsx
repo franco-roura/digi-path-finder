@@ -4,10 +4,11 @@ import { ThemeToggle } from "./components/theme-toggle";
 import { Button } from "./components/ui/button";
 import { Digimon } from "./types";
 import SkillsSelector from "./components/skills-selector";
-import { findPath, PathStep } from "./lib/path-finder";
+import { PathStep } from "./lib/path-finder";
 import { DigimonSelector } from "./components/digimon-selector";
 import EvolutionPath from "./components/evolution-path";
 import { toast, Toaster } from "sonner";
+import pathFinderWorker from "./lib/path-finder/worker?worker&url";
 
 function App() {
   const [originDigimon, setOriginDigimon] = useState<Digimon | null>(null);
@@ -17,16 +18,31 @@ function App() {
   const [skills, setSkills] = useState<string[]>([]);
 
   const [path, setPath] = useState<PathStep[] | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleFindPath = () => {
     if (!originDigimon || !targetDigimon) {
       return;
     }
-    const newPath = findPath(originDigimon, targetDigimon, skills);
-    setPath(newPath);
-    if (!newPath) {
-      toast.error("Failed to find an evolution path between these digimons");
-    }
+
+    setIsLoading(true);
+    // We defer the path finder to avoid blocking the main thread
+    const worker = new Worker(pathFinderWorker, {
+      type: "module",
+    });
+    worker.postMessage({
+      originDigimon,
+      targetDigimon,
+      skills,
+    });
+    worker.onmessage = (e: MessageEvent<PathStep[]>) => {
+      const newPath = e.data;
+      setPath(newPath);
+      if (!newPath) {
+        toast.error("Failed to find an evolution path between these digimons");
+      }
+      setIsLoading(false);
+    };
   };
 
   return (
@@ -72,7 +88,7 @@ function App() {
               </Button>
             </div>
           </div>
-          {path && <EvolutionPath path={path} />}
+          {path && <EvolutionPath isLoading={isLoading} path={path} />}
         </div>
       </div>
     </ThemeProvider>
