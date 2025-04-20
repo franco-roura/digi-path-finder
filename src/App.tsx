@@ -1,46 +1,35 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import dbJson from "./db.json";
-import { Button } from "./components/ui/button";
+import dbJson from "@/db/db.json";
 import { ThemeProvider } from "./components/theme-provider";
 import { ThemeToggle } from "./components/theme-toggle";
-import { AutoComplete } from "./components/ui/Autocomplete";
+import { Button } from "./components/ui/button";
+import { AutoComplete } from "./components/ui/autocomplete";
 import { Digimon } from "./types";
+import SkillsSelector from "./components/skills-selector";
+import { findPath } from "./lib/path-finder";
+import { ArrowRightIcon } from "lucide-react";
 
 const digimonDb = dbJson as Record<string, Digimon>;
 
 function App() {
-  const [count, setCount] = useState(0);
   const [originDigimon, setOriginDigimon] = useState<Digimon | null>(null);
   const [originSearchValue, setOriginSearchValue] = useState("");
   const [targetDigimon, setTargetDigimon] = useState<Digimon | null>(null);
   const [targetSearchValue, setTargetSearchValue] = useState("");
+  const [skills, setSkills] = useState<string[]>([]);
+
+  const [path, setPath] = useState<string[] | null>(null);
 
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <div className="min-h-screen bg-background text-foreground">
-        <div className="flex items-center justify-between p-4">
-          <div className="flex items-center gap-4">
-            <a href="https://vite.dev" target="_blank">
-              <img src={viteLogo} className="logo" alt="Vite logo" />
-            </a>
-            <a href="https://react.dev" target="_blank">
-              <img src={reactLogo} className="logo react" alt="React logo" />
-            </a>
-          </div>
-          <ThemeToggle />
-        </div>
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-8">Vite + React</h1>
-          <div className="border rounded-md shadow-md p-4 mb-4 bg-card">
-            <Button onClick={() => setCount((count) => count + 1)}>
-              count is {count}
-            </Button>
-            <p className="mt-4">
-              Edit <code>src/App.tsx</code> and save to test HMR
-            </p>
+          <div className="flex items-center gap-4 mb-8">
+            <h1 className="text-4xl font-bold ">
+              Cyber Sleuth Evolution Path Finder
+            </h1>
+            <ThemeToggle />
           </div>
           <div className="flex w-full space-x-4">
             <div>
@@ -131,7 +120,56 @@ function App() {
                 />
               )}
             </div>
+            <div>
+              <label className="block mb-2 text-left" htmlFor="skills">
+                Skills
+              </label>
+              <SkillsSelector
+                selectedSkills={skills}
+                onSelectedSkillsChange={setSkills}
+              />
+            </div>
           </div>
+          <div>
+            <Button
+              disabled={!originDigimon || !targetDigimon}
+              onClick={() => {
+                if (!originDigimon || !targetDigimon) {
+                  return;
+                }
+                setPath(findPath(originDigimon, targetDigimon, skills));
+              }}
+            >
+              Find Path
+            </Button>
+          </div>
+          {path && (
+            <div className="mt-4">
+              <h2>Path</h2>
+              <div className="flex items-center gap-2 flex-wrap">
+                {path.map((digimonId, index) => (
+                  <>
+                    <div
+                      key={`${digimonId}-${index}`}
+                      className="flex items-center gap-2 border rounded-t-md pr-2 overflow-hidden"
+                    >
+                      <a href={digimonDb[digimonId].url} target="_blank">
+                        <img
+                          src={`/avatars/${digimonId}.png`}
+                          alt={digimonDb[digimonId].name}
+                          className="w-16 h-16"
+                        />
+                      </a>
+                      {digimonDb[digimonId].name}
+                    </div>
+                    {index < path.length - 1 && (
+                      <ArrowRightIcon className="w-4 h-4" />
+                    )}
+                  </>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </ThemeProvider>
