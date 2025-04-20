@@ -7,6 +7,7 @@ import SkillsSelector from "./components/skills-selector";
 import { findPath, PathStep } from "./lib/path-finder";
 import { DigimonSelector } from "./components/digimon-selector";
 import EvolutionPath from "./components/evolution-path";
+import { toast, Toaster } from "sonner";
 
 function App() {
   const [originDigimon, setOriginDigimon] = useState<Digimon | null>(null);
@@ -21,11 +22,17 @@ function App() {
     if (!originDigimon || !targetDigimon) {
       return;
     }
-    setPath(findPath(originDigimon, targetDigimon, skills));
+    const newPath = findPath(originDigimon, targetDigimon, skills);
+    setPath(newPath);
+    if (!newPath) {
+      toast.error("Failed to find an evolution path between these digimons");
+    }
   };
 
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+      <Toaster richColors />
+
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 dark:from-blue-950 dark:to-indigo-950 flex flex-col items-center p-4 md:p-8 bg-background text-foreground">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center w-full mx-auto max-w-5xl bg-white dark:bg-gray-900 shadow-lg p-6 mb-2 border-4 border-blue-500 dark:border-blue-700 relative">
