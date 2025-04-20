@@ -17,6 +17,13 @@ function App() {
 
   const [path, setPath] = useState<PathStep[] | null>(null);
 
+  const handleFindPath = () => {
+    if (!originDigimon || !targetDigimon) {
+      return;
+    }
+    setPath(findPath(originDigimon, targetDigimon, skills));
+  };
+
   return (
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 dark:from-blue-950 dark:to-indigo-950 flex flex-col items-center p-4 md:p-8 bg-background text-foreground">
@@ -52,12 +59,7 @@ function App() {
               <Button
                 className="cursor-pointer h-10 bg-blue-800 hover:bg-blue-900 text-white px-8 py-2 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 border-blue-400 dark:border-blue-800"
                 disabled={!originDigimon || !targetDigimon}
-                onClick={() => {
-                  if (!originDigimon || !targetDigimon) {
-                    return;
-                  }
-                  setPath(findPath(originDigimon, targetDigimon, skills));
-                }}
+                onClick={handleFindPath}
               >
                 Find Evolution Path
               </Button>
