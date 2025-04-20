@@ -13,9 +13,12 @@ type Props = {
 const EvolutionPathStep = (props: Props) => {
   const digimon = digimons[props.step.digimonId];
   return (
-    <div
+    <a
+      href={digimon.url}
+      target="_blank"
+      rel="noopener noreferrer"
       className={cn(
-        "p-3 rounded-xl bg-blue-50 dark:bg-blue-900 border border-blue-200 dark:border-blue-700 h-fit flex flex-col",
+        "p-3 rounded-xl bg-blue-50 dark:bg-blue-900 border border-blue-200 dark:border-blue-700 h-fit flex flex-col cursor-pointer",
         {
           "bg-gradient-to-b from-yellow-100 to-orange-100 dark:from-yellow-900 dark:to-orange-900 border-2 border-yellow-400 dark:border-yellow-600":
             props.step.learnedMoves.length > 0,
@@ -51,7 +54,7 @@ const EvolutionPathStep = (props: Props) => {
           </ul>
         </div>
       )}
-    </div>
+    </a>
   );
 };
 
