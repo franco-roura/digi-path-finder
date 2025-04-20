@@ -9,6 +9,7 @@ import { DigimonSelector } from "./components/digimon-selector";
 import EvolutionPath from "./components/evolution-path";
 import { toast, Toaster } from "sonner";
 import pathFinderWorker from "./lib/path-finder/worker?worker&url";
+import { GithubIcon } from "./components/github-icon";
 
 function App() {
   const [originDigimon, setOriginDigimon] = useState<Digimon | null>(null);
@@ -55,7 +56,19 @@ function App() {
             <h1 className="text-2xl md:text-4xl font-bold text-blue-900 dark:text-blue-400 ">
               Cyber Sleuth Evolution Path Finder
             </h1>
-            <ThemeToggle />
+            <div className="flex flex-col md:flex-row items-center gap-2">
+              <Button variant="outline" size="icon" asChild>
+                <a
+                  href="https://github.com/franco-roura/digi-path-finder"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GithubIcon />
+                  <span className="sr-only">GitHub Repository</span>
+                </a>
+              </Button>
+              <ThemeToggle />
+            </div>
           </div>
           <div className="flex flex-col gap-6 w-full mx-auto max-w-5xl bg-white dark:bg-gray-900 p-6 rounded-b-3xl shadow-lg border-4 border-t-0 border-blue-500 dark:border-blue-700 mb-8">
             <div className="flex flex-col md:flex-row gap-6">
