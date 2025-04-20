@@ -64,17 +64,16 @@ const SkillsSelector = ({
           {selectedSkills.map((skillId) => (
             <Badge
               key={skillId}
-              variant="secondary"
-              className="flex items-center gap-1"
+              className="flex items-center gap-1 bg-blue-100/80 hover:bg-blue-200/80 text-blue-900 dark:bg-blue-900/20 dark:hover:bg-blue-900/30 dark:text-blue-200 border-0 px-3 py-1"
             >
               {skillNames[skillId as keyof typeof skillNames]}
               <Button
                 variant="ghost"
                 size="icon"
-                className="h-4 w-4 hover:bg-transparent cursor-pointer"
+                className="h-4 w-4 hover:bg-transparent cursor-pointer p-0 ml-1"
                 onClick={() => handleRemoveSkill(skillId)}
               >
-                <X className="h-3 w-3" />
+                <X className="h-3 w-3 text-blue-900/70 dark:text-blue-200/70" />
               </Button>
             </Badge>
           ))}

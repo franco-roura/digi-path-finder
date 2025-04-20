@@ -25,14 +25,14 @@ function App() {
     <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100 dark:from-blue-950 dark:to-indigo-950 flex flex-col items-center p-4 md:p-8 bg-background text-foreground">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center w-full max-w-5xl bg-white dark:bg-gray-900 shadow-lg p-6 mb-2 border-4 border-blue-500 dark:border-blue-700 relative">
+          <div className="flex justify-between items-center w-full mx-auto max-w-5xl bg-white dark:bg-gray-900 shadow-lg p-6 mb-2 border-4 border-blue-500 dark:border-blue-700 relative">
             <h1 className="text-2xl md:text-4xl font-bold text-blue-900 dark:text-blue-400 ">
               Cyber Sleuth Evolution Path Finder
             </h1>
             <ThemeToggle />
           </div>
-          <div className="flex flex-col gap-6 w-full max-w-5xl bg-white dark:bg-gray-900 p-6 rounded-b-3xl shadow-lg border-4 border-t-0 border-blue-500 dark:border-blue-700 mb-8">
-            <div className="flex gap-6">
+          <div className="flex flex-col gap-6 w-full mx-auto max-w-5xl bg-white dark:bg-gray-900 p-6 rounded-b-3xl shadow-lg border-4 border-t-0 border-blue-500 dark:border-blue-700 mb-8">
+            <div className="flex flex-col md:flex-row gap-6">
               <DigimonSelector
                 label="Origin Digimon"
                 selectedDigimon={originDigimon}
