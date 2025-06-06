@@ -4,6 +4,7 @@ import { ThemeToggle } from "./components/theme-toggle";
 import { Button } from "./components/ui/button";
 import { Digimon } from "./types";
 import SkillsSelector from "./components/skills-selector";
+import ExcludedDigimonSelector from "./components/excluded-digimon-selector";
 import { PathStep } from "./lib/path-finder";
 import { DigimonSelector } from "./components/digimon-selector";
 import EvolutionPath from "./components/evolution-path";
@@ -17,6 +18,7 @@ function App() {
   const [targetDigimon, setTargetDigimon] = useState<Digimon | null>(null);
   const [targetSearchValue, setTargetSearchValue] = useState("");
   const [skills, setSkills] = useState<string[]>([]);
+  const [excludedDigimonIds, setExcludedDigimonIds] = useState<string[]>([]);
 
   const [path, setPath] = useState<PathStep[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -35,6 +37,7 @@ function App() {
       originDigimon,
       targetDigimon,
       skills,
+      excludedDigimonIds,
     });
     worker.onmessage = (e: MessageEvent<PathStep[]>) => {
       const newPath = e.data;
@@ -90,6 +93,10 @@ function App() {
             <SkillsSelector
               selectedSkills={skills}
               onSelectedSkillsChange={setSkills}
+            />
+            <ExcludedDigimonSelector
+              excludedDigimonIds={excludedDigimonIds}
+              onExcludedDigimonIdsChange={setExcludedDigimonIds}
             />
             <div className="w-full flex justify-center">
               <Button
