@@ -37,13 +37,21 @@ const typedLearnersByMoveId = learnersByMoveId as LearnersByMoveId;
 export const findPath = (
   originDigimon: Digimon,
   targetDigimon: Digimon,
-  skills: string[]
+  skills: string[],
+  excludedDigimonIds: string[] = []
 ): PathStep[] | null => {
+  if (
+    excludedDigimonIds.includes(originDigimon.id.toString()) ||
+    excludedDigimonIds.includes(targetDigimon.id.toString())
+  ) {
+    return null;
+  }
   // If no skills required, just find shortest path
   if (skills.length === 0) {
     return findShortestPath(
       originDigimon.id.toString(),
-      targetDigimon.id.toString()
+      targetDigimon.id.toString(),
+      excludedDigimonIds
     );
   }
 
@@ -99,6 +107,7 @@ export const findPath = (
 
     // Explore next digimon in evolution line
     for (const nextId of currentDigimon.neighBours.next) {
+      if (excludedDigimonIds.includes(nextId)) continue;
       queue.push({
         digimonId: nextId,
         learnedMoves: new Set(newLearnedMoves),
@@ -108,6 +117,7 @@ export const findPath = (
 
     // Explore previous digimon in evolution line
     for (const prevId of currentDigimon.neighBours.prev) {
+      if (excludedDigimonIds.includes(prevId)) continue;
       queue.push({
         digimonId: prevId,
         learnedMoves: new Set(newLearnedMoves),
@@ -123,7 +133,8 @@ export const findPath = (
 // Helper function to find shortest path without move requirements
 function findShortestPath(
   originId: string,
-  targetId: string
+  targetId: string,
+  excludedDigimonIds: string[] = []
 ): PathStep[] | null {
   const queue: { digimonId: string; path: PathStep[] }[] = [
     {
@@ -146,6 +157,7 @@ function findShortestPath(
     const currentDigimon = typedDigimonDb[current.digimonId];
 
     for (const nextId of currentDigimon.neighBours.next) {
+      if (excludedDigimonIds.includes(nextId)) continue;
       queue.push({
         digimonId: nextId,
         path: [...current.path, { digimonId: nextId, learnedMoves: [] }],
@@ -153,6 +165,7 @@ function findShortestPath(
     }
 
     for (const prevId of currentDigimon.neighBours.prev) {
+      if (excludedDigimonIds.includes(prevId)) continue;
       queue.push({
         digimonId: prevId,
         path: [...current.path, { digimonId: prevId, learnedMoves: [] }],
