@@ -1,0 +1,8723 @@
+{
+  "1": [
+    {
+      "to": 9,
+      "level": 5,
+      "requirements": {}
+    },
+    {
+      "to": 12,
+      "level": 5,
+      "requirements": {}
+    },
+    {
+      "to": 250,
+      "level": 8,
+      "requirements": {
+        "atk": 55,
+        "abi": 5,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    }
+  ],
+  "2": [
+    {
+      "to": 7,
+      "level": 5,
+      "requirements": {}
+    },
+    {
+      "to": 13,
+      "level": 3,
+      "requirements": {
+        "hp": 50
+      }
+    },
+    {
+      "to": 15,
+      "level": 3,
+      "requirements": {
+        "def": 15
+      }
+    }
+  ],
+  "3": [
+    {
+      "to": 8,
+      "level": 5,
+      "requirements": {}
+    },
+    {
+      "to": 11,
+      "level": 3,
+      "requirements": {
+        "int": 10
+      }
+    }
+  ],
+  "4": [
+    {
+      "to": 6,
+      "level": 3,
+      "requirements": {
+        "atk": 15
+      }
+    },
+    {
+      "to": 16,
+      "level": 5,
+      "requirements": {}
+    }
+  ],
+  "5": [
+    {
+      "to": 10,
+      "level": 5,
+      "requirements": {}
+    },
+    {
+      "to": 14,
+      "level": 3,
+      "requirements": {
+        "int": 15
+      }
+    }
+  ],
+  "6": [
+    {
+      "to": 17,
+      "level": 9,
+      "requirements": {
+        "atk": 30,
+        "cam": 10
+      }
+    },
+    {
+      "to": 27,
+      "level": 7,
+      "requirements": {
+        "atk": 30,
+        "spd": 20
+      }
+    },
+    {
+      "to": 37,
+      "level": 8,
+      "requirements": {
+        "hp": 75,
+        "def": 20
+      }
+    },
+    {
+      "to": 41,
+      "level": 9,
+      "requirements": {
+        "atk": 20,
+        "abi": 20,
+        "misc": [
+          "ITEM__STEEL_WILL"
+        ]
+      }
+    },
+    {
+      "to": 255,
+      "level": 6,
+      "requirements": {
+        "atk": 50,
+        "def": 20,
+        "cam": 10
+      }
+    },
+    {
+      "to": 326,
+      "level": 8,
+      "requirements": {
+        "atk": 30,
+        "spd": 20,
+        "cam": 10
+      }
+    }
+  ],
+  "7": [
+    {
+      "to": 50,
+      "level": 9,
+      "requirements": {
+        "hp": 75
+      }
+    },
+    {
+      "to": 42,
+      "level": 8,
+      "requirements": {
+        "hp": 100,
+        "cam": 10
+      }
+    },
+    {
+      "to": 52,
+      "level": 7,
+      "requirements": {
+        "atk": 20,
+        "int": 20,
+        "spd": 20
+      }
+    },
+    {
+      "to": 256,
+      "level": 6,
+      "requirements": {
+        "spd": 30
+      }
+    }
+  ],
+  "8": [
+    {
+      "to": 25,
+      "level": 7,
+      "requirements": {
+        "hp": 75,
+        "atk": 20,
+        "spd": 20
+      }
+    },
+    {
+      "to": 26,
+      "level": 6,
+      "requirements": {
+        "hp": 80,
+        "atk": 30
+      }
+    },
+    {
+      "to": 31,
+      "level": 7,
+      "requirements": {
+        "atk": 40
+      }
+    },
+    {
+      "to": 46,
+      "level": 6,
+      "requirements": {
+        "atk": 20,
+        "spd": 20,
+        "cam": 10
+      }
+    },
+    {
+      "to": 252,
+      "level": 10,
+      "requirements": {
+        "atk": 20,
+        "spd": 20
+      }
+    },
+    {
+      "to": 258,
+      "level": 8,
+      "requirements": {
+        "atk": 35,
+        "cam": 10
+      }
+    }
+  ],
+  "9": [
+    {
+      "to": 18,
+      "level": 8,
+      "requirements": {
+        "atk": 30
+      }
+    },
+    {
+      "to": 29,
+      "level": 9,
+      "requirements": {
+        "atk": 20,
+        "spd": 20
+      }
+    },
+    {
+      "to": 43,
+      "level": 8,
+      "requirements": {
+        "spd": 30
+      }
+    },
+    {
+      "to": 254,
+      "level": 8,
+      "requirements": {
+        "atk": 30,
+        "spd": 20
+      }
+    }
+  ],
+  "10": [
+    {
+      "to": 40,
+      "level": 7,
+      "requirements": {
+        "int": 20,
+        "spd": 20,
+        "cam": 10
+      }
+    },
+    {
+      "to": 45,
+      "level": 9,
+      "requirements": {
+        "spd": 30
+      }
+    },
+    {
+      "to": 49,
+      "level": 7,
+      "requirements": {
+        "spd": 30,
+        "cam": 10
+      }
+    },
+    {
+      "to": 51,
+      "level": 30,
+      "requirements": {
+        "sp": 80,
+        "int": 130,
+        "abi": 80
+      }
+    },
+    {
+      "to": 328,
+      "level": 7,
+      "requirements": {
+        "sp": 20,
+        "int": 30,
+        "cam": 50,
+        "misc": [
+          "DLC_REQUIRED"
+        ]
+      }
+    }
+  ],
+  "11": [
+    {
+      "to": 19,
+      "level": 7,
+      "requirements": {
+        "hp": 75,
+        "def": 20,
+        "cam": 10
+      }
+    },
+    {
+      "to": 35,
+      "level": 8,
+      "requirements": {
+        "spd": 30,
+        "cam": 10
+      }
+    },
+    {
+      "to": 47,
+      "level": 7,
+      "requirements": {
+        "sp": 20,
+        "int": 20,
+        "cam": 10
+      }
+    },
+    {
+      "to": 259,
+      "level": 8,
+      "requirements": {
+        "sp": 30,
+        "int": 20
+      }
+    }
+  ],
+  "12": [
+    {
+      "to": 20,
+      "level": 7,
+      "requirements": {
+        "sp": 20,
+        "int": 30
+      }
+    },
+    {
+      "to": 24,
+      "level": 9,
+      "requirements": {
+        "atk": 15,
+        "spd": 20
+      }
+    },
+    {
+      "to": 53,
+      "level": 8,
+      "requirements": {
+        "atk": 15,
+        "int": 20
+      }
+    },
+    {
+      "to": 253,
+      "level": 6,
+      "requirements": {
+        "spd": 30
+      }
+    }
+  ],
+  "13": [
+    {
+      "to": 21,
+      "level": 7,
+      "requirements": {
+        "hp": 75,
+        "sp": 20,
+        "spd": 20
+      }
+    },
+    {
+      "to": 44,
+      "level": 8,
+      "requirements": {
+        "int": 20,
+        "spd": 20,
+        "cam": 10
+      }
+    },
+    {
+      "to": 54,
+      "level": 8,
+      "requirements": {
+        "def": 20,
+        "cam": 10
+      }
+    },
+    {
+      "to": 257,
+      "level": 8,
+      "requirements": {
+        "hp": 75,
+        "def": 10
+      }
+    }
+  ],
+  "14": [
+    {
+      "to": 22,
+      "level": 7,
+      "requirements": {
+        "int": 20
+      }
+    },
+    {
+      "to": 32,
+      "level": 8,
+      "requirements": {
+        "hp": 100,
+        "cam": 10
+      }
+    },
+    {
+      "to": 33,
+      "level": 7,
+      "requirements": {
+        "def": 15,
+        "int": 20
+      }
+    },
+    {
+      "to": 48,
+      "level": 8,
+      "requirements": {
+        "int": 40
+      }
+    }
+  ],
+  "15": [
+    {
+      "to": 30,
+      "level": 8,
+      "requirements": {
+        "def": 30
+      }
+    },
+    {
+      "to": 34,
+      "level": 6,
+      "requirements": {
+        "hp": 75,
+        "def": 25
+      }
+    },
+    {
+      "to": 36,
+      "level": 9,
+      "requirements": {
+        "def": 20
+      }
+    },
+    {
+      "to": 39,
+      "level": 7,
+      "requirements": {
+        "hp": 75,
+        "def": 30,
+        "cam": 10
+      }
+    }
+  ],
+  "16": [
+    {
+      "to": 23,
+      "level": 9,
+      "requirements": {
+        "atk": 20,
+        "spd": 20,
+        "cam": 10
+      }
+    },
+    {
+      "to": 28,
+      "level": 8,
+      "requirements": {
+        "sp": 20,
+        "int": 20
+      }
+    },
+    {
+      "to": 38,
+      "level": 8,
+      "requirements": {
+        "atk": 20,
+        "spd": 30
+      }
+    },
+    {
+      "to": 337,
+      "level": 8,
+      "requirements": {
+        "atk": 30,
+        "def": 30
+      }
+    }
+  ],
+  "17": [
+    {
+      "to": 74,
+      "level": 16,
+      "requirements": {
+        "atk": 55,
+        "cam": 50
+      }
+    },
+    {
+      "to": 84,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "atk": 50
+      }
+    },
+    {
+      "to": 85,
+      "level": 12,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 90,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "atk": 40
+      }
+    },
+    {
+      "to": 104,
+      "level": 14,
+      "requirements": {
+        "atk": 40
+      }
+    },
+    {
+      "to": 261,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "atk": 50,
+        "misc": [
+          "ITEM__HUMAN_SPIRIT_OF_FLAME"
+        ]
+      }
+    }
+  ],
+  "18": [
+    {
+      "to": 72,
+      "level": 15,
+      "requirements": {
+        "atk": 50,
+        "spd": 20
+      }
+    },
+    {
+      "to": 75,
+      "level": 16,
+      "requirements": {
+        "hp": 150,
+        "atk": 50
+      }
+    },
+    {
+      "to": 81,
+      "level": 14,
+      "requirements": {
+        "atk": 30,
+        "def": 40
+      }
+    },
+    {
+      "to": 89,
+      "level": 14,
+      "requirements": {
+        "def": 55
+      }
+    },
+    {
+      "to": 90,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "atk": 40
+      }
+    },
+    {
+      "to": 277,
+      "level": 14,
+      "requirements": {
+        "atk": 55,
+        "def": 55
+      }
+    }
+  ],
+  "19": [
+    {
+      "to": 57,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 79,
+      "level": 12,
+      "requirements": {
+        "hp": 130,
+        "sp": 25,
+        "def": 40
+      }
+    },
+    {
+      "to": 80,
+      "level": 18,
+      "requirements": {
+        "abi": 5
+      }
+    },
+    {
+      "to": 81,
+      "level": 14,
+      "requirements": {
+        "atk": 30,
+        "def": 40
+      }
+    },
+    {
+      "to": 89,
+      "level": 14,
+      "requirements": {
+        "def": 55
+      }
+    },
+    {
+      "to": 268,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 60
+      }
+    }
+  ],
+  "20": [
+    {
+      "to": 55,
+      "level": 15,
+      "requirements": {
+        "atk": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 59,
+      "level": 14,
+      "requirements": {
+        "sp": 35,
+        "int": 55
+      }
+    },
+    {
+      "to": 63,
+      "level": 14,
+      "requirements": {
+        "atk": 55
+      }
+    },
+    {
+      "to": 88,
+      "level": 16,
+      "requirements": {
+        "sp": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 98,
+      "level": 13,
+      "requirements": {
+        "sp": 40,
+        "int": 30
+      }
+    },
+    {
+      "to": 101,
+      "level": 16,
+      "requirements": {
+        "int": 40,
+        "cam": 25
+      }
+    }
+  ],
+  "21": [
+    {
+      "to": 69,
+      "level": 15,
+      "requirements": {
+        "spd": 50,
+        "cam": 25
+      }
+    },
+    {
+      "to": 70,
+      "level": 15,
+      "requirements": {
+        "atk": 35,
+        "spd": 50
+      }
+    },
+    {
+      "to": 79,
+      "level": 12,
+      "requirements": {
+        "hp": 130,
+        "sp": 25,
+        "def": 40
+      }
+    },
+    {
+      "to": 85,
+      "level": 12,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 95,
+      "level": 12,
+      "requirements": {
+        "atk": 40,
+        "def": 40
+      }
+    },
+    {
+      "to": 106,
+      "level": 16,
+      "requirements": {
+        "atk": 55
+      }
+    }
+  ],
+  "22": [
+    {
+      "to": 67,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 55
+      }
+    },
+    {
+      "to": 78,
+      "level": 14,
+      "requirements": {
+        "sp": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 83,
+      "level": 14,
+      "requirements": {
+        "def": 30,
+        "int": 40
+      }
+    },
+    {
+      "to": 96,
+      "level": 12,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 270,
+      "level": 14,
+      "requirements": {
+        "hp": 300,
+        "spd": 30
+      }
+    },
+    {
+      "to": 280,
+      "level": 12,
+      "requirements": {
+        "hp": 500
+      }
+    }
+  ],
+  "23": [
+    {
+      "to": 63,
+      "level": 14,
+      "requirements": {
+        "atk": 55
+      }
+    },
+    {
+      "to": 65,
+      "level": 15,
+      "requirements": {
+        "spd": 55
+      }
+    },
+    {
+      "to": 68,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "spd": 40
+      }
+    },
+    {
+      "to": 93,
+      "level": 16,
+      "requirements": {
+        "hp": 300,
+        "def": 30,
+        "cam": 25
+      }
+    },
+    {
+      "to": 106,
+      "level": 16,
+      "requirements": {
+        "atk": 55
+      }
+    },
+    {
+      "to": 269,
+      "level": 15,
+      "requirements": {
+        "atk": 50,
+        "spd": 55
+      }
+    }
+  ],
+  "24": [
+    {
+      "to": 65,
+      "level": 15,
+      "requirements": {
+        "spd": 55
+      }
+    },
+    {
+      "to": 70,
+      "level": 15,
+      "requirements": {
+        "atk": 35,
+        "spd": 50
+      }
+    },
+    {
+      "to": 73,
+      "level": 16,
+      "requirements": {
+        "hp": 150,
+        "atk": 40
+      }
+    },
+    {
+      "to": 94,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 95,
+      "level": 12,
+      "requirements": {
+        "atk": 40,
+        "def": 40
+      }
+    },
+    {
+      "to": 106,
+      "level": 16,
+      "requirements": {
+        "atk": 55
+      }
+    }
+  ],
+  "25": [
+    {
+      "to": 69,
+      "level": 15,
+      "requirements": {
+        "spd": 50,
+        "cam": 25
+      }
+    },
+    {
+      "to": 94,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 96,
+      "level": 12,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 99,
+      "level": 16,
+      "requirements": {
+        "atk": 40,
+        "spd": 35
+      }
+    },
+    {
+      "to": 105,
+      "level": 14,
+      "requirements": {
+        "hp": 250,
+        "atk": 30
+      }
+    },
+    {
+      "to": 263,
+      "level": 15,
+      "requirements": {
+        "hp": 45,
+        "spd": 55,
+        "misc": [
+          "ITEM__HUMAN_SPIRIT_OF_LIGHT"
+        ]
+      }
+    }
+  ],
+  "26": [
+    {
+      "to": 70,
+      "level": 15,
+      "requirements": {
+        "atk": 35,
+        "spd": 50
+      }
+    },
+    {
+      "to": 102,
+      "level": 12,
+      "requirements": {
+        "hp": 300
+      }
+    },
+    {
+      "to": 105,
+      "level": 14,
+      "requirements": {
+        "hp": 250,
+        "atk": 30
+      }
+    },
+    {
+      "to": 107,
+      "level": 16,
+      "requirements": {
+        "spd": 40,
+        "abi": 5
+      }
+    },
+    {
+      "to": 280,
+      "level": 12,
+      "requirements": {
+        "hp": 500
+      }
+    }
+  ],
+  "27": [
+    {
+      "to": 84,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "atk": 50
+      }
+    },
+    {
+      "to": 72,
+      "level": 15,
+      "requirements": {
+        "atk": 50,
+        "spd": 20
+      }
+    },
+    {
+      "to": 75,
+      "level": 16,
+      "requirements": {
+        "hp": 150,
+        "atk": 50
+      }
+    },
+    {
+      "to": 90,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "atk": 40
+      }
+    },
+    {
+      "to": 104,
+      "level": 14,
+      "requirements": {
+        "atk": 40
+      }
+    },
+    {
+      "to": 261,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "atk": 50,
+        "misc": [
+          "ITEM__HUMAN_SPIRIT_OF_FLAME"
+        ]
+      }
+    }
+  ],
+  "28": [
+    {
+      "to": 62,
+      "level": 16,
+      "requirements": {
+        "int": 40,
+        "abi": 5
+      }
+    },
+    {
+      "to": 80,
+      "level": 18,
+      "requirements": {
+        "abi": 5
+      }
+    },
+    {
+      "to": 103,
+      "level": 14,
+      "requirements": {
+        "spd": 50
+      }
+    },
+    {
+      "to": 107,
+      "level": 16,
+      "requirements": {
+        "spd": 40,
+        "abi": 5
+      }
+    },
+    {
+      "to": 263,
+      "level": 15,
+      "requirements": {
+        "hp": 45,
+        "spd": 55,
+        "misc": [
+          "ITEM__HUMAN_SPIRIT_OF_LIGHT"
+        ]
+      }
+    }
+  ],
+  "29": [
+    {
+      "to": 59,
+      "level": 14,
+      "requirements": {
+        "sp": 35,
+        "int": 55
+      }
+    },
+    {
+      "to": 73,
+      "level": 16,
+      "requirements": {
+        "hp": 150,
+        "atk": 40
+      }
+    },
+    {
+      "to": 98,
+      "level": 13,
+      "requirements": {
+        "sp": 40,
+        "int": 30
+      }
+    },
+    {
+      "to": 100,
+      "level": 20,
+      "requirements": {}
+    },
+    {
+      "to": 262,
+      "level": 16,
+      "requirements": {
+        "atk": 50,
+        "int": 40,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    }
+  ],
+  "30": [
+    {
+      "to": 57,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 76,
+      "level": 14,
+      "requirements": {
+        "int": 35
+      }
+    },
+    {
+      "to": 86,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 35
+      }
+    },
+    {
+      "to": 89,
+      "level": 14,
+      "requirements": {
+        "def": 55
+      }
+    },
+    {
+      "to": 260,
+      "level": 15,
+      "requirements": {
+        "hp": 110,
+        "def": 50
+      }
+    },
+    {
+      "to": 268,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 60
+      }
+    }
+  ],
+  "31": [
+    {
+      "to": 63,
+      "level": 14,
+      "requirements": {
+        "atk": 55
+      }
+    },
+    {
+      "to": 65,
+      "level": 15,
+      "requirements": {
+        "spd": 55
+      }
+    },
+    {
+      "to": 72,
+      "level": 15,
+      "requirements": {
+        "atk": 50,
+        "spd": 20
+      }
+    },
+    {
+      "to": 75,
+      "level": 16,
+      "requirements": {
+        "hp": 150,
+        "atk": 50
+      }
+    },
+    {
+      "to": 95,
+      "level": 12,
+      "requirements": {
+        "atk": 40,
+        "def": 40
+      }
+    },
+    {
+      "to": 267,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "def": 25,
+        "spd": 40
+      }
+    }
+  ],
+  "32": [
+    {
+      "to": 57,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 58,
+      "level": 15,
+      "requirements": {
+        "hp": 300,
+        "cam": 25
+      }
+    },
+    {
+      "to": 88,
+      "level": 16,
+      "requirements": {
+        "sp": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 105,
+      "level": 14,
+      "requirements": {
+        "hp": 250,
+        "atk": 30
+      }
+    },
+    {
+      "to": 260,
+      "level": 15,
+      "requirements": {
+        "hp": 110,
+        "def": 50
+      }
+    },
+    {
+      "to": 271,
+      "level": 15,
+      "requirements": {
+        "atk": 45,
+        "spd": 50
+      }
+    }
+  ],
+  "33": [
+    {
+      "to": 58,
+      "level": 15,
+      "requirements": {
+        "hp": 300,
+        "cam": 25
+      }
+    },
+    {
+      "to": 67,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 55
+      }
+    },
+    {
+      "to": 78,
+      "level": 14,
+      "requirements": {
+        "sp": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 83,
+      "level": 14,
+      "requirements": {
+        "def": 30,
+        "int": 40
+      }
+    },
+    {
+      "to": 270,
+      "level": 14,
+      "requirements": {
+        "hp": 300,
+        "spd": 30
+      }
+    }
+  ],
+  "34": [
+    {
+      "to": 76,
+      "level": 14,
+      "requirements": {
+        "int": 35
+      }
+    },
+    {
+      "to": 79,
+      "level": 12,
+      "requirements": {
+        "hp": 130,
+        "sp": 25,
+        "def": 40
+      }
+    },
+    {
+      "to": 86,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 35
+      }
+    },
+    {
+      "to": 104,
+      "level": 14,
+      "requirements": {
+        "atk": 40
+      }
+    },
+    {
+      "to": 265,
+      "level": 14,
+      "requirements": {
+        "hp": 130,
+        "def": 60
+      }
+    },
+    {
+      "to": 268,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 60
+      }
+    }
+  ],
+  "35": [
+    {
+      "to": 68,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "spd": 40
+      }
+    },
+    {
+      "to": 58,
+      "level": 15,
+      "requirements": {
+        "hp": 300,
+        "cam": 25
+      }
+    },
+    {
+      "to": 91,
+      "level": 16,
+      "requirements": {
+        "int": 40,
+        "cam": 25
+      }
+    },
+    {
+      "to": 240,
+      "level": 50,
+      "requirements": {
+        "atk": 100,
+        "def": 120,
+        "int": 120,
+        "cam": 50,
+        "abi": 40,
+        "misc": [
+          "ITEM__DIGI_EGG_OF_DESTINY"
+        ]
+      }
+    },
+    {
+      "to": 278,
+      "level": 13,
+      "requirements": {
+        "int": 40,
+        "spd": 40,
+        "cam": 10
+      }
+    }
+  ],
+  "36": [
+    {
+      "to": 66,
+      "level": 14,
+      "requirements": {
+        "def": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 77,
+      "level": 14,
+      "requirements": {
+        "atk": 55
+      }
+    },
+    {
+      "to": 82,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "int": 40
+      }
+    },
+    {
+      "to": 87,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 55
+      }
+    },
+    {
+      "to": 108,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40
+      }
+    }
+  ],
+  "37": [
+    {
+      "to": 76,
+      "level": 14,
+      "requirements": {
+        "int": 35
+      }
+    },
+    {
+      "to": 64,
+      "level": 14,
+      "requirements": {
+        "def": 55
+      }
+    },
+    {
+      "to": 74,
+      "level": 16,
+      "requirements": {
+        "atk": 55,
+        "cam": 50
+      }
+    },
+    {
+      "to": 85,
+      "level": 12,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 86,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 35
+      }
+    },
+    {
+      "to": 265,
+      "level": 14,
+      "requirements": {
+        "hp": 130,
+        "def": 60
+      }
+    }
+  ],
+  "38": [
+    {
+      "to": 64,
+      "level": 14,
+      "requirements": {
+        "def": 55
+      }
+    },
+    {
+      "to": 81,
+      "level": 14,
+      "requirements": {
+        "atk": 30,
+        "def": 40
+      }
+    },
+    {
+      "to": 94,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 108,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 279,
+      "level": 15,
+      "requirements": {
+        "hp": 130,
+        "atk": 50
+      }
+    }
+  ],
+  "39": [
+    {
+      "to": 64,
+      "level": 14,
+      "requirements": {
+        "def": 55
+      }
+    },
+    {
+      "to": 76,
+      "level": 14,
+      "requirements": {
+        "int": 35
+      }
+    },
+    {
+      "to": 80,
+      "level": 18,
+      "requirements": {
+        "abi": 5
+      }
+    },
+    {
+      "to": 86,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 35
+      }
+    },
+    {
+      "to": 100,
+      "level": 20,
+      "requirements": {}
+    }
+  ],
+  "40": [
+    {
+      "to": 61,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40,
+        "cam": 25
+      }
+    },
+    {
+      "to": 62,
+      "level": 16,
+      "requirements": {
+        "int": 40,
+        "abi": 5
+      }
+    },
+    {
+      "to": 91,
+      "level": 16,
+      "requirements": {
+        "int": 40,
+        "cam": 25
+      }
+    },
+    {
+      "to": 97,
+      "level": 14,
+      "requirements": {
+        "hp": 40,
+        "int": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 107,
+      "level": 16,
+      "requirements": {
+        "spd": 40,
+        "abi": 5
+      }
+    },
+    {
+      "to": 278,
+      "level": 13,
+      "requirements": {
+        "int": 40,
+        "spd": 40,
+        "cam": 10
+      }
+    }
+  ],
+  "41": [
+    {
+      "to": 74,
+      "level": 16,
+      "requirements": {
+        "atk": 55,
+        "cam": 50
+      }
+    },
+    {
+      "to": 84,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "atk": 50
+      }
+    },
+    {
+      "to": 100,
+      "level": 20,
+      "requirements": {}
+    },
+    {
+      "to": 272,
+      "level": 20,
+      "requirements": {
+        "atk": 50,
+        "spd": 50
+      }
+    },
+    {
+      "to": 275,
+      "level": 16,
+      "requirements": {
+        "atk": 55,
+        "spd": 50
+      }
+    },
+    {
+      "to": 277,
+      "level": 14,
+      "requirements": {
+        "atk": 55,
+        "def": 55
+      }
+    }
+  ],
+  "42": [
+    {
+      "to": 60,
+      "level": 14,
+      "requirements": {
+        "hp": 500
+      }
+    },
+    {
+      "to": 77,
+      "level": 14,
+      "requirements": {
+        "atk": 55
+      }
+    },
+    {
+      "to": 82,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "int": 40
+      }
+    },
+    {
+      "to": 93,
+      "level": 16,
+      "requirements": {
+        "hp": 300,
+        "def": 30,
+        "cam": 25
+      }
+    },
+    {
+      "to": 102,
+      "level": 12,
+      "requirements": {
+        "hp": 300
+      }
+    },
+    {
+      "to": 273,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    }
+  ],
+  "43": [
+    {
+      "to": 55,
+      "level": 15,
+      "requirements": {
+        "atk": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 71,
+      "level": 14,
+      "requirements": {
+        "sp": 40,
+        "int": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 73,
+      "level": 16,
+      "requirements": {
+        "hp": 150,
+        "atk": 40
+      }
+    },
+    {
+      "to": 92,
+      "level": 16,
+      "requirements": {
+        "atk": 40,
+        "abi": 5
+      }
+    },
+    {
+      "to": 98,
+      "level": 13,
+      "requirements": {
+        "sp": 40,
+        "int": 30
+      }
+    }
+  ],
+  "44": [
+    {
+      "to": 56,
+      "level": 14,
+      "requirements": {
+        "spd": 55
+      }
+    },
+    {
+      "to": 66,
+      "level": 14,
+      "requirements": {
+        "def": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 71,
+      "level": 14,
+      "requirements": {
+        "sp": 40,
+        "int": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 97,
+      "level": 14,
+      "requirements": {
+        "hp": 40,
+        "int": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 264,
+      "level": 14,
+      "requirements": {
+        "atk": 35,
+        "spd": 45
+      }
+    }
+  ],
+  "45": [
+    {
+      "to": 56,
+      "level": 14,
+      "requirements": {
+        "spd": 55
+      }
+    },
+    {
+      "to": 61,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40,
+        "cam": 25
+      }
+    },
+    {
+      "to": 87,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 55
+      }
+    },
+    {
+      "to": 103,
+      "level": 14,
+      "requirements": {
+        "spd": 50
+      }
+    }
+  ],
+  "46": [
+    {
+      "to": 61,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40,
+        "cam": 25
+      }
+    },
+    {
+      "to": 99,
+      "level": 16,
+      "requirements": {
+        "atk": 40,
+        "spd": 35
+      }
+    },
+    {
+      "to": 238,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40,
+        "cam": 25,
+        "misc": [
+          "ITEM__DIGI_EGG_OF_COURAGE"
+        ]
+      }
+    },
+    {
+      "to": 239,
+      "level": 60,
+      "requirements": {
+        "atk": 120,
+        "def": 145,
+        "cam": 50,
+        "abi": 80,
+        "misc": [
+          "ITEM__DIGI_EGG_OF_MIRACLES"
+        ]
+      }
+    },
+    {
+      "to": 263,
+      "level": 15,
+      "requirements": {
+        "hp": 45,
+        "spd": 55,
+        "misc": [
+          "ITEM__HUMAN_SPIRIT_OF_LIGHT"
+        ]
+      }
+    },
+    {
+      "to": 271,
+      "level": 15,
+      "requirements": {
+        "atk": 45,
+        "spd": 50
+      }
+    }
+  ],
+  "47": [
+    {
+      "to": 88,
+      "level": 16,
+      "requirements": {
+        "sp": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 91,
+      "level": 16,
+      "requirements": {
+        "int": 40,
+        "cam": 25
+      }
+    },
+    {
+      "to": 99,
+      "level": 16,
+      "requirements": {
+        "atk": 40,
+        "spd": 35
+      }
+    },
+    {
+      "to": 105,
+      "level": 14,
+      "requirements": {
+        "hp": 250,
+        "atk": 30
+      }
+    },
+    {
+      "to": 107,
+      "level": 16,
+      "requirements": {
+        "spd": 40,
+        "abi": 5
+      }
+    },
+    {
+      "to": 275,
+      "level": 16,
+      "requirements": {
+        "atk": 55,
+        "spd": 50
+      }
+    }
+  ],
+  "48": [
+    {
+      "to": 67,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 55
+      }
+    },
+    {
+      "to": 78,
+      "level": 14,
+      "requirements": {
+        "sp": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 83,
+      "level": 14,
+      "requirements": {
+        "def": 30,
+        "int": 40
+      }
+    },
+    {
+      "to": 96,
+      "level": 12,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 102,
+      "level": 12,
+      "requirements": {
+        "hp": 300
+      }
+    },
+    {
+      "to": 264,
+      "level": 14,
+      "requirements": {
+        "atk": 35,
+        "spd": 45
+      }
+    }
+  ],
+  "49": [
+    {
+      "to": 56,
+      "level": 14,
+      "requirements": {
+        "spd": 55
+      }
+    },
+    {
+      "to": 97,
+      "level": 14,
+      "requirements": {
+        "hp": 40,
+        "int": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 103,
+      "level": 14,
+      "requirements": {
+        "spd": 50
+      }
+    },
+    {
+      "to": 104,
+      "level": 14,
+      "requirements": {
+        "atk": 40
+      }
+    },
+    {
+      "to": 264,
+      "level": 14,
+      "requirements": {
+        "atk": 35,
+        "spd": 45
+      }
+    }
+  ],
+  "50": [
+    {
+      "to": 60,
+      "level": 14,
+      "requirements": {
+        "hp": 500
+      }
+    },
+    {
+      "to": 82,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "int": 40
+      }
+    },
+    {
+      "to": 93,
+      "level": 16,
+      "requirements": {
+        "hp": 300,
+        "def": 30,
+        "cam": 25
+      }
+    },
+    {
+      "to": 102,
+      "level": 12,
+      "requirements": {
+        "hp": 300
+      }
+    }
+  ],
+  "51": [
+    {
+      "to": 62,
+      "level": 16,
+      "requirements": {
+        "int": 40,
+        "abi": 5
+      }
+    },
+    {
+      "to": 92,
+      "level": 16,
+      "requirements": {
+        "atk": 40,
+        "abi": 5
+      }
+    },
+    {
+      "to": 162,
+      "level": 55,
+      "requirements": {
+        "atk": 180,
+        "int": 240,
+        "spd": 180,
+        "abi": 80
+      }
+    }
+  ],
+  "52": [
+    {
+      "to": 60,
+      "level": 14,
+      "requirements": {
+        "hp": 500
+      }
+    },
+    {
+      "to": 69,
+      "level": 15,
+      "requirements": {
+        "spd": 50,
+        "cam": 25
+      }
+    },
+    {
+      "to": 71,
+      "level": 14,
+      "requirements": {
+        "sp": 40,
+        "int": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 101,
+      "level": 16,
+      "requirements": {
+        "int": 40,
+        "cam": 25
+      }
+    },
+    {
+      "to": 274,
+      "level": 14,
+      "requirements": {
+        "atk": 45,
+        "spd": 40
+      }
+    },
+    {
+      "to": 281,
+      "level": 15,
+      "requirements": {
+        "atk": 35,
+        "spd": 40
+      }
+    }
+  ],
+  "53": [
+    {
+      "to": 59,
+      "level": 14,
+      "requirements": {
+        "sp": 35,
+        "int": 55
+      }
+    },
+    {
+      "to": 68,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "spd": 40
+      }
+    },
+    {
+      "to": 92,
+      "level": 16,
+      "requirements": {
+        "atk": 40,
+        "abi": 5
+      }
+    },
+    {
+      "to": 101,
+      "level": 16,
+      "requirements": {
+        "int": 40,
+        "cam": 25
+      }
+    },
+    {
+      "to": 273,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 274,
+      "level": 14,
+      "requirements": {
+        "atk": 45,
+        "spd": 40
+      }
+    }
+  ],
+  "54": [
+    {
+      "to": 55,
+      "level": 15,
+      "requirements": {
+        "atk": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 66,
+      "level": 14,
+      "requirements": {
+        "def": 40,
+        "int": 40
+      }
+    },
+    {
+      "to": 77,
+      "level": 14,
+      "requirements": {
+        "atk": 55
+      }
+    },
+    {
+      "to": 87,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 55
+      }
+    },
+    {
+      "to": 108,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 276,
+      "level": 15,
+      "requirements": {
+        "sp": 40,
+        "spd": 40,
+        "cam": 100,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    }
+  ],
+  "55": [
+    {
+      "to": 114,
+      "level": 30,
+      "requirements": {
+        "atk": 70,
+        "int": 90,
+        "abi": 10
+      }
+    },
+    {
+      "to": 125,
+      "level": 28,
+      "requirements": {
+        "hp": 800,
+        "def": 70
+      }
+    },
+    {
+      "to": 163,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 95,
+        "abi": 10
+      }
+    },
+    {
+      "to": 282,
+      "level": 30,
+      "requirements": {
+        "atk": 110,
+        "int": 85,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    },
+    {
+      "to": 292,
+      "level": 28,
+      "requirements": {
+        "sp": 70,
+        "int": 85
+      }
+    }
+  ],
+  "56": [
+    {
+      "to": 115,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "spd": 95,
+        "cam": 25
+      }
+    },
+    {
+      "to": 119,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 126,
+      "level": 30,
+      "requirements": {
+        "atk": 60,
+        "int": 75,
+        "spd": 75,
+        "cam": 100,
+        "misc": [
+          "DIGIMON__GATOMON"
+        ]
+      }
+    },
+    {
+      "to": 157,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "spd": 90
+      }
+    },
+    {
+      "to": 297,
+      "level": 26,
+      "requirements": {
+        "sp": 65,
+        "int": 65
+      }
+    }
+  ],
+  "57": [
+    {
+      "to": 112,
+      "level": 26,
+      "requirements": {
+        "def": 110
+      }
+    },
+    {
+      "to": 124,
+      "level": 30,
+      "requirements": {
+        "def": 75,
+        "int": 65,
+        "cam": 100,
+        "misc": [
+          "DIGIMON__ANGEMON"
+        ]
+      }
+    },
+    {
+      "to": 128,
+      "level": 28,
+      "requirements": {
+        "atk": 120,
+        "def": 85,
+        "spd": 70
+      }
+    },
+    {
+      "to": 146,
+      "level": 30,
+      "requirements": {
+        "sp": 80,
+        "int": 80,
+        "abi": 10
+      }
+    },
+    {
+      "to": 287,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 125,
+        "abi": 10
+      }
+    }
+  ],
+  "58": [
+    {
+      "to": 129,
+      "level": 30,
+      "requirements": {
+        "hp": 800,
+        "atk": 75,
+        "cam": 50
+      }
+    },
+    {
+      "to": 145,
+      "level": 28,
+      "requirements": {
+        "hp": 850,
+        "def": 75,
+        "int": 75
+      }
+    },
+    {
+      "to": 147,
+      "level": 26,
+      "requirements": {
+        "atk": 75,
+        "spd": 80
+      }
+    },
+    {
+      "to": 295,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 75
+      }
+    }
+  ],
+  "59": [
+    {
+      "to": 114,
+      "level": 30,
+      "requirements": {
+        "atk": 70,
+        "int": 90,
+        "abi": 10
+      }
+    },
+    {
+      "to": 133,
+      "level": 28,
+      "requirements": {
+        "hp": 500,
+        "atk": 95
+      }
+    },
+    {
+      "to": 166,
+      "level": 28,
+      "requirements": {
+        "sp": 75,
+        "int": 100
+      }
+    },
+    {
+      "to": 298,
+      "level": 28,
+      "requirements": {
+        "sp": 80,
+        "int": 80
+      }
+    }
+  ],
+  "60": [
+    {
+      "to": 125,
+      "level": 28,
+      "requirements": {
+        "hp": 800,
+        "def": 70
+      }
+    },
+    {
+      "to": 130,
+      "level": 30,
+      "requirements": {
+        "sp": 60,
+        "int": 75,
+        "spd": 60
+      }
+    },
+    {
+      "to": 140,
+      "level": 26,
+      "requirements": {
+        "hp": 850,
+        "atk": 60,
+        "int": 60
+      }
+    }
+  ],
+  "61": [
+    {
+      "to": 138,
+      "level": 30,
+      "requirements": {
+        "atk": 90,
+        "def": 60,
+        "spd": 75,
+        "cam": 100,
+        "misc": [
+          "DIGIMON__STINGMON"
+        ]
+      }
+    },
+    {
+      "to": 146,
+      "level": 30,
+      "requirements": {
+        "sp": 80,
+        "int": 80,
+        "abi": 10
+      }
+    },
+    {
+      "to": 158,
+      "level": 30,
+      "requirements": {
+        "hp": 350,
+        "atk": 100,
+        "spd": 75,
+        "cam": 50
+      }
+    },
+    {
+      "to": 283,
+      "level": 30,
+      "requirements": {
+        "atk": 80,
+        "spd": 95,
+        "abi": 10
+      }
+    },
+    {
+      "to": 293,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 90,
+        "spd": 75,
+        "cam": 100,
+        "misc": [
+          "DIGIMON__STINGMON"
+        ]
+      }
+    }
+  ],
+  "62": [
+    {
+      "to": 119,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 124,
+      "level": 30,
+      "requirements": {
+        "def": 75,
+        "int": 65,
+        "cam": 100,
+        "misc": [
+          "DIGIMON__ANKYLOMON"
+        ]
+      }
+    },
+    {
+      "to": 146,
+      "level": 30,
+      "requirements": {
+        "sp": 80,
+        "int": 80,
+        "abi": 10
+      }
+    },
+    {
+      "to": 291,
+      "level": 30,
+      "requirements": {
+        "atk": 90,
+        "spd": 80
+      }
+    },
+    {
+      "to": 297,
+      "level": 26,
+      "requirements": {
+        "sp": 65,
+        "int": 65
+      }
+    }
+  ],
+  "63": [
+    {
+      "to": 132,
+      "level": 30,
+      "requirements": {
+        "hp": 700,
+        "def": 75
+      }
+    },
+    {
+      "to": 133,
+      "level": 28,
+      "requirements": {
+        "hp": 500,
+        "atk": 95
+      }
+    },
+    {
+      "to": 164,
+      "level": 28,
+      "requirements": {
+        "atk": 90,
+        "spd": 85,
+        "cam": 50
+      }
+    },
+    {
+      "to": 290,
+      "level": 28,
+      "requirements": {
+        "atk": 80,
+        "int": 70
+      }
+    }
+  ],
+  "64": [
+    {
+      "to": 111,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 75,
+        "int": 75
+      }
+    },
+    {
+      "to": 122,
+      "level": 26,
+      "requirements": {
+        "hp": 400,
+        "atk": 95
+      }
+    },
+    {
+      "to": 137,
+      "level": 28,
+      "requirements": {
+        "sp": 60,
+        "int": 85
+      }
+    },
+    {
+      "to": 155,
+      "level": 26,
+      "requirements": {
+        "def": 80,
+        "int": 65
+      }
+    },
+    {
+      "to": 286,
+      "level": 26,
+      "requirements": {
+        "hp": 700,
+        "def": 85
+      }
+    }
+  ],
+  "65": [
+    {
+      "to": 122,
+      "level": 26,
+      "requirements": {
+        "hp": 400,
+        "atk": 95
+      }
+    },
+    {
+      "to": 147,
+      "level": 26,
+      "requirements": {
+        "atk": 75,
+        "spd": 80
+      }
+    },
+    {
+      "to": 164,
+      "level": 28,
+      "requirements": {
+        "atk": 90,
+        "spd": 85,
+        "cam": 50
+      }
+    }
+  ],
+  "66": [
+    {
+      "to": 109,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "def": 95
+      }
+    },
+    {
+      "to": 125,
+      "level": 28,
+      "requirements": {
+        "hp": 800,
+        "def": 70
+      }
+    },
+    {
+      "to": 159,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 75
+      }
+    }
+  ],
+  "67": [
+    {
+      "to": 134,
+      "level": 26,
+      "requirements": {
+        "hp": 900
+      }
+    },
+    {
+      "to": 142,
+      "level": 32,
+      "requirements": {}
+    },
+    {
+      "to": 149,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "sp": 70,
+        "int": 70
+      }
+    }
+  ],
+  "68": [
+    {
+      "to": 110,
+      "level": 28,
+      "requirements": {
+        "atk": 65,
+        "int": 75,
+        "spd": 85
+      }
+    },
+    {
+      "to": 151,
+      "level": 30,
+      "requirements": {
+        "atk": 105,
+        "spd": 75
+      }
+    },
+    {
+      "to": 160,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "spd": 75,
+        "cam": 50
+      }
+    }
+  ],
+  "69": [
+    {
+      "to": 129,
+      "level": 30,
+      "requirements": {
+        "hp": 800,
+        "atk": 75,
+        "cam": 50
+      }
+    },
+    {
+      "to": 135,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "def": 75
+      }
+    },
+    {
+      "to": 139,
+      "level": 28,
+      "requirements": {
+        "hp": 350,
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 164,
+      "level": 28,
+      "requirements": {
+        "atk": 90,
+        "spd": 85,
+        "cam": 50
+      }
+    }
+  ],
+  "70": [
+    {
+      "to": 143,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 80,
+        "int": 70
+      }
+    },
+    {
+      "to": 147,
+      "level": 26,
+      "requirements": {
+        "atk": 75,
+        "spd": 80
+      }
+    },
+    {
+      "to": 165,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 90,
+        "spd": 70
+      }
+    },
+    {
+      "to": 296,
+      "level": 26,
+      "requirements": {
+        "atk": 65,
+        "def": 65
+      }
+    }
+  ],
+  "71": [
+    {
+      "to": 130,
+      "level": 30,
+      "requirements": {
+        "sp": 60,
+        "int": 75,
+        "spd": 60
+      }
+    },
+    {
+      "to": 156,
+      "level": 26,
+      "requirements": {
+        "hp": 600,
+        "atk": 60
+      }
+    },
+    {
+      "to": 163,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 95,
+        "abi": 10
+      }
+    }
+  ],
+  "72": [
+    {
+      "to": 120,
+      "level": 26,
+      "requirements": {
+        "hp": 800,
+        "atk": 75,
+        "def": 95
+      }
+    },
+    {
+      "to": 151,
+      "level": 30,
+      "requirements": {
+        "atk": 105,
+        "spd": 75
+      }
+    },
+    {
+      "to": 152,
+      "level": 30,
+      "requirements": {
+        "hp": 350,
+        "atk": 100,
+        "cam": 50
+      }
+    },
+    {
+      "to": 154,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 95
+      }
+    },
+    {
+      "to": 284,
+      "level": 30,
+      "requirements": {
+        "hp": 500,
+        "atk": 120,
+        "def": 60,
+        "misc": [
+          "ITEM__BEAST_SPIRIT_OF_FLAME"
+        ]
+      }
+    }
+  ],
+  "73": [
+    {
+      "to": 113,
+      "level": 30,
+      "requirements": {
+        "atk": 95,
+        "spd": 80
+      }
+    },
+    {
+      "to": 123,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 130,
+      "level": 30,
+      "requirements": {
+        "sp": 60,
+        "int": 75,
+        "spd": 60
+      }
+    },
+    {
+      "to": 282,
+      "level": 30,
+      "requirements": {
+        "atk": 110,
+        "int": 85,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    }
+  ],
+  "74": [
+    {
+      "to": 128,
+      "level": 28,
+      "requirements": {
+        "atk": 120,
+        "def": 85,
+        "spd": 70
+      }
+    },
+    {
+      "to": 150,
+      "level": 26,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "spd": 75
+      }
+    },
+    {
+      "to": 152,
+      "level": 30,
+      "requirements": {
+        "hp": 350,
+        "atk": 100,
+        "cam": 50
+      }
+    },
+    {
+      "to": 153,
+      "level": 30,
+      "requirements": {
+        "hp": 450,
+        "atk": 110
+      }
+    }
+  ],
+  "75": [
+    {
+      "to": 135,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "def": 75
+      }
+    },
+    {
+      "to": 136,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "def": 75
+      }
+    },
+    {
+      "to": 153,
+      "level": 30,
+      "requirements": {
+        "hp": 450,
+        "atk": 110
+      }
+    },
+    {
+      "to": 295,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 75
+      }
+    }
+  ],
+  "76": [
+    {
+      "to": 111,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 75,
+        "int": 75
+      }
+    },
+    {
+      "to": 136,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "def": 75
+      }
+    },
+    {
+      "to": 137,
+      "level": 28,
+      "requirements": {
+        "sp": 60,
+        "int": 85
+      }
+    },
+    {
+      "to": 166,
+      "level": 28,
+      "requirements": {
+        "sp": 75,
+        "int": 100
+      }
+    }
+  ],
+  "77": [
+    {
+      "to": 118,
+      "level": 26,
+      "requirements": {
+        "atk": 95,
+        "def": 90
+      }
+    },
+    {
+      "to": 121,
+      "level": 28,
+      "requirements": {
+        "def": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 125,
+      "level": 28,
+      "requirements": {
+        "hp": 800,
+        "def": 70
+      }
+    }
+  ],
+  "78": [
+    {
+      "to": 134,
+      "level": 26,
+      "requirements": {
+        "hp": 900
+      }
+    },
+    {
+      "to": 145,
+      "level": 28,
+      "requirements": {
+        "hp": 850,
+        "def": 75,
+        "int": 75
+      }
+    },
+    {
+      "to": 149,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "sp": 70,
+        "int": 70
+      }
+    }
+  ],
+  "79": [
+    {
+      "to": 116,
+      "level": 26,
+      "requirements": {
+        "sp": 75,
+        "def": 75,
+        "spd": 65
+      }
+    },
+    {
+      "to": 127,
+      "level": 28,
+      "requirements": {
+        "sp": 70,
+        "atk": 70,
+        "def": 80
+      }
+    },
+    {
+      "to": 155,
+      "level": 26,
+      "requirements": {
+        "def": 80,
+        "int": 65
+      }
+    }
+  ],
+  "80": [
+    {
+      "to": 142,
+      "level": 32,
+      "requirements": {}
+    },
+    {
+      "to": 144,
+      "level": 26,
+      "requirements": {
+        "sp": 85
+      }
+    },
+    {
+      "to": 207,
+      "level": 65,
+      "requirements": {
+        "abi": 10
+      }
+    }
+  ],
+  "81": [
+    {
+      "to": 135,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "def": 75
+      }
+    },
+    {
+      "to": 137,
+      "level": 28,
+      "requirements": {
+        "sp": 60,
+        "int": 85
+      }
+    },
+    {
+      "to": 150,
+      "level": 26,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "spd": 75
+      }
+    }
+  ],
+  "82": [
+    {
+      "to": 117,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 100,
+        "abi": 10
+      }
+    },
+    {
+      "to": 159,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 75
+      }
+    },
+    {
+      "to": 161,
+      "level": 30,
+      "requirements": {
+        "int": 75,
+        "spd": 75,
+        "cam": 50
+      }
+    }
+  ],
+  "83": [
+    {
+      "to": 134,
+      "level": 26,
+      "requirements": {
+        "hp": 900
+      }
+    },
+    {
+      "to": 145,
+      "level": 28,
+      "requirements": {
+        "hp": 850,
+        "def": 75,
+        "int": 75
+      }
+    },
+    {
+      "to": 149,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "sp": 70,
+        "int": 70
+      }
+    },
+    {
+      "to": 339,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "def": 75
+      }
+    }
+  ],
+  "84": [
+    {
+      "to": 120,
+      "level": 26,
+      "requirements": {
+        "hp": 800,
+        "atk": 75,
+        "def": 95
+      }
+    },
+    {
+      "to": 128,
+      "level": 28,
+      "requirements": {
+        "atk": 120,
+        "def": 85,
+        "spd": 70
+      }
+    },
+    {
+      "to": 158,
+      "level": 30,
+      "requirements": {
+        "hp": 350,
+        "atk": 100,
+        "spd": 75,
+        "cam": 50
+      }
+    },
+    {
+      "to": 287,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 125,
+        "abi": 10
+      }
+    }
+  ],
+  "85": [
+    {
+      "to": 116,
+      "level": 26,
+      "requirements": {
+        "sp": 75,
+        "def": 75,
+        "spd": 65
+      }
+    },
+    {
+      "to": 127,
+      "level": 28,
+      "requirements": {
+        "sp": 70,
+        "atk": 70,
+        "def": 80
+      }
+    },
+    {
+      "to": 144,
+      "level": 26,
+      "requirements": {
+        "sp": 85
+      }
+    }
+  ],
+  "86": [
+    {
+      "to": 127,
+      "level": 28,
+      "requirements": {
+        "sp": 70,
+        "atk": 70,
+        "def": 80
+      }
+    },
+    {
+      "to": 148,
+      "level": 26,
+      "requirements": {
+        "atk": 75,
+        "def": 80
+      }
+    },
+    {
+      "to": 155,
+      "level": 26,
+      "requirements": {
+        "def": 80,
+        "int": 65
+      }
+    },
+    {
+      "to": 286,
+      "level": 26,
+      "requirements": {
+        "hp": 700,
+        "def": 85
+      }
+    },
+    {
+      "to": 289,
+      "level": 30,
+      "requirements": {
+        "sp": 60,
+        "atk": 70
+      }
+    }
+  ],
+  "87": [
+    {
+      "to": 113,
+      "level": 30,
+      "requirements": {
+        "atk": 95,
+        "spd": 80
+      }
+    },
+    {
+      "to": 118,
+      "level": 26,
+      "requirements": {
+        "atk": 95,
+        "def": 90
+      }
+    },
+    {
+      "to": 138,
+      "level": 30,
+      "requirements": {
+        "atk": 90,
+        "def": 60,
+        "spd": 75,
+        "cam": 100,
+        "misc": [
+          "DIGIMON__EXVEEMON"
+        ]
+      }
+    },
+    {
+      "to": 293,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 90,
+        "spd": 75,
+        "cam": 100,
+        "misc": [
+          "DIGIMON__EXVEEMON"
+        ]
+      }
+    }
+  ],
+  "88": [
+    {
+      "to": 110,
+      "level": 28,
+      "requirements": {
+        "atk": 65,
+        "int": 75,
+        "spd": 85
+      }
+    },
+    {
+      "to": 141,
+      "level": 26,
+      "requirements": {
+        "sp": 75,
+        "int": 80,
+        "spd": 80
+      }
+    },
+    {
+      "to": 166,
+      "level": 28,
+      "requirements": {
+        "sp": 75,
+        "int": 100
+      }
+    }
+  ],
+  "89": [
+    {
+      "to": 111,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 75,
+        "int": 75
+      }
+    },
+    {
+      "to": 120,
+      "level": 26,
+      "requirements": {
+        "hp": 800,
+        "atk": 75,
+        "def": 95
+      }
+    },
+    {
+      "to": 121,
+      "level": 28,
+      "requirements": {
+        "def": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 136,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "def": 75
+      }
+    },
+    {
+      "to": 299,
+      "level": 26,
+      "requirements": {
+        "atk": 80,
+        "def": 75
+      }
+    }
+  ],
+  "90": [
+    {
+      "to": 148,
+      "level": 26,
+      "requirements": {
+        "atk": 75,
+        "def": 80
+      }
+    },
+    {
+      "to": 150,
+      "level": 26,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "spd": 75
+      }
+    },
+    {
+      "to": 153,
+      "level": 30,
+      "requirements": {
+        "hp": 450,
+        "atk": 110
+      }
+    },
+    {
+      "to": 154,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 95
+      }
+    }
+  ],
+  "91": [
+    {
+      "to": 117,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 100,
+        "abi": 10
+      }
+    },
+    {
+      "to": 126,
+      "level": 30,
+      "requirements": {
+        "atk": 60,
+        "int": 75,
+        "spd": 75,
+        "cam": 100,
+        "misc": [
+          "DIGIMON__AQUILAMON"
+        ]
+      }
+    },
+    {
+      "to": 161,
+      "level": 30,
+      "requirements": {
+        "int": 75,
+        "spd": 75,
+        "cam": 50
+      }
+    },
+    {
+      "to": 296,
+      "level": 26,
+      "requirements": {
+        "atk": 65,
+        "def": 65
+      }
+    }
+  ],
+  "92": [
+    {
+      "to": 113,
+      "level": 30,
+      "requirements": {
+        "atk": 95,
+        "spd": 80
+      }
+    },
+    {
+      "to": 114,
+      "level": 30,
+      "requirements": {
+        "atk": 70,
+        "int": 90,
+        "abi": 10
+      }
+    },
+    {
+      "to": 143,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 80,
+        "int": 70
+      }
+    },
+    {
+      "to": 153,
+      "level": 30,
+      "requirements": {
+        "hp": 450,
+        "atk": 110
+      }
+    },
+    {
+      "to": 290,
+      "level": 28,
+      "requirements": {
+        "atk": 80,
+        "int": 70
+      }
+    }
+  ],
+  "93": [
+    {
+      "to": 140,
+      "level": 26,
+      "requirements": {
+        "hp": 850,
+        "atk": 60,
+        "int": 60
+      }
+    },
+    {
+      "to": 147,
+      "level": 26,
+      "requirements": {
+        "atk": 75,
+        "spd": 80
+      }
+    },
+    {
+      "to": 161,
+      "level": 30,
+      "requirements": {
+        "int": 75,
+        "spd": 75,
+        "cam": 50
+      }
+    }
+  ],
+  "94": [
+    {
+      "to": 131,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "spd": 100,
+        "abi": 10
+      }
+    },
+    {
+      "to": 135,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "def": 75
+      }
+    },
+    {
+      "to": 158,
+      "level": 30,
+      "requirements": {
+        "hp": 350,
+        "atk": 100,
+        "spd": 75,
+        "cam": 50
+      }
+    },
+    {
+      "to": 288,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 80,
+        "spd": 70
+      }
+    }
+  ],
+  "95": [
+    {
+      "to": 112,
+      "level": 26,
+      "requirements": {
+        "def": 110
+      }
+    },
+    {
+      "to": 127,
+      "level": 28,
+      "requirements": {
+        "sp": 70,
+        "atk": 70,
+        "def": 80
+      }
+    },
+    {
+      "to": 132,
+      "level": 30,
+      "requirements": {
+        "hp": 700,
+        "def": 75
+      }
+    }
+  ],
+  "96": [
+    {
+      "to": 116,
+      "level": 26,
+      "requirements": {
+        "sp": 75,
+        "def": 75,
+        "spd": 65
+      }
+    },
+    {
+      "to": 142,
+      "level": 32,
+      "requirements": {}
+    },
+    {
+      "to": 156,
+      "level": 26,
+      "requirements": {
+        "hp": 600,
+        "atk": 60
+      }
+    }
+  ],
+  "97": [
+    {
+      "to": 115,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "spd": 95,
+        "cam": 25
+      }
+    },
+    {
+      "to": 119,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 131,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "spd": 100,
+        "abi": 10
+      }
+    },
+    {
+      "to": 157,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "spd": 90
+      }
+    },
+    {
+      "to": 284,
+      "level": 30,
+      "requirements": {
+        "hp": 500,
+        "atk": 120,
+        "def": 60,
+        "misc": [
+          "ITEM__BEAST_SPIRIT_OF_FLAME"
+        ]
+      }
+    },
+    {
+      "to": 297,
+      "level": 26,
+      "requirements": {
+        "sp": 65,
+        "int": 65
+      }
+    }
+  ],
+  "98": [
+    {
+      "to": 114,
+      "level": 30,
+      "requirements": {
+        "atk": 70,
+        "int": 90,
+        "abi": 10
+      }
+    },
+    {
+      "to": 140,
+      "level": 26,
+      "requirements": {
+        "hp": 850,
+        "atk": 60,
+        "int": 60
+      }
+    },
+    {
+      "to": 143,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 80,
+        "int": 70
+      }
+    },
+    {
+      "to": 163,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 95,
+        "abi": 10
+      }
+    },
+    {
+      "to": 298,
+      "level": 28,
+      "requirements": {
+        "sp": 80,
+        "int": 80
+      }
+    },
+    {
+      "to": 300,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "spd": 80
+      }
+    }
+  ],
+  "99": [
+    {
+      "to": 115,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "spd": 95,
+        "cam": 25
+      }
+    },
+    {
+      "to": 123,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 151,
+      "level": 30,
+      "requirements": {
+        "atk": 105,
+        "spd": 75
+      }
+    },
+    {
+      "to": 154,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 95
+      }
+    }
+  ],
+  "100": [
+    {
+      "to": 116,
+      "level": 26,
+      "requirements": {
+        "sp": 75,
+        "def": 75,
+        "spd": 65
+      }
+    },
+    {
+      "to": 144,
+      "level": 26,
+      "requirements": {
+        "sp": 85
+      }
+    },
+    {
+      "to": 155,
+      "level": 26,
+      "requirements": {
+        "def": 80,
+        "int": 65
+      }
+    },
+    {
+      "to": 286,
+      "level": 26,
+      "requirements": {
+        "hp": 700,
+        "def": 85
+      }
+    }
+  ],
+  "101": [
+    {
+      "to": 123,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 136,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "def": 75
+      }
+    },
+    {
+      "to": 163,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 95,
+        "abi": 10
+      }
+    },
+    {
+      "to": 165,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 90,
+        "spd": 70
+      }
+    }
+  ],
+  "102": [
+    {
+      "to": 109,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "def": 95
+      }
+    },
+    {
+      "to": 132,
+      "level": 30,
+      "requirements": {
+        "hp": 700,
+        "def": 75
+      }
+    },
+    {
+      "to": 159,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 75
+      }
+    }
+  ],
+  "103": [
+    {
+      "to": 110,
+      "level": 28,
+      "requirements": {
+        "atk": 65,
+        "int": 75,
+        "spd": 85
+      }
+    },
+    {
+      "to": 141,
+      "level": 26,
+      "requirements": {
+        "sp": 75,
+        "int": 80,
+        "spd": 80
+      }
+    },
+    {
+      "to": 157,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "spd": 90
+      }
+    }
+  ],
+  "104": [
+    {
+      "to": 133,
+      "level": 28,
+      "requirements": {
+        "hp": 500,
+        "atk": 95
+      }
+    },
+    {
+      "to": 139,
+      "level": 28,
+      "requirements": {
+        "hp": 350,
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 143,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 80,
+        "int": 70
+      }
+    },
+    {
+      "to": 148,
+      "level": 26,
+      "requirements": {
+        "atk": 75,
+        "def": 80
+      }
+    },
+    {
+      "to": 284,
+      "level": 30,
+      "requirements": {
+        "hp": 500,
+        "atk": 120,
+        "def": 60,
+        "misc": [
+          "ITEM__BEAST_SPIRIT_OF_FLAME"
+        ]
+      }
+    },
+    {
+      "to": 299,
+      "level": 26,
+      "requirements": {
+        "atk": 80,
+        "def": 75
+      }
+    }
+  ],
+  "105": [
+    {
+      "to": 117,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 100,
+        "abi": 10
+      }
+    },
+    {
+      "to": 129,
+      "level": 30,
+      "requirements": {
+        "hp": 800,
+        "atk": 75,
+        "cam": 50
+      }
+    },
+    {
+      "to": 156,
+      "level": 26,
+      "requirements": {
+        "hp": 600,
+        "atk": 60
+      }
+    },
+    {
+      "to": 289,
+      "level": 30,
+      "requirements": {
+        "sp": 60,
+        "atk": 70
+      }
+    }
+  ],
+  "106": [
+    {
+      "to": 112,
+      "level": 26,
+      "requirements": {
+        "def": 110
+      }
+    },
+    {
+      "to": 122,
+      "level": 26,
+      "requirements": {
+        "hp": 400,
+        "atk": 95
+      }
+    },
+    {
+      "to": 139,
+      "level": 28,
+      "requirements": {
+        "hp": 350,
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 152,
+      "level": 30,
+      "requirements": {
+        "hp": 350,
+        "atk": 100,
+        "cam": 50
+      }
+    },
+    {
+      "to": 288,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 80,
+        "spd": 70
+      }
+    }
+  ],
+  "107": [
+    {
+      "to": 131,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "spd": 100,
+        "abi": 10
+      }
+    },
+    {
+      "to": 141,
+      "level": 26,
+      "requirements": {
+        "sp": 75,
+        "int": 80,
+        "spd": 80
+      }
+    },
+    {
+      "to": 160,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "spd": 75,
+        "cam": 50
+      }
+    }
+  ],
+  "108": [
+    {
+      "to": 109,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "def": 95
+      }
+    },
+    {
+      "to": 118,
+      "level": 26,
+      "requirements": {
+        "atk": 95,
+        "def": 90
+      }
+    },
+    {
+      "to": 121,
+      "level": 28,
+      "requirements": {
+        "def": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 160,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "spd": 75,
+        "cam": 50
+      }
+    }
+  ],
+  "109": [
+    {
+      "to": 181,
+      "level": 45,
+      "requirements": {
+        "hp": 1500,
+        "atk": 120,
+        "def": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 211,
+      "level": 50,
+      "requirements": {
+        "hp": 1100,
+        "def": 150,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 215,
+      "level": 55,
+      "requirements": {
+        "hp": 900,
+        "sp": 120,
+        "int": 145,
+        "abi": 20
+      }
+    }
+  ],
+  "110": [
+    {
+      "to": 184,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 145,
+        "spd": 100,
+        "abi": 40
+      }
+    },
+    {
+      "to": 195,
+      "level": 55,
+      "requirements": {
+        "def": 120,
+        "int": 130,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 196,
+      "level": 55,
+      "requirements": {
+        "hp": 1100,
+        "atk": 180,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 241,
+      "level": 55,
+      "requirements": {
+        "hp": 1100,
+        "sp": 100,
+        "int": 100,
+        "abi": 40
+      }
+    }
+  ],
+  "111": [
+    {
+      "to": 183,
+      "level": 60,
+      "requirements": {
+        "sp": 110,
+        "def": 180,
+        "int": 140,
+        "abi": 80
+      }
+    },
+    {
+      "to": 193,
+      "level": 50,
+      "requirements": {
+        "hp": 1000,
+        "atk": 120,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 202,
+      "level": 55,
+      "requirements": {
+        "atk": 100,
+        "def": 130,
+        "int": 100,
+        "abi": 20
+      }
+    }
+  ],
+  "112": [
+    {
+      "to": 169,
+      "level": 45,
+      "requirements": {
+        "sp": 120,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 195,
+      "level": 55,
+      "requirements": {
+        "def": 120,
+        "int": 130,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 222,
+      "level": 45,
+      "requirements": {
+        "sp": 100,
+        "atk": 120,
+        "def": 140,
+        "abi": 20
+      }
+    }
+  ],
+  "113": [
+    {
+      "to": 173,
+      "level": 55,
+      "requirements": {
+        "hp": 1200,
+        "sp": 110,
+        "atk": 110,
+        "int": 110,
+        "abi": 40
+      }
+    },
+    {
+      "to": 196,
+      "level": 55,
+      "requirements": {
+        "hp": 1100,
+        "atk": 180,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 212,
+      "level": 60,
+      "requirements": {
+        "hp": 2000,
+        "atk": 250,
+        "spd": 150,
+        "abi": 80
+      }
+    },
+    {
+      "to": 301,
+      "level": 60,
+      "requirements": {
+        "sp": 130,
+        "atk": 200,
+        "spd": 100,
+        "abi": 40,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    }
+  ],
+  "114": [
+    {
+      "to": 173,
+      "level": 55,
+      "requirements": {
+        "hp": 1200,
+        "sp": 110,
+        "atk": 110,
+        "int": 110,
+        "abi": 40
+      }
+    },
+    {
+      "to": 203,
+      "level": 60,
+      "requirements": {
+        "sp": 160,
+        "def": 120,
+        "int": 200,
+        "abi": 80
+      }
+    },
+    {
+      "to": 205,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "int": 160,
+        "spd": 110,
+        "abi": 20
+      }
+    },
+    {
+      "to": 301,
+      "level": 60,
+      "requirements": {
+        "sp": 130,
+        "atk": 200,
+        "spd": 100,
+        "abi": 40,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    },
+    {
+      "to": 306,
+      "level": 50,
+      "requirements": {
+        "hp": 1300,
+        "atk": 110,
+        "int": 110,
+        "abi": 40
+      }
+    }
+  ],
+  "115": [
+    {
+      "to": 168,
+      "level": 60,
+      "requirements": {
+        "atk": 120,
+        "spd": 145,
+        "abi": 80
+      }
+    },
+    {
+      "to": 199,
+      "level": 60,
+      "requirements": {
+        "hp": 1200,
+        "atk": 140,
+        "def": 120,
+        "spd": 130,
+        "abi": 80
+      }
+    },
+    {
+      "to": 229,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "spd": 160,
+        "abi": 20
+      }
+    },
+    {
+      "to": 308,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "def": 120,
+        "int": 120,
+        "abi": 40
+      }
+    }
+  ],
+  "116": [
+    {
+      "to": 205,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "int": 160,
+        "spd": 110,
+        "abi": 20
+      }
+    },
+    {
+      "to": 207,
+      "level": 65,
+      "requirements": {
+        "abi": 10
+      }
+    },
+    {
+      "to": 222,
+      "level": 45,
+      "requirements": {
+        "sp": 100,
+        "atk": 120,
+        "def": 140,
+        "abi": 20
+      }
+    },
+    {
+      "to": 305,
+      "level": 45,
+      "requirements": {
+        "atk": 110,
+        "def": 130,
+        "spd": 100,
+        "abi": 20
+      }
+    },
+    {
+      "to": 314,
+      "level": 50,
+      "requirements": {
+        "atk": 120,
+        "def": 135,
+        "abi": 20
+      }
+    }
+  ],
+  "117": [
+    {
+      "to": 176,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "def": 120,
+        "int": 145,
+        "abi": 40
+      }
+    },
+    {
+      "to": 215,
+      "level": 55,
+      "requirements": {
+        "hp": 900,
+        "sp": 120,
+        "int": 145,
+        "abi": 20
+      }
+    },
+    {
+      "to": 217,
+      "level": 60,
+      "requirements": {
+        "sp": 120,
+        "atk": 120,
+        "int": 120,
+        "cam": 100,
+        "abi": 80,
+        "misc": [
+          "DIGIMON__LADYDEVIMON"
+        ]
+      }
+    },
+    {
+      "to": 245,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "int": 130,
+        "spd": 160,
+        "abi": 20
+      }
+    }
+  ],
+  "118": [
+    {
+      "to": 181,
+      "level": 45,
+      "requirements": {
+        "hp": 1500,
+        "atk": 120,
+        "def": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 196,
+      "level": 55,
+      "requirements": {
+        "hp": 1100,
+        "atk": 180,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 211,
+      "level": 50,
+      "requirements": {
+        "hp": 1100,
+        "def": 150,
+        "int": 120,
+        "abi": 20
+      }
+    }
+  ],
+  "119": [
+    {
+      "to": 189,
+      "level": 50,
+      "requirements": {
+        "hp": 1000,
+        "atk": 130,
+        "def": 110,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 214,
+      "level": 50,
+      "requirements": {
+        "int": 130,
+        "spd": 150,
+        "abi": 20
+      }
+    },
+    {
+      "to": 229,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "spd": 160,
+        "abi": 20
+      }
+    },
+    {
+      "to": 302,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 145,
+        "spd": 130,
+        "abi": 40
+      }
+    },
+    {
+      "to": 307,
+      "level": 50,
+      "requirements": {
+        "sp": 110,
+        "int": 140,
+        "abi": 20
+      }
+    }
+  ],
+  "120": [
+    {
+      "to": 182,
+      "level": 50,
+      "requirements": {
+        "def": 160,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 221,
+      "level": 50,
+      "requirements": {
+        "hp": 1300,
+        "atk": 130,
+        "def": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 225,
+      "level": 50,
+      "requirements": {
+        "sp": 120,
+        "def": 120,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 243,
+      "level": 50,
+      "requirements": {
+        "atk": 150,
+        "def": 140,
+        "abi": 20
+      }
+    },
+    {
+      "to": 312,
+      "level": 50,
+      "requirements": {
+        "hp": 1600,
+        "atk": 160,
+        "abi": 20
+      }
+    },
+    {
+      "to": 318,
+      "level": 55,
+      "requirements": {
+        "hp": 1700,
+        "atk": 180,
+        "abi": 40
+      }
+    }
+  ],
+  "121": [
+    {
+      "to": 182,
+      "level": 50,
+      "requirements": {
+        "def": 160,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 192,
+      "level": 50,
+      "requirements": {
+        "def": 130,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 193,
+      "level": 50,
+      "requirements": {
+        "hp": 1000,
+        "atk": 120,
+        "spd": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "122": [
+    {
+      "to": 185,
+      "level": 50,
+      "requirements": {
+        "atk": 145,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 200,
+      "level": 60,
+      "requirements": {
+        "sp": 100,
+        "int": 120,
+        "spd": 140,
+        "abi": 80
+      }
+    },
+    {
+      "to": 204,
+      "level": 55,
+      "requirements": {
+        "atk": 120,
+        "def": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 314,
+      "level": 50,
+      "requirements": {
+        "atk": 120,
+        "def": 135,
+        "abi": 20
+      }
+    }
+  ],
+  "123": [
+    {
+      "to": 167,
+      "level": 60,
+      "requirements": {
+        "atk": 150,
+        "def": 170,
+        "int": 135,
+        "abi": 80
+      }
+    },
+    {
+      "to": 189,
+      "level": 50,
+      "requirements": {
+        "hp": 1000,
+        "atk": 130,
+        "def": 110,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 194,
+      "level": 55,
+      "requirements": {
+        "hp": 1400,
+        "atk": 150,
+        "int": 120,
+        "abi": 20
+      }
+    }
+  ],
+  "124": [
+    {
+      "to": 172,
+      "level": 50,
+      "requirements": {
+        "hp": 1700,
+        "atk": 130,
+        "def": 130,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 178,
+      "level": 60,
+      "requirements": {
+        "atk": 130,
+        "def": 130,
+        "int": 130,
+        "abi": 40
+      }
+    },
+    {
+      "to": 184,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 145,
+        "spd": 100,
+        "abi": 40
+      }
+    }
+  ],
+  "125": [
+    {
+      "to": 180,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 135,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 181,
+      "level": 45,
+      "requirements": {
+        "hp": 1500,
+        "atk": 120,
+        "def": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 206,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "def": 130,
+        "int": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "126": [
+    {
+      "to": 186,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 120,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 199,
+      "level": 60,
+      "requirements": {
+        "hp": 1200,
+        "atk": 140,
+        "def": 120,
+        "spd": 130,
+        "abi": 80
+      }
+    },
+    {
+      "to": 214,
+      "level": 50,
+      "requirements": {
+        "int": 130,
+        "spd": 150,
+        "abi": 20
+      }
+    },
+    {
+      "to": 245,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "int": 130,
+        "spd": 160,
+        "abi": 20
+      }
+    },
+    {
+      "to": 307,
+      "level": 50,
+      "requirements": {
+        "sp": 110,
+        "int": 140,
+        "abi": 20
+      }
+    }
+  ],
+  "127": [
+    {
+      "to": 179,
+      "level": 60,
+      "requirements": {
+        "hp": 1700,
+        "atk": 145,
+        "def": 120,
+        "abi": 80
+      }
+    },
+    {
+      "to": 189,
+      "level": 50,
+      "requirements": {
+        "hp": 1000,
+        "atk": 130,
+        "def": 110,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 207,
+      "level": 65,
+      "requirements": {
+        "abi": 10
+      }
+    }
+  ],
+  "128": [
+    {
+      "to": 188,
+      "level": 55,
+      "requirements": {
+        "atk": 140,
+        "spd": 130,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 194,
+      "level": 55,
+      "requirements": {
+        "hp": 1400,
+        "atk": 150,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 197,
+      "level": 60,
+      "requirements": {
+        "hp": 1600,
+        "atk": 230,
+        "int": 160,
+        "abi": 80
+      }
+    }
+  ],
+  "129": [
+    {
+      "to": 172,
+      "level": 50,
+      "requirements": {
+        "hp": 1700,
+        "atk": 130,
+        "def": 130,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 218,
+      "level": 50,
+      "requirements": {
+        "sp": 110,
+        "int": 135,
+        "cam": 50,
+        "abi": 20
+      }
+    },
+    {
+      "to": 223,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "def": 120,
+        "spd": 150,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 210,
+      "level": 50,
+      "requirements": {
+        "sp": 100,
+        "def": 120,
+        "int": 145,
+        "abi": 20
+      }
+    }
+  ],
+  "130": [
+    {
+      "to": 180,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 135,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 186,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 120,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 195,
+      "level": 55,
+      "requirements": {
+        "def": 120,
+        "int": 130,
+        "spd": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "131": [
+    {
+      "to": 190,
+      "level": 60,
+      "requirements": {
+        "def": 140,
+        "int": 120,
+        "spd": 150,
+        "abi": 80
+      }
+    },
+    {
+      "to": 191,
+      "level": 55,
+      "requirements": {
+        "sp": 130,
+        "def": 130,
+        "int": 150,
+        "cam": 50,
+        "abi": 40
+      }
+    },
+    {
+      "to": 223,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "def": 120,
+        "spd": 150,
+        "cam": 80,
+        "abi": 20
+      }
+    }
+  ],
+  "132": [
+    {
+      "to": 194,
+      "level": 55,
+      "requirements": {
+        "hp": 1400,
+        "atk": 150,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 213,
+      "level": 60,
+      "requirements": {
+        "hp": 1700,
+        "sp": 140,
+        "int": 180,
+        "abi": 80
+      }
+    },
+    {
+      "to": 219,
+      "level": 55,
+      "requirements": {
+        "atk": 150,
+        "spd": 140,
+        "abi": 20
+      }
+    }
+  ],
+  "133": [
+    {
+      "to": 179,
+      "level": 60,
+      "requirements": {
+        "hp": 1700,
+        "atk": 145,
+        "def": 120,
+        "abi": 80
+      }
+    },
+    {
+      "to": 212,
+      "level": 60,
+      "requirements": {
+        "hp": 2000,
+        "atk": 250,
+        "spd": 150,
+        "abi": 80
+      }
+    },
+    {
+      "to": 216,
+      "level": 50,
+      "requirements": {
+        "atk": 145,
+        "def": 100,
+        "abi": 20
+      }
+    }
+  ],
+  "134": [
+    {
+      "to": 172,
+      "level": 50,
+      "requirements": {
+        "hp": 1700,
+        "atk": 130,
+        "def": 130,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 210,
+      "level": 50,
+      "requirements": {
+        "sp": 100,
+        "def": 120,
+        "int": 145,
+        "abi": 20
+      }
+    },
+    {
+      "to": 227,
+      "level": 60,
+      "requirements": {
+        "hp": 2000,
+        "sp": 140,
+        "atk": 140,
+        "def": 140,
+        "int": 140,
+        "abi": 80
+      }
+    },
+    {
+      "to": 305,
+      "level": 45,
+      "requirements": {
+        "atk": 110,
+        "def": 130,
+        "spd": 100,
+        "abi": 20
+      }
+    }
+  ],
+  "135": [
+    {
+      "to": 167,
+      "level": 60,
+      "requirements": {
+        "atk": 150,
+        "def": 170,
+        "int": 135,
+        "abi": 80
+      }
+    },
+    {
+      "to": 190,
+      "level": 60,
+      "requirements": {
+        "def": 140,
+        "int": 120,
+        "spd": 150,
+        "abi": 80
+      }
+    },
+    {
+      "to": 312,
+      "level": 50,
+      "requirements": {
+        "hp": 1600,
+        "atk": 160,
+        "abi": 20
+      }
+    }
+  ],
+  "136": [
+    {
+      "to": 183,
+      "level": 60,
+      "requirements": {
+        "sp": 110,
+        "def": 180,
+        "int": 140,
+        "abi": 80
+      }
+    },
+    {
+      "to": 200,
+      "level": 60,
+      "requirements": {
+        "sp": 100,
+        "int": 120,
+        "spd": 140,
+        "abi": 80
+      }
+    },
+    {
+      "to": 230,
+      "level": 60,
+      "requirements": {
+        "atk": 120,
+        "int": 135,
+        "spd": 150,
+        "cam": 50,
+        "abi": 80
+      }
+    },
+    {
+      "to": 311,
+      "level": 60,
+      "requirements": {
+        "hp": 1500,
+        "atk": 140,
+        "def": 120,
+        "abi": 20
+      }
+    }
+  ],
+  "137": [
+    {
+      "to": 182,
+      "level": 50,
+      "requirements": {
+        "def": 160,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 221,
+      "level": 50,
+      "requirements": {
+        "hp": 1300,
+        "atk": 130,
+        "def": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 224,
+      "level": 55,
+      "requirements": {
+        "def": 135,
+        "spd": 125,
+        "abi": 20
+      }
+    }
+  ],
+  "138": [
+    {
+      "to": 170,
+      "level": 55,
+      "requirements": {
+        "hp": 1600,
+        "def": 150,
+        "spd": 150,
+        "abi": 20
+      }
+    }
+  ],
+  "139": [
+    {
+      "to": 185,
+      "level": 50,
+      "requirements": {
+        "atk": 145,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 204,
+      "level": 55,
+      "requirements": {
+        "atk": 120,
+        "def": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 220,
+      "level": 55,
+      "requirements": {
+        "atk": 120,
+        "spd": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "140": [
+    {
+      "to": 206,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "def": 130,
+        "int": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 216,
+      "level": 50,
+      "requirements": {
+        "atk": 145,
+        "def": 100,
+        "abi": 20
+      }
+    },
+    {
+      "to": 231,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 120,
+        "abi": 20
+      }
+    }
+  ],
+  "141": [
+    {
+      "to": 176,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "def": 120,
+        "int": 145,
+        "abi": 40
+      }
+    },
+    {
+      "to": 214,
+      "level": 50,
+      "requirements": {
+        "int": 130,
+        "spd": 150,
+        "abi": 20
+      }
+    },
+    {
+      "to": 218,
+      "level": 50,
+      "requirements": {
+        "sp": 110,
+        "int": 135,
+        "cam": 50,
+        "abi": 20
+      }
+    }
+  ],
+  "142": [
+    {
+      "to": 207,
+      "level": 65,
+      "requirements": {
+        "abi": 10
+      }
+    },
+    {
+      "to": 209,
+      "level": 45,
+      "requirements": {
+        "def": 150,
+        "abi": 20
+      }
+    },
+    {
+      "to": 222,
+      "level": 45,
+      "requirements": {
+        "sp": 100,
+        "atk": 120,
+        "def": 140,
+        "abi": 20
+      }
+    }
+  ],
+  "143": [
+    {
+      "to": 197,
+      "level": 60,
+      "requirements": {
+        "hp": 1600,
+        "atk": 230,
+        "int": 160,
+        "abi": 80
+      }
+    },
+    {
+      "to": 203,
+      "level": 60,
+      "requirements": {
+        "sp": 160,
+        "def": 120,
+        "int": 200,
+        "abi": 80
+      }
+    },
+    {
+      "to": 216,
+      "level": 50,
+      "requirements": {
+        "atk": 145,
+        "def": 100,
+        "abi": 20
+      }
+    },
+    {
+      "to": 243,
+      "level": 50,
+      "requirements": {
+        "atk": 150,
+        "def": 140,
+        "abi": 20
+      }
+    }
+  ],
+  "144": [
+    {
+      "to": 169,
+      "level": 45,
+      "requirements": {
+        "sp": 120,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 202,
+      "level": 55,
+      "requirements": {
+        "atk": 100,
+        "def": 130,
+        "int": 100,
+        "abi": 20
+      }
+    },
+    {
+      "to": 211,
+      "level": 50,
+      "requirements": {
+        "hp": 1100,
+        "def": 150,
+        "int": 120,
+        "abi": 20
+      }
+    }
+  ],
+  "145": [
+    {
+      "to": 210,
+      "level": 50,
+      "requirements": {
+        "sp": 100,
+        "def": 120,
+        "int": 145,
+        "abi": 20
+      }
+    },
+    {
+      "to": 218,
+      "level": 50,
+      "requirements": {
+        "sp": 110,
+        "int": 135,
+        "cam": 50,
+        "abi": 20
+      }
+    },
+    {
+      "to": 225,
+      "level": 50,
+      "requirements": {
+        "sp": 120,
+        "def": 120,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 313,
+      "level": 55,
+      "requirements": {
+        "hp": 1000,
+        "sp": 100,
+        "int": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "146": [
+    {
+      "to": 188,
+      "level": 55,
+      "requirements": {
+        "atk": 140,
+        "spd": 130,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 191,
+      "level": 55,
+      "requirements": {
+        "sp": 130,
+        "def": 130,
+        "int": 150,
+        "cam": 50,
+        "abi": 40
+      }
+    },
+    {
+      "to": 230,
+      "level": 60,
+      "requirements": {
+        "atk": 120,
+        "int": 135,
+        "spd": 150,
+        "cam": 50,
+        "abi": 80
+      }
+    },
+    {
+      "to": 245,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "int": 130,
+        "spd": 160,
+        "abi": 20
+      }
+    },
+    {
+      "to": 308,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "def": 120,
+        "int": 120,
+        "abi": 40
+      }
+    }
+  ],
+  "147": [
+    {
+      "to": 192,
+      "level": 50,
+      "requirements": {
+        "def": 130,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 204,
+      "level": 55,
+      "requirements": {
+        "atk": 120,
+        "def": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 220,
+      "level": 55,
+      "requirements": {
+        "atk": 120,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 319,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "int": 110,
+        "spd": 160,
+        "abi": 20
+      }
+    }
+  ],
+  "148": [
+    {
+      "to": 174,
+      "level": 55,
+      "requirements": {
+        "hp": 1700,
+        "atk": 160,
+        "def": 130,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 206,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "def": 130,
+        "int": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 209,
+      "level": 45,
+      "requirements": {
+        "def": 150,
+        "abi": 20
+      }
+    }
+  ],
+  "149": [
+    {
+      "to": 210,
+      "level": 50,
+      "requirements": {
+        "sp": 100,
+        "def": 120,
+        "int": 145,
+        "abi": 20
+      }
+    },
+    {
+      "to": 225,
+      "level": 50,
+      "requirements": {
+        "sp": 120,
+        "def": 120,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 227,
+      "level": 60,
+      "requirements": {
+        "hp": 2000,
+        "sp": 140,
+        "atk": 140,
+        "def": 140,
+        "int": 140,
+        "abi": 80
+      }
+    },
+    {
+      "to": 313,
+      "level": 55,
+      "requirements": {
+        "hp": 1000,
+        "sp": 100,
+        "int": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "150": [
+    {
+      "to": 168,
+      "level": 60,
+      "requirements": {
+        "atk": 120,
+        "spd": 145,
+        "abi": 80
+      }
+    },
+    {
+      "to": 208,
+      "level": 55,
+      "requirements": {
+        "hp": 1800,
+        "atk": 140,
+        "def": 140,
+        "abi": 20
+      }
+    },
+    {
+      "to": 221,
+      "level": 50,
+      "requirements": {
+        "hp": 1300,
+        "atk": 130,
+        "def": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 308,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "def": 120,
+        "int": 120,
+        "abi": 40
+      }
+    },
+    {
+      "to": 318,
+      "level": 55,
+      "requirements": {
+        "hp": 1700,
+        "atk": 180,
+        "abi": 40
+      }
+    }
+  ],
+  "151": [
+    {
+      "to": 178,
+      "level": 60,
+      "requirements": {
+        "atk": 130,
+        "def": 130,
+        "int": 130,
+        "abi": 40
+      }
+    },
+    {
+      "to": 198,
+      "level": 60,
+      "requirements": {
+        "atk": 140,
+        "def": 140,
+        "int": 140,
+        "cam": 50,
+        "abi": 80
+      }
+    },
+    {
+      "to": 226,
+      "level": 55,
+      "requirements": {
+        "hp": 1300,
+        "atk": 180,
+        "def": 150,
+        "abi": 20
+      }
+    },
+    {
+      "to": 243,
+      "level": 50,
+      "requirements": {
+        "atk": 150,
+        "def": 140,
+        "abi": 20
+      }
+    },
+    {
+      "to": 318,
+      "level": 55,
+      "requirements": {
+        "hp": 1700,
+        "atk": 180,
+        "abi": 40
+      }
+    }
+  ],
+  "152": [
+    {
+      "to": 174,
+      "level": 55,
+      "requirements": {
+        "hp": 1700,
+        "atk": 160,
+        "def": 130,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 177,
+      "level": 50,
+      "requirements": {
+        "atk": 120,
+        "def": 100,
+        "spd": 100,
+        "abi": 20
+      }
+    },
+    {
+      "to": 226,
+      "level": 55,
+      "requirements": {
+        "hp": 1300,
+        "atk": 180,
+        "def": 150,
+        "abi": 20
+      }
+    }
+  ],
+  "153": [
+    {
+      "to": 174,
+      "level": 55,
+      "requirements": {
+        "hp": 1700,
+        "atk": 160,
+        "def": 130,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 177,
+      "level": 50,
+      "requirements": {
+        "atk": 120,
+        "def": 100,
+        "spd": 100,
+        "abi": 20
+      }
+    },
+    {
+      "to": 208,
+      "level": 55,
+      "requirements": {
+        "hp": 1800,
+        "atk": 140,
+        "def": 140,
+        "abi": 20
+      }
+    },
+    {
+      "to": 241,
+      "level": 55,
+      "requirements": {
+        "hp": 1100,
+        "sp": 100,
+        "int": 100,
+        "abi": 40
+      }
+    }
+  ],
+  "154": [
+    {
+      "to": 208,
+      "level": 55,
+      "requirements": {
+        "hp": 1800,
+        "atk": 140,
+        "def": 140,
+        "abi": 20
+      }
+    },
+    {
+      "to": 198,
+      "level": 60,
+      "requirements": {
+        "atk": 140,
+        "def": 140,
+        "int": 140,
+        "cam": 50,
+        "abi": 80
+      }
+    },
+    {
+      "to": 226,
+      "level": 55,
+      "requirements": {
+        "hp": 1300,
+        "atk": 180,
+        "def": 150,
+        "abi": 20
+      }
+    },
+    {
+      "to": 315,
+      "level": 55,
+      "requirements": {
+        "hp": 1500,
+        "atk": 160,
+        "def": 140,
+        "abi": 20
+      }
+    }
+  ],
+  "155": [
+    {
+      "to": 169,
+      "level": 45,
+      "requirements": {
+        "sp": 120,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 202,
+      "level": 55,
+      "requirements": {
+        "atk": 100,
+        "def": 130,
+        "int": 100,
+        "abi": 20
+      }
+    },
+    {
+      "to": 209,
+      "level": 45,
+      "requirements": {
+        "def": 150,
+        "abi": 20
+      }
+    }
+  ],
+  "156": [
+    {
+      "to": 185,
+      "level": 50,
+      "requirements": {
+        "atk": 145,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 186,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 120,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 219,
+      "level": 55,
+      "requirements": {
+        "atk": 150,
+        "spd": 140,
+        "abi": 20
+      }
+    }
+  ],
+  "157": [
+    {
+      "to": 180,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 135,
+        "spd": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 219,
+      "level": 55,
+      "requirements": {
+        "atk": 150,
+        "spd": 140,
+        "abi": 20
+      }
+    },
+    {
+      "to": 229,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "spd": 160,
+        "abi": 20
+      }
+    },
+    {
+      "to": 302,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 145,
+        "spd": 130,
+        "abi": 40
+      }
+    },
+    {
+      "to": 340,
+      "level": 50,
+      "requirements": {
+        "hp": 1300,
+        "atk": 180,
+        "abi": 20
+      }
+    }
+  ],
+  "158": [
+    {
+      "to": 177,
+      "level": 50,
+      "requirements": {
+        "atk": 120,
+        "def": 100,
+        "spd": 100,
+        "abi": 20
+      }
+    },
+    {
+      "to": 188,
+      "level": 55,
+      "requirements": {
+        "atk": 140,
+        "spd": 130,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 309,
+      "level": 55,
+      "requirements": {
+        "hp": 1300,
+        "atk": 130,
+        "spd": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "159": [
+    {
+      "to": 228,
+      "level": 60,
+      "requirements": {
+        "sp": 200,
+        "int": 250,
+        "spd": 130,
+        "abi": 80
+      }
+    },
+    {
+      "to": 231,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 232,
+      "level": 55,
+      "requirements": {
+        "int": 170,
+        "spd": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "160": [
+    {
+      "to": 192,
+      "level": 50,
+      "requirements": {
+        "def": 130,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 193,
+      "level": 50,
+      "requirements": {
+        "hp": 1000,
+        "atk": 120,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 224,
+      "level": 55,
+      "requirements": {
+        "def": 135,
+        "spd": 125,
+        "abi": 20
+      }
+    }
+  ],
+  "161": [
+    {
+      "to": 215,
+      "level": 55,
+      "requirements": {
+        "hp": 900,
+        "sp": 120,
+        "int": 145,
+        "abi": 20
+      }
+    },
+    {
+      "to": 231,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 232,
+      "level": 55,
+      "requirements": {
+        "int": 170,
+        "spd": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "162": [
+    {
+      "to": 237,
+      "level": 70,
+      "requirements": {
+        "hp": 1400,
+        "sp": 160,
+        "atk": 130,
+        "int": 250,
+        "spd": 170,
+        "abi": 100
+      }
+    }
+  ],
+  "163": [
+    {
+      "to": 217,
+      "level": 60,
+      "requirements": {
+        "sp": 120,
+        "atk": 120,
+        "int": 120,
+        "cam": 100,
+        "abi": 80,
+        "misc": [
+          "DIGIMON__ANGEWOMON"
+        ]
+      }
+    },
+    {
+      "to": 228,
+      "level": 60,
+      "requirements": {
+        "sp": 200,
+        "int": 250,
+        "spd": 130,
+        "abi": 80
+      }
+    },
+    {
+      "to": 232,
+      "level": 55,
+      "requirements": {
+        "int": 170,
+        "spd": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "164": [
+    {
+      "to": 220,
+      "level": 55,
+      "requirements": {
+        "atk": 120,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 223,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "def": 120,
+        "spd": 150,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 224,
+      "level": 55,
+      "requirements": {
+        "def": 135,
+        "spd": 125,
+        "abi": 20
+      }
+    }
+  ],
+  "165": [
+    {
+      "to": 204,
+      "level": 55,
+      "requirements": {
+        "atk": 120,
+        "def": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 219,
+      "level": 55,
+      "requirements": {
+        "atk": 150,
+        "spd": 140,
+        "abi": 20
+      }
+    },
+    {
+      "to": 224,
+      "level": 55,
+      "requirements": {
+        "def": 135,
+        "spd": 125,
+        "abi": 20
+      }
+    },
+    {
+      "to": 319,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "int": 110,
+        "spd": 160,
+        "abi": 20
+      }
+    }
+  ],
+  "166": [
+    {
+      "to": 173,
+      "level": 55,
+      "requirements": {
+        "hp": 1200,
+        "sp": 110,
+        "atk": 110,
+        "int": 110,
+        "abi": 40
+      }
+    },
+    {
+      "to": 205,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "int": 160,
+        "spd": 110,
+        "abi": 20
+      }
+    },
+    {
+      "to": 213,
+      "level": 60,
+      "requirements": {
+        "hp": 1700,
+        "sp": 140,
+        "int": 180,
+        "abi": 80
+      }
+    }
+  ],
+  "167": [
+    {
+      "to": 322,
+      "level": 60,
+      "requirements": {
+        "atk": 180,
+        "def": 170,
+        "int": 150,
+        "cam": 100,
+        "abi": 80,
+        "misc": [
+          "DIGIMON__OURYUMON"
+        ]
+      }
+    }
+  ],
+  "168": [],
+  "169": [],
+  "170": [
+    {
+      "to": 233,
+      "level": 70,
+      "requirements": {
+        "atk": 160,
+        "def": 160,
+        "int": 160,
+        "spd": 160,
+        "abi": 100
+      }
+    },
+    {
+      "to": 171,
+      "level": 0,
+      "requirements": {
+        "misc": [
+          "MODE_CHANGE"
+        ]
+      }
+    }
+  ],
+  "171": [
+    {
+      "to": 170,
+      "level": 0,
+      "requirements": {
+        "misc": [
+          "MODE_CHANGE"
+        ]
+      }
+    }
+  ],
+  "172": [],
+  "173": [],
+  "174": [
+    {
+      "to": 234,
+      "level": 60,
+      "requirements": {
+        "atk": 200,
+        "int": 150,
+        "spd": 150,
+        "cam": 100,
+        "abi": 40,
+        "misc": [
+          "DIGIMON__METALGARURUMON"
+        ]
+      }
+    }
+  ],
+  "175": [],
+  "176": [],
+  "177": [],
+  "178": [],
+  "179": [],
+  "180": [],
+  "181": [],
+  "182": [],
+  "183": [],
+  "184": [],
+  "185": [],
+  "186": [],
+  "187": [],
+  "188": [
+    {
+      "to": 246,
+      "level": 60,
+      "requirements": {
+        "hp": 2000,
+        "atk": 250,
+        "cam": 100,
+        "abi": 30
+      }
+    }
+  ],
+  "189": [],
+  "190": [],
+  "191": [],
+  "192": [],
+  "193": [],
+  "194": [],
+  "195": [],
+  "196": [
+    {
+      "to": 320,
+      "level": 70,
+      "requirements": {
+        "hp": 2000,
+        "sp": 140,
+        "atk": 290,
+        "abi": 100
+      }
+    }
+  ],
+  "197": [],
+  "198": [
+    {
+      "to": 325,
+      "level": 80,
+      "requirements": {
+        "atk": 185,
+        "def": 185,
+        "int": 185,
+        "cam": 100,
+        "abi": 80
+      }
+    }
+  ],
+  "199": [],
+  "200": [
+    {
+      "to": 201,
+      "level": 0,
+      "requirements": {
+        "misc": [
+          "MODE_CHANGE"
+        ]
+      }
+    }
+  ],
+  "201": [
+    {
+      "to": 200,
+      "level": 0,
+      "requirements": {
+        "misc": [
+          "MODE_CHANGE"
+        ]
+      }
+    }
+  ],
+  "202": [],
+  "203": [],
+  "204": [
+    {
+      "to": 244,
+      "level": 60,
+      "requirements": {
+        "atk": 255,
+        "cam": 100,
+        "abi": 40,
+        "misc": [
+          "DIGIMON__DARKDRAMON"
+        ]
+      }
+    },
+    {
+      "to": 323,
+      "level": 60,
+      "requirements": {
+        "atk": 155,
+        "int": 100,
+        "cam": 100,
+        "abi": 40,
+        "misc": [
+          "DIGIMON__VARODURUMON"
+        ]
+      }
+    }
+  ],
+  "205": [
+    {
+      "to": 341,
+      "level": 99,
+      "requirements": {
+        "abi": 120
+      }
+    }
+  ],
+  "206": [
+    {
+      "to": 341,
+      "level": 99,
+      "requirements": {
+        "abi": 120
+      }
+    }
+  ],
+  "207": [],
+  "208": [
+    {
+      "to": 235,
+      "level": 60,
+      "requirements": {
+        "hp": 1500,
+        "atk": 150,
+        "def": 200,
+        "cam": 100,
+        "abi": 40,
+        "misc": [
+          "DIGIMON__METALGARURUMON__BLK_"
+        ]
+      }
+    }
+  ],
+  "209": [],
+  "210": [],
+  "211": [
+    {
+      "to": 310,
+      "level": 55,
+      "requirements": {
+        "hp": 1600,
+        "atk": 140,
+        "def": 130,
+        "abi": 40
+      }
+    }
+  ],
+  "212": [
+    {
+      "to": 242,
+      "level": 80,
+      "requirements": {
+        "hp": 2100,
+        "atk": 300,
+        "spd": 220,
+        "cam": 100,
+        "abi": 100
+      }
+    }
+  ],
+  "213": [
+    {
+      "to": 236,
+      "level": 0,
+      "requirements": {
+        "misc": [
+          "MODE_CHANGE"
+        ]
+      }
+    }
+  ],
+  "214": [],
+  "215": [],
+  "216": [],
+  "217": [],
+  "218": [],
+  "219": [],
+  "220": [
+    {
+      "to": 247,
+      "level": 60,
+      "requirements": {
+        "atk": 200,
+        "spd": 200,
+        "cam": 100,
+        "abi": 30
+      }
+    }
+  ],
+  "221": [
+    {
+      "to": 304,
+      "level": 50,
+      "requirements": {
+        "hp": 1500,
+        "atk": 130,
+        "def": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 341,
+      "level": 99,
+      "requirements": {
+        "abi": 120
+      }
+    }
+  ],
+  "222": [],
+  "223": [
+    {
+      "to": 234,
+      "level": 60,
+      "requirements": {
+        "atk": 200,
+        "int": 150,
+        "spd": 150,
+        "cam": 100,
+        "abi": 40,
+        "misc": [
+          "DIGIMON__WARGREYMON"
+        ]
+      }
+    }
+  ],
+  "224": [
+    {
+      "to": 235,
+      "level": 60,
+      "requirements": {
+        "hp": 1500,
+        "atk": 150,
+        "def": 200,
+        "cam": 100,
+        "abi": 40,
+        "misc": [
+          "DIGIMON__BLACKWARGREYMON"
+        ]
+      }
+    }
+  ],
+  "225": [
+    {
+      "to": 341,
+      "level": 99,
+      "requirements": {
+        "abi": 120
+      }
+    }
+  ],
+  "226": [],
+  "227": [],
+  "228": [],
+  "229": [
+    {
+      "to": 248,
+      "level": 60,
+      "requirements": {
+        "sp": 160,
+        "spd": 250,
+        "cam": 100,
+        "abi": 30
+      }
+    }
+  ],
+  "230": [],
+  "231": [
+    {
+      "to": 249,
+      "level": 60,
+      "requirements": {
+        "sp": 170,
+        "int": 180,
+        "cam": 100,
+        "abi": 30
+      }
+    }
+  ],
+  "232": [],
+  "233": [],
+  "234": [],
+  "235": [],
+  "236": [
+    {
+      "to": 213,
+      "level": 0,
+      "requirements": {
+        "misc": [
+          "MODE_CHANGE"
+        ]
+      }
+    }
+  ],
+  "237": [],
+  "238": [],
+  "239": [],
+  "240": [],
+  "241": [],
+  "242": [],
+  "243": [
+    {
+      "to": 244,
+      "level": 60,
+      "requirements": {
+        "atk": 255,
+        "cam": 100,
+        "abi": 40,
+        "misc": [
+          "DIGIMON__BANCHOLEOMON"
+        ]
+      }
+    }
+  ],
+  "244": [],
+  "245": [],
+  "246": [],
+  "247": [],
+  "248": [],
+  "249": [],
+  "250": [
+    {
+      "to": 251,
+      "level": 6,
+      "requirements": {
+        "atk": 90,
+        "spd": 20,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    }
+  ],
+  "251": [
+    {
+      "to": 262,
+      "level": 16,
+      "requirements": {
+        "atk": 50,
+        "int": 40,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    },
+    {
+      "to": 73,
+      "level": 16,
+      "requirements": {
+        "hp": 150,
+        "atk": 40
+      }
+    },
+    {
+      "to": 106,
+      "level": 16,
+      "requirements": {
+        "atk": 55
+      }
+    }
+  ],
+  "252": [
+    {
+      "to": 272,
+      "level": 20,
+      "requirements": {
+        "atk": 50,
+        "spd": 50
+      }
+    },
+    {
+      "to": 275,
+      "level": 16,
+      "requirements": {
+        "atk": 55,
+        "spd": 50
+      }
+    },
+    {
+      "to": 80,
+      "level": 18,
+      "requirements": {
+        "abi": 5
+      }
+    },
+    {
+      "to": 338,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "def": 40
+      }
+    }
+  ],
+  "253": [
+    {
+      "to": 280,
+      "level": 12,
+      "requirements": {
+        "hp": 500
+      }
+    },
+    {
+      "to": 85,
+      "level": 12,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 95,
+      "level": 12,
+      "requirements": {
+        "atk": 40,
+        "def": 40
+      }
+    },
+    {
+      "to": 101,
+      "level": 16,
+      "requirements": {
+        "int": 40,
+        "cam": 25
+      }
+    }
+  ],
+  "254": [
+    {
+      "to": 262,
+      "level": 16,
+      "requirements": {
+        "atk": 50,
+        "int": 40,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    },
+    {
+      "to": 269,
+      "level": 15,
+      "requirements": {
+        "atk": 50,
+        "spd": 55
+      }
+    },
+    {
+      "to": 280,
+      "level": 12,
+      "requirements": {
+        "hp": 500
+      }
+    },
+    {
+      "to": 330,
+      "level": 14,
+      "requirements": {
+        "sp": 40,
+        "spd": 50,
+        "cam": 10,
+        "misc": [
+          "DLC_REQUIRED"
+        ]
+      }
+    },
+    {
+      "to": 92,
+      "level": 16,
+      "requirements": {
+        "atk": 40,
+        "abi": 5
+      }
+    }
+  ],
+  "255": [
+    {
+      "to": 266,
+      "level": 14,
+      "requirements": {
+        "atk": 60,
+        "spd": 25
+      }
+    },
+    {
+      "to": 267,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "def": 25,
+        "spd": 40
+      }
+    },
+    {
+      "to": 99,
+      "level": 16,
+      "requirements": {
+        "atk": 40,
+        "spd": 35
+      }
+    },
+    {
+      "to": 338,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "def": 40
+      }
+    }
+  ],
+  "256": [
+    {
+      "to": 265,
+      "level": 14,
+      "requirements": {
+        "hp": 130,
+        "def": 60
+      }
+    },
+    {
+      "to": 279,
+      "level": 15,
+      "requirements": {
+        "hp": 130,
+        "atk": 50
+      }
+    },
+    {
+      "to": 87,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 55
+      }
+    },
+    {
+      "to": 108,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40
+      }
+    },
+    {
+      "to": 93,
+      "level": 16,
+      "requirements": {
+        "hp": 300,
+        "def": 30,
+        "cam": 25
+      }
+    }
+  ],
+  "257": [
+    {
+      "to": 273,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "def": 40
+      }
+    },
+    {
+      "to": 60,
+      "level": 14,
+      "requirements": {
+        "hp": 500
+      }
+    },
+    {
+      "to": 82,
+      "level": 14,
+      "requirements": {
+        "hp": 150,
+        "int": 40
+      }
+    },
+    {
+      "to": 102,
+      "level": 12,
+      "requirements": {
+        "hp": 300
+      }
+    }
+  ],
+  "258": [
+    {
+      "to": 266,
+      "level": 14,
+      "requirements": {
+        "atk": 60,
+        "spd": 25
+      }
+    },
+    {
+      "to": 271,
+      "level": 15,
+      "requirements": {
+        "atk": 45,
+        "spd": 50
+      }
+    },
+    {
+      "to": 279,
+      "level": 15,
+      "requirements": {
+        "hp": 130,
+        "atk": 50
+      }
+    },
+    {
+      "to": 73,
+      "level": 16,
+      "requirements": {
+        "hp": 150,
+        "atk": 40
+      }
+    },
+    {
+      "to": 94,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "spd": 40
+      }
+    }
+  ],
+  "259": [
+    {
+      "to": 269,
+      "level": 15,
+      "requirements": {
+        "atk": 50,
+        "spd": 55
+      }
+    },
+    {
+      "to": 281,
+      "level": 15,
+      "requirements": {
+        "atk": 35,
+        "spd": 40
+      }
+    },
+    {
+      "to": 330,
+      "level": 14,
+      "requirements": {
+        "sp": 40,
+        "spd": 50,
+        "cam": 10,
+        "misc": [
+          "DLC_REQUIRED"
+        ]
+      }
+    },
+    {
+      "to": 91,
+      "level": 16,
+      "requirements": {
+        "int": 40,
+        "cam": 25
+      }
+    }
+  ],
+  "260": [
+    {
+      "to": 112,
+      "level": 26,
+      "requirements": {
+        "def": 110
+      }
+    },
+    {
+      "to": 139,
+      "level": 28,
+      "requirements": {
+        "hp": 350,
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 129,
+      "level": 30,
+      "requirements": {
+        "hp": 800,
+        "atk": 75,
+        "cam": 50
+      }
+    }
+  ],
+  "261": [
+    {
+      "to": 284,
+      "level": 30,
+      "requirements": {
+        "hp": 500,
+        "atk": 120,
+        "def": 60,
+        "misc": [
+          "ITEM__BEAST_SPIRIT_OF_FLAME"
+        ]
+      }
+    },
+    {
+      "to": 300,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "spd": 80
+      }
+    },
+    {
+      "to": 133,
+      "level": 28,
+      "requirements": {
+        "hp": 500,
+        "atk": 95
+      }
+    },
+    {
+      "to": 158,
+      "level": 30,
+      "requirements": {
+        "hp": 350,
+        "atk": 100,
+        "spd": 75,
+        "cam": 50
+      }
+    }
+  ],
+  "262": [
+    {
+      "to": 282,
+      "level": 30,
+      "requirements": {
+        "atk": 110,
+        "int": 85,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    },
+    {
+      "to": 290,
+      "level": 28,
+      "requirements": {
+        "atk": 80,
+        "int": 70
+      }
+    },
+    {
+      "to": 113,
+      "level": 30,
+      "requirements": {
+        "atk": 95,
+        "spd": 80
+      }
+    }
+  ],
+  "263": [
+    {
+      "to": 285,
+      "level": 30,
+      "requirements": {
+        "hp": 300,
+        "atk": 100,
+        "spd": 85,
+        "misc": [
+          "ITEM__BEAST_SPIRIT_OF_LIGHT"
+        ]
+      }
+    },
+    {
+      "to": 136,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "def": 75
+      }
+    },
+    {
+      "to": 164,
+      "level": 28,
+      "requirements": {
+        "atk": 90,
+        "spd": 85,
+        "cam": 50
+      }
+    }
+  ],
+  "264": [
+    {
+      "to": 283,
+      "level": 30,
+      "requirements": {
+        "atk": 80,
+        "spd": 95,
+        "abi": 10
+      }
+    },
+    {
+      "to": 149,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "sp": 70,
+        "int": 70
+      }
+    },
+    {
+      "to": 150,
+      "level": 26,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "spd": 75
+      }
+    },
+    {
+      "to": 152,
+      "level": 30,
+      "requirements": {
+        "hp": 350,
+        "atk": 100,
+        "cam": 50
+      }
+    }
+  ],
+  "265": [
+    {
+      "to": 288,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 80,
+        "spd": 70
+      }
+    },
+    {
+      "to": 294,
+      "level": 40,
+      "requirements": {
+        "hp": 800,
+        "atk": 80,
+        "def": 80
+      }
+    },
+    {
+      "to": 111,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 75,
+        "int": 75
+      }
+    },
+    {
+      "to": 240,
+      "level": 50,
+      "requirements": {
+        "atk": 100,
+        "def": 120,
+        "int": 120,
+        "cam": 50,
+        "abi": 40,
+        "misc": [
+          "ITEM__DIGI_EGG_OF_DESTINY"
+        ]
+      }
+    },
+    {
+      "to": 239,
+      "level": 60,
+      "requirements": {
+        "atk": 120,
+        "def": 145,
+        "cam": 50,
+        "abi": 80,
+        "misc": [
+          "ITEM__DIGI_EGG_OF_MIRACLES"
+        ]
+      }
+    }
+  ],
+  "266": [
+    {
+      "to": 283,
+      "level": 30,
+      "requirements": {
+        "atk": 80,
+        "spd": 95,
+        "abi": 10
+      }
+    },
+    {
+      "to": 115,
+      "level": 30,
+      "requirements": {
+        "atk": 75,
+        "spd": 95,
+        "cam": 25
+      }
+    },
+    {
+      "to": 143,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 80,
+        "int": 70
+      }
+    }
+  ],
+  "267": [
+    {
+      "to": 287,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 125,
+        "abi": 10
+      }
+    },
+    {
+      "to": 295,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 75
+      }
+    },
+    {
+      "to": 151,
+      "level": 30,
+      "requirements": {
+        "atk": 105,
+        "spd": 75
+      }
+    }
+  ],
+  "268": [
+    {
+      "to": 299,
+      "level": 26,
+      "requirements": {
+        "atk": 80,
+        "def": 75
+      }
+    },
+    {
+      "to": 112,
+      "level": 26,
+      "requirements": {
+        "def": 110
+      }
+    },
+    {
+      "to": 140,
+      "level": 26,
+      "requirements": {
+        "hp": 850,
+        "atk": 60,
+        "int": 60
+      }
+    }
+  ],
+  "269": [
+    {
+      "to": 285,
+      "level": 30,
+      "requirements": {
+        "hp": 300,
+        "atk": 100,
+        "spd": 85,
+        "misc": [
+          "ITEM__BEAST_SPIRIT_OF_LIGHT"
+        ]
+      }
+    },
+    {
+      "to": 300,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "spd": 80
+      }
+    },
+    {
+      "to": 114,
+      "level": 30,
+      "requirements": {
+        "atk": 70,
+        "int": 90,
+        "abi": 10
+      }
+    },
+    {
+      "to": 165,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 90,
+        "spd": 70
+      }
+    }
+  ],
+  "270": [
+    {
+      "to": 292,
+      "level": 28,
+      "requirements": {
+        "sp": 70,
+        "int": 85
+      }
+    },
+    {
+      "to": 111,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 75,
+        "int": 75
+      }
+    },
+    {
+      "to": 149,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "sp": 70,
+        "int": 70
+      }
+    },
+    {
+      "to": 339,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "def": 75
+      }
+    }
+  ],
+  "271": [
+    {
+      "to": 291,
+      "level": 30,
+      "requirements": {
+        "atk": 90,
+        "spd": 80
+      }
+    },
+    {
+      "to": 123,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 164,
+      "level": 28,
+      "requirements": {
+        "atk": 90,
+        "spd": 85,
+        "cam": 50
+      }
+    }
+  ],
+  "272": [
+    {
+      "to": 285,
+      "level": 30,
+      "requirements": {
+        "hp": 300,
+        "atk": 100,
+        "spd": 85,
+        "misc": [
+          "ITEM__BEAST_SPIRIT_OF_LIGHT"
+        ]
+      }
+    },
+    {
+      "to": 294,
+      "level": 40,
+      "requirements": {
+        "hp": 800,
+        "atk": 80,
+        "def": 80
+      }
+    },
+    {
+      "to": 298,
+      "level": 28,
+      "requirements": {
+        "sp": 80,
+        "int": 80
+      }
+    }
+  ],
+  "273": [
+    {
+      "to": 296,
+      "level": 26,
+      "requirements": {
+        "atk": 65,
+        "def": 65
+      }
+    },
+    {
+      "to": 112,
+      "level": 26,
+      "requirements": {
+        "def": 110
+      }
+    },
+    {
+      "to": 140,
+      "level": 26,
+      "requirements": {
+        "hp": 850,
+        "atk": 60,
+        "int": 60
+      }
+    }
+  ],
+  "274": [
+    {
+      "to": 110,
+      "level": 28,
+      "requirements": {
+        "atk": 65,
+        "int": 75,
+        "spd": 85
+      }
+    },
+    {
+      "to": 123,
+      "level": 28,
+      "requirements": {
+        "hp": 400,
+        "atk": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 156,
+      "level": 26,
+      "requirements": {
+        "hp": 600,
+        "atk": 60
+      }
+    }
+  ],
+  "275": [
+    {
+      "to": 285,
+      "level": 30,
+      "requirements": {
+        "hp": 300,
+        "atk": 100,
+        "spd": 85,
+        "misc": [
+          "ITEM__BEAST_SPIRIT_OF_LIGHT"
+        ]
+      }
+    },
+    {
+      "to": 291,
+      "level": 30,
+      "requirements": {
+        "atk": 90,
+        "spd": 80
+      }
+    },
+    {
+      "to": 158,
+      "level": 30,
+      "requirements": {
+        "hp": 350,
+        "atk": 100,
+        "spd": 75,
+        "cam": 50
+      }
+    }
+  ],
+  "276": [
+    {
+      "to": 161,
+      "level": 30,
+      "requirements": {
+        "int": 75,
+        "spd": 75,
+        "cam": 50
+      }
+    },
+    {
+      "to": 121,
+      "level": 28,
+      "requirements": {
+        "def": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 159,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 75
+      }
+    }
+  ],
+  "277": [
+    {
+      "to": 295,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 75
+      }
+    },
+    {
+      "to": 128,
+      "level": 28,
+      "requirements": {
+        "atk": 120,
+        "def": 85,
+        "spd": 70
+      }
+    },
+    {
+      "to": 154,
+      "level": 28,
+      "requirements": {
+        "atk": 75,
+        "def": 95
+      }
+    }
+  ],
+  "278": [
+    {
+      "to": 297,
+      "level": 26,
+      "requirements": {
+        "sp": 65,
+        "int": 65
+      }
+    },
+    {
+      "to": 141,
+      "level": 26,
+      "requirements": {
+        "sp": 75,
+        "int": 80,
+        "spd": 80
+      }
+    },
+    {
+      "to": 146,
+      "level": 30,
+      "requirements": {
+        "sp": 80,
+        "int": 80,
+        "abi": 10
+      }
+    }
+  ],
+  "279": [
+    {
+      "to": 288,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 80,
+        "spd": 70
+      }
+    },
+    {
+      "to": 294,
+      "level": 40,
+      "requirements": {
+        "hp": 800,
+        "atk": 80,
+        "def": 80
+      }
+    },
+    {
+      "to": 120,
+      "level": 26,
+      "requirements": {
+        "hp": 800,
+        "atk": 75,
+        "def": 95
+      }
+    },
+    {
+      "to": 135,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "def": 75
+      }
+    }
+  ],
+  "280": [
+    {
+      "to": 290,
+      "level": 28,
+      "requirements": {
+        "atk": 80,
+        "int": 70
+      }
+    },
+    {
+      "to": 292,
+      "level": 28,
+      "requirements": {
+        "sp": 70,
+        "int": 85
+      }
+    },
+    {
+      "to": 298,
+      "level": 28,
+      "requirements": {
+        "sp": 80,
+        "int": 80
+      }
+    },
+    {
+      "to": 142,
+      "level": 32,
+      "requirements": {}
+    },
+    {
+      "to": 153,
+      "level": 30,
+      "requirements": {
+        "hp": 450,
+        "atk": 110
+      }
+    }
+  ],
+  "281": [
+    {
+      "to": 289,
+      "level": 30,
+      "requirements": {
+        "sp": 60,
+        "atk": 70
+      }
+    },
+    {
+      "to": 110,
+      "level": 28,
+      "requirements": {
+        "atk": 65,
+        "int": 75,
+        "spd": 85
+      }
+    },
+    {
+      "to": 147,
+      "level": 26,
+      "requirements": {
+        "atk": 75,
+        "spd": 80
+      }
+    }
+  ],
+  "282": [
+    {
+      "to": 301,
+      "level": 60,
+      "requirements": {
+        "sp": 130,
+        "atk": 200,
+        "spd": 100,
+        "abi": 40,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    },
+    {
+      "to": 196,
+      "level": 55,
+      "requirements": {
+        "hp": 1100,
+        "atk": 180,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 197,
+      "level": 60,
+      "requirements": {
+        "hp": 1600,
+        "atk": 230,
+        "int": 160,
+        "abi": 80
+      }
+    }
+  ],
+  "283": [
+    {
+      "to": 309,
+      "level": 55,
+      "requirements": {
+        "hp": 1300,
+        "atk": 130,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 168,
+      "level": 60,
+      "requirements": {
+        "atk": 120,
+        "spd": 145,
+        "abi": 80
+      }
+    },
+    {
+      "to": 199,
+      "level": 60,
+      "requirements": {
+        "hp": 1200,
+        "atk": 140,
+        "def": 120,
+        "spd": 130,
+        "abi": 80
+      }
+    }
+  ],
+  "284": [
+    {
+      "to": 303,
+      "level": 55,
+      "requirements": {
+        "hp": 1500,
+        "atk": 150,
+        "def": 120,
+        "cam": 80,
+        "abi": 20
+      }
+    }
+  ],
+  "285": [
+    {
+      "to": 316,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "spd": 160,
+        "cam": 80,
+        "abi": 20
+      }
+    }
+  ],
+  "286": [
+    {
+      "to": 189,
+      "level": 50,
+      "requirements": {
+        "hp": 1000,
+        "atk": 130,
+        "def": 110,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 206,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "def": 130,
+        "int": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 209,
+      "level": 45,
+      "requirements": {
+        "def": 150,
+        "abi": 20
+      }
+    }
+  ],
+  "287": [
+    {
+      "to": 315,
+      "level": 55,
+      "requirements": {
+        "hp": 1500,
+        "atk": 160,
+        "def": 140,
+        "abi": 20
+      }
+    },
+    {
+      "to": 318,
+      "level": 55,
+      "requirements": {
+        "hp": 1700,
+        "atk": 180,
+        "abi": 40
+      }
+    },
+    {
+      "to": 172,
+      "level": 50,
+      "requirements": {
+        "hp": 1700,
+        "atk": 130,
+        "def": 130,
+        "int": 120,
+        "abi": 20
+      }
+    }
+  ],
+  "288": [
+    {
+      "to": 311,
+      "level": 60,
+      "requirements": {
+        "hp": 1500,
+        "atk": 140,
+        "def": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 312,
+      "level": 50,
+      "requirements": {
+        "hp": 1600,
+        "atk": 160,
+        "abi": 20
+      }
+    },
+    {
+      "to": 167,
+      "level": 60,
+      "requirements": {
+        "atk": 150,
+        "def": 170,
+        "int": 135,
+        "abi": 80
+      }
+    },
+    {
+      "to": 193,
+      "level": 50,
+      "requirements": {
+        "hp": 1000,
+        "atk": 120,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 340,
+      "level": 50,
+      "requirements": {
+        "hp": 1300,
+        "atk": 180,
+        "abi": 20
+      }
+    }
+  ],
+  "289": [
+    {
+      "to": 184,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 145,
+        "spd": 100,
+        "abi": 40
+      }
+    },
+    {
+      "to": 190,
+      "level": 60,
+      "requirements": {
+        "def": 140,
+        "int": 120,
+        "spd": 150,
+        "abi": 80
+      }
+    },
+    {
+      "to": 195,
+      "level": 55,
+      "requirements": {
+        "def": 120,
+        "int": 130,
+        "spd": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "290": [
+    {
+      "to": 306,
+      "level": 50,
+      "requirements": {
+        "hp": 1300,
+        "atk": 110,
+        "int": 110,
+        "abi": 40
+      }
+    },
+    {
+      "to": 196,
+      "level": 55,
+      "requirements": {
+        "hp": 1100,
+        "atk": 180,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 197,
+      "level": 60,
+      "requirements": {
+        "hp": 1600,
+        "atk": 230,
+        "int": 160,
+        "abi": 80
+      }
+    }
+  ],
+  "291": [
+    {
+      "to": 309,
+      "level": 55,
+      "requirements": {
+        "hp": 1300,
+        "atk": 130,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 245,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "int": 130,
+        "spd": 160,
+        "abi": 20
+      }
+    },
+    {
+      "to": 187,
+      "level": 60,
+      "requirements": {
+        "atk": 180,
+        "spd": 180,
+        "cam": 80,
+        "abi": 80
+      }
+    }
+  ],
+  "292": [
+    {
+      "to": 313,
+      "level": 55,
+      "requirements": {
+        "hp": 1000,
+        "sp": 100,
+        "int": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 169,
+      "level": 45,
+      "requirements": {
+        "sp": 120,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 227,
+      "level": 60,
+      "requirements": {
+        "hp": 2000,
+        "sp": 140,
+        "atk": 140,
+        "def": 140,
+        "int": 140,
+        "abi": 80
+      }
+    }
+  ],
+  "293": [
+    {
+      "to": 170,
+      "level": 55,
+      "requirements": {
+        "hp": 1600,
+        "def": 150,
+        "spd": 150,
+        "abi": 20
+      }
+    },
+    {
+      "to": 181,
+      "level": 45,
+      "requirements": {
+        "hp": 1500,
+        "atk": 120,
+        "def": 120,
+        "abi": 20
+      }
+    }
+  ],
+  "294": [
+    {
+      "to": 311,
+      "level": 60,
+      "requirements": {
+        "hp": 1500,
+        "atk": 140,
+        "def": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 193,
+      "level": 50,
+      "requirements": {
+        "hp": 1000,
+        "atk": 120,
+        "spd": 130,
+        "abi": 20
+      }
+    },
+    {
+      "to": 187,
+      "level": 60,
+      "requirements": {
+        "atk": 180,
+        "spd": 180,
+        "cam": 80,
+        "abi": 80
+      }
+    }
+  ],
+  "295": [
+    {
+      "to": 315,
+      "level": 55,
+      "requirements": {
+        "hp": 1500,
+        "atk": 160,
+        "def": 140,
+        "abi": 20
+      }
+    },
+    {
+      "to": 181,
+      "level": 45,
+      "requirements": {
+        "hp": 1500,
+        "atk": 120,
+        "def": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 185,
+      "level": 50,
+      "requirements": {
+        "atk": 145,
+        "spd": 120,
+        "abi": 20
+      }
+    }
+  ],
+  "296": [
+    {
+      "to": 305,
+      "level": 45,
+      "requirements": {
+        "atk": 110,
+        "def": 130,
+        "spd": 100,
+        "abi": 20
+      }
+    },
+    {
+      "to": 189,
+      "level": 50,
+      "requirements": {
+        "hp": 1000,
+        "atk": 130,
+        "def": 110,
+        "cam": 80,
+        "abi": 20
+      }
+    },
+    {
+      "to": 204,
+      "level": 55,
+      "requirements": {
+        "atk": 120,
+        "def": 130,
+        "abi": 20
+      }
+    }
+  ],
+  "297": [
+    {
+      "to": 302,
+      "level": 55,
+      "requirements": {
+        "sp": 120,
+        "int": 145,
+        "spd": 130,
+        "abi": 40
+      }
+    },
+    {
+      "to": 307,
+      "level": 50,
+      "requirements": {
+        "sp": 110,
+        "int": 140,
+        "abi": 20
+      }
+    },
+    {
+      "to": 191,
+      "level": 55,
+      "requirements": {
+        "sp": 130,
+        "def": 130,
+        "int": 150,
+        "cam": 50,
+        "abi": 40
+      }
+    }
+  ],
+  "298": [
+    {
+      "to": 173,
+      "level": 55,
+      "requirements": {
+        "hp": 1200,
+        "sp": 110,
+        "atk": 110,
+        "int": 110,
+        "abi": 40
+      }
+    },
+    {
+      "to": 194,
+      "level": 55,
+      "requirements": {
+        "hp": 1400,
+        "atk": 150,
+        "int": 120,
+        "abi": 20
+      }
+    },
+    {
+      "to": 203,
+      "level": 60,
+      "requirements": {
+        "sp": 160,
+        "def": 120,
+        "int": 200,
+        "abi": 80
+      }
+    }
+  ],
+  "299": [
+    {
+      "to": 314,
+      "level": 50,
+      "requirements": {
+        "atk": 120,
+        "def": 135,
+        "abi": 20
+      }
+    },
+    {
+      "to": 179,
+      "level": 60,
+      "requirements": {
+        "hp": 1700,
+        "atk": 145,
+        "def": 120,
+        "abi": 80
+      }
+    },
+    {
+      "to": 222,
+      "level": 45,
+      "requirements": {
+        "sp": 100,
+        "atk": 120,
+        "def": 140,
+        "abi": 20
+      }
+    }
+  ],
+  "300": [
+    {
+      "to": 306,
+      "level": 50,
+      "requirements": {
+        "hp": 1300,
+        "atk": 110,
+        "int": 110,
+        "abi": 40
+      }
+    },
+    {
+      "to": 173,
+      "level": 55,
+      "requirements": {
+        "hp": 1200,
+        "sp": 110,
+        "atk": 110,
+        "int": 110,
+        "abi": 40
+      }
+    },
+    {
+      "to": 205,
+      "level": 50,
+      "requirements": {
+        "atk": 130,
+        "int": 160,
+        "spd": 110,
+        "abi": 20
+      }
+    }
+  ],
+  "301": [
+    {
+      "to": 321,
+      "level": 70,
+      "requirements": {
+        "sp": 150,
+        "atk": 250,
+        "int": 150,
+        "spd": 160,
+        "abi": 60,
+        "misc": [
+          "CLEAR_HACKERS_MEMORY"
+        ]
+      }
+    }
+  ],
+  "302": [
+    {
+      "to": 323,
+      "level": 60,
+      "requirements": {
+        "atk": 155,
+        "int": 100,
+        "cam": 100,
+        "abi": 40,
+        "misc": [
+          "DIGIMON__BANCHOLEOMON"
+        ]
+      }
+    }
+  ],
+  "303": [
+    {
+      "to": 324,
+      "level": 60,
+      "requirements": {
+        "hp": 1000,
+        "atk": 150,
+        "int": 150,
+        "cam": 100,
+        "abi": 100,
+        "misc": [
+          "DIGIMON__MAGNAGARURUMON"
+        ]
+      }
+    }
+  ],
+  "304": [],
+  "305": [],
+  "306": [],
+  "307": [],
+  "308": [],
+  "309": [
+    {
+      "to": 175,
+      "level": 60,
+      "requirements": {
+        "hp": 1650,
+        "atk": 150,
+        "spd": 150,
+        "cam": 100,
+        "abi": 100,
+        "misc": [
+          "DIGIMON__BREAKDRAMON"
+        ]
+      }
+    }
+  ],
+  "310": [],
+  "311": [],
+  "312": [],
+  "313": [],
+  "314": [],
+  "315": [
+    {
+      "to": 175,
+      "level": 60,
+      "requirements": {
+        "hp": 1650,
+        "atk": 150,
+        "spd": 150,
+        "cam": 100,
+        "abi": 100,
+        "misc": [
+          "DIGIMON__SLAYERDRAMON"
+        ]
+      }
+    }
+  ],
+  "316": [
+    {
+      "to": 317,
+      "level": 0,
+      "requirements": {
+        "misc": [
+          "MODE_CHANGE"
+        ]
+      }
+    },
+    {
+      "to": 324,
+      "level": 60,
+      "requirements": {
+        "hp": 1000,
+        "atk": 150,
+        "int": 150,
+        "cam": 100,
+        "abi": 100,
+        "misc": [
+          "DIGIMON__KAISERGREYMON"
+        ]
+      }
+    }
+  ],
+  "317": [
+    {
+      "to": 316,
+      "level": 0,
+      "requirements": {
+        "misc": [
+          "MODE_CHANGE"
+        ]
+      }
+    }
+  ],
+  "318": [],
+  "319": [],
+  "320": [],
+  "321": [],
+  "322": [],
+  "323": [],
+  "324": [],
+  "325": [],
+  "326": [
+    {
+      "to": 327,
+      "level": 60,
+      "requirements": {
+        "atk": 130,
+        "def": 130,
+        "spd": 120,
+        "abi": 80
+      }
+    }
+  ],
+  "327": [],
+  "328": [
+    {
+      "to": 329,
+      "level": 60,
+      "requirements": {
+        "hp": 1150,
+        "sp": 130,
+        "int": 150,
+        "abi": 50,
+        "misc": [
+          "DLC_REQUIRED"
+        ]
+      }
+    },
+    {
+      "to": 330,
+      "level": 14,
+      "requirements": {
+        "sp": 40,
+        "spd": 50,
+        "cam": 10,
+        "misc": [
+          "DLC_REQUIRED"
+        ]
+      }
+    },
+    {
+      "to": 68,
+      "level": 15,
+      "requirements": {
+        "hp": 150,
+        "spd": 40
+      }
+    },
+    {
+      "to": 281,
+      "level": 15,
+      "requirements": {
+        "atk": 35,
+        "spd": 40
+      }
+    }
+  ],
+  "329": [],
+  "330": [
+    {
+      "to": 331,
+      "level": 60,
+      "requirements": {
+        "hp": 1150,
+        "atk": 130,
+        "spd": 150,
+        "abi": 50,
+        "misc": [
+          "DLC_REQUIRED"
+        ]
+      }
+    },
+    {
+      "to": 296,
+      "level": 26,
+      "requirements": {
+        "atk": 65,
+        "def": 65
+      }
+    },
+    {
+      "to": 163,
+      "level": 30,
+      "requirements": {
+        "sp": 75,
+        "int": 95,
+        "abi": 10
+      }
+    }
+  ],
+  "331": [],
+  "332": [],
+  "333": [],
+  "334": [],
+  "335": [],
+  "336": [],
+  "337": [
+    {
+      "to": 338,
+      "level": 14,
+      "requirements": {
+        "atk": 40,
+        "def": 40
+      }
+    },
+    {
+      "to": 279,
+      "level": 15,
+      "requirements": {
+        "hp": 130,
+        "atk": 50
+      }
+    },
+    {
+      "to": 107,
+      "level": 16,
+      "requirements": {
+        "spd": 40,
+        "abi": 5
+      }
+    }
+  ],
+  "338": [
+    {
+      "to": 339,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "atk": 95,
+        "def": 75
+      }
+    },
+    {
+      "to": 121,
+      "level": 28,
+      "requirements": {
+        "def": 75,
+        "spd": 75
+      }
+    },
+    {
+      "to": 149,
+      "level": 30,
+      "requirements": {
+        "hp": 400,
+        "sp": 70,
+        "int": 70
+      }
+    }
+  ],
+  "339": [
+    {
+      "to": 340,
+      "level": 50,
+      "requirements": {
+        "hp": 1300,
+        "atk": 180,
+        "abi": 20
+      }
+    },
+    {
+      "to": 177,
+      "level": 50,
+      "requirements": {
+        "atk": 120,
+        "def": 100,
+        "spd": 100,
+        "abi": 20
+      }
+    },
+    {
+      "to": 308,
+      "level": 55,
+      "requirements": {
+        "atk": 130,
+        "def": 120,
+        "int": 120,
+        "abi": 40
+      }
+    },
+    {
+      "to": 219,
+      "level": 55,
+      "requirements": {
+        "atk": 150,
+        "spd": 140,
+        "abi": 20
+      }
+    }
+  ],
+  "340": [
+    {
+      "to": 322,
+      "level": 60,
+      "requirements": {
+        "atk": 180,
+        "def": 170,
+        "int": 150,
+        "cam": 100,
+        "abi": 80,
+        "misc": [
+          "DIGIMON__ALPHAMON"
+        ]
+      }
+    }
+  ],
+  "341": []
+}

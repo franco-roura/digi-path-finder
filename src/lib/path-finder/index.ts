@@ -1,24 +1,10 @@
 import { Digimon } from "@/types";
-import digimonDb from "@/db/db.json";
-import learnersByMoveId from "@/db/learnersByMoveId.json";
-
-interface DigimonDb {
-  [key: string]: {
-    id: number;
-    name: string;
-    moves: string[];
-    neighBours: {
-      prev: string[];
-      next: string[];
-    };
-    url: string;
-    icon: string;
-  };
-}
-
-interface LearnersByMoveId {
-  [key: string]: string[];
-}
+import {
+  canLearnMove,
+  getById,
+  getDedigivolutions,
+  getDigivolutions,
+} from "@/lib/digimonData";
 
 export interface PathStep {
   digimonId: string;
@@ -30,9 +16,6 @@ interface PathState {
   learnedMoves: Set<string>;
   path: PathStep[];
 }
-
-const typedDigimonDb = digimonDb as DigimonDb;
-const typedLearnersByMoveId = learnersByMoveId as LearnersByMoveId;
 
 export const findPath = (
   originDigimon: Digimon,
@@ -76,13 +59,14 @@ export const findPath = (
     visited.add(stateKey);
 
     // Get current digimon's data
-    const currentDigimon = typedDigimonDb[current.digimonId];
+    const currentDigimon = getById(parseInt(current.digimonId, 10));
+    if (!currentDigimon) continue;
 
     // Check if current digimon can learn any of the required moves
     const newLearnedMoves = new Set(current.learnedMoves);
     const movesLearnedHere: string[] = [];
     for (const moveId of skills) {
-      if (typedLearnersByMoveId[moveId]?.includes(current.digimonId)) {
+      if (canLearnMove(currentDigimon, moveId)) {
         newLearnedMoves.add(moveId);
         movesLearnedHere.push(moveId);
       }
@@ -106,22 +90,30 @@ export const findPath = (
     }
 
     // Explore next digimon in evolution line
-    for (const nextId of currentDigimon.neighBours.next) {
-      if (excludedDigimonIds.includes(nextId)) continue;
+    for (const possibleEvolution of getDigivolutions(currentDigimon.id)) {
+      if (excludedDigimonIds.includes(possibleEvolution.to.toString()))
+        continue;
       queue.push({
-        digimonId: nextId,
+        digimonId: possibleEvolution.to.toString(),
         learnedMoves: new Set(newLearnedMoves),
-        path: [...newPath, { digimonId: nextId, learnedMoves: [] }],
+        path: [
+          ...newPath,
+          { digimonId: possibleEvolution.to.toString(), learnedMoves: [] },
+        ],
       });
     }
 
     // Explore previous digimon in evolution line
-    for (const prevId of currentDigimon.neighBours.prev) {
-      if (excludedDigimonIds.includes(prevId)) continue;
+    for (const possibleEvolution of getDedigivolutions(currentDigimon.id)) {
+      if (excludedDigimonIds.includes(possibleEvolution.from.toString()))
+        continue;
       queue.push({
-        digimonId: prevId,
+        digimonId: possibleEvolution.from.toString(),
         learnedMoves: new Set(newLearnedMoves),
-        path: [...newPath, { digimonId: prevId, learnedMoves: [] }],
+        path: [
+          ...newPath,
+          { digimonId: possibleEvolution.from.toString(), learnedMoves: [] },
+        ],
       });
     }
   }
@@ -154,21 +146,30 @@ function findShortestPath(
       return current.path;
     }
 
-    const currentDigimon = typedDigimonDb[current.digimonId];
+    const currentDigimon = getById(parseInt(current.digimonId, 10));
+    if (!currentDigimon) continue;
 
-    for (const nextId of currentDigimon.neighBours.next) {
-      if (excludedDigimonIds.includes(nextId)) continue;
+    for (const possibleEvolution of getDigivolutions(currentDigimon.id)) {
+      if (excludedDigimonIds.includes(possibleEvolution.to.toString()))
+        continue;
       queue.push({
-        digimonId: nextId,
-        path: [...current.path, { digimonId: nextId, learnedMoves: [] }],
+        digimonId: possibleEvolution.to.toString(),
+        path: [
+          ...current.path,
+          { digimonId: possibleEvolution.to.toString(), learnedMoves: [] },
+        ],
       });
     }
 
-    for (const prevId of currentDigimon.neighBours.prev) {
-      if (excludedDigimonIds.includes(prevId)) continue;
+    for (const possibleEvolution of getDedigivolutions(currentDigimon.id)) {
+      if (excludedDigimonIds.includes(possibleEvolution.from.toString()))
+        continue;
       queue.push({
-        digimonId: prevId,
-        path: [...current.path, { digimonId: prevId, learnedMoves: [] }],
+        digimonId: possibleEvolution.from.toString(),
+        path: [
+          ...current.path,
+          { digimonId: possibleEvolution.from.toString(), learnedMoves: [] },
+        ],
       });
     }
   }
