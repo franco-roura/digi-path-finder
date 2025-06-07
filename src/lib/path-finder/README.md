@@ -1,23 +1,25 @@
 # Path finder
 
-1. Uses BFS to find the shortest path between digimon
+1. Uses Dijkstra's algorithm to find the path with the lowest ABI cost
 2. Tracks learned moves along the path
 3. Considers both evolution and devolution paths
-4. Returns the shortest path that learns all required moves
-5. Handles the case where no moves are required
-6. Properly typed the database objects to fix TypeScript errors
+4. Takes evolution ABI requirements into account
+5. Generates nine possible level scenarios (10 to 90) for each evolution
+6. Returns the path that learns all required moves using the least ABI
 
 The implementation works as follows:
 
-1. If no skills are required, it uses a simpler BFS to find the shortest path
-2. Otherwise, it uses a BFS that tracks both the path and learned moves
-3. Each state in the BFS includes:
+1. Each edge cost is the ABI requirement of that evolution
+2. For every evolution or de-evolution the algorithm explores 9 possible levels
+   (10, 20, ..., 90) to determine ABI gain
+3. Each state in the search includes:
    - Current digimon ID
    - Set of learned moves
    - Path taken to reach this state
+   - Current ABI cost
 4. The algorithm checks if a digimon can learn any required moves at each step
-5. It explores both evolution (next) and devolution (prev) paths
-6. It returns the first path that reaches the target digimon with all required moves learned
+5. It explores both evolution (next) and devolution (prev) paths using Dijkstra's ordering
+6. It returns the path that reaches the target digimon with all required moves using the least ABI
 
 The algorithm returns an array of `PathStep` objects, where each step contains:
 - `digimonId`: The ID of the digimon in this step
