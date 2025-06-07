@@ -32,7 +32,7 @@ function parseRequirements(text: string): EvolutionRequirement {
     ["def", /DEF:\s*(\d+)/i],
     ["int", /INT:\s*(\d+)/i],
     ["spd", /SPD:\s*(\d+)/i],
-    ["cam", /CAM:\s*(\d+)/i],
+    ["cam", /CAM:\s*(\d+)%/i],
     ["abi", /ABI:\s*(\d+)/i],
     ["exp", /EXP:\s*(\d+)/i],
   ];
@@ -40,7 +40,7 @@ function parseRequirements(text: string): EvolutionRequirement {
   for (const [prop, regex] of patterns) {
     const match = regex.exec(rest);
     if (match) {
-      (result as any)[prop] = parseInt(match[1], 10);
+      (result as Record<string, number>)[prop] = parseInt(match[1], 10);
       rest = rest.replace(match[0], "");
     }
   }
@@ -51,6 +51,7 @@ function parseRequirements(text: string): EvolutionRequirement {
       s = s.replace(/clear(ed)?\s*/i, "CLEAR_");
       s = s.replace(/\s+/g, "_");
       s = s.toUpperCase();
+      s = s.replace(/[^a-zA-Z0-9_]+/g, "_");
       if (s) misc.push(s);
     });
   }
