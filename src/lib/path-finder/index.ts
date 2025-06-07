@@ -9,6 +9,17 @@ import {
 export interface PathStep {
   digimonId: string;
   learnedMoves: string[];
+  abi: number;
+  requirements: {
+    abi?: number;
+    level?: number;
+    hp?: number;
+    mp?: number;
+    attack?: number;
+    defense?: number;
+    speed?: number;
+    brain?: number;
+  };
 }
 
 interface PathState {
@@ -17,6 +28,16 @@ interface PathState {
   path: PathStep[];
   abi: number;
   cost: number;
+  requirements: {
+    abi?: number;
+    level?: number;
+    hp?: number;
+    mp?: number;
+    attack?: number;
+    defense?: number;
+    speed?: number;
+    brain?: number;
+  };
 }
 
 const LEVELS = [10, 20, 30, 40, 50, 60, 70, 80, 90];
@@ -52,8 +73,7 @@ export const findPath = (
   targetDigimon: Digimon,
   skills: string[],
   excludedDigimonIds: string[] = [],
-  initialAbi = 0,
-  _initialLevel = 1
+  initialAbi = 0
 ): PathStep[] | null => {
   if (
     excludedDigimonIds.includes(originDigimon.id.toString()) ||
@@ -66,22 +86,41 @@ export const findPath = (
     {
       digimonId: originDigimon.id.toString(),
       learnedMoves: new Set(),
-      path: [{ digimonId: originDigimon.id.toString(), learnedMoves: [] }],
+      path: [
+        {
+          digimonId: originDigimon.id.toString(),
+          learnedMoves: [],
+          abi: initialAbi,
+          requirements: {},
+        },
+      ],
       abi: initialAbi,
       cost: 0,
+      requirements: {},
     },
   ];
 
   const visited = new Map<string, number>();
+  let bestPath: PathStep[] | null = null;
+  let minAbiCost = Infinity;
 
   while (queue.length > 0) {
     queue.sort((a, b) => a.cost - b.cost);
     const current = queue.shift()!;
+
+    // Early exit if we've found a path and current cost is higher than our best
+    if (bestPath && current.cost >= minAbiCost) {
+      continue;
+    }
+
     const stateKey = `${current.digimonId}-${Array.from(current.learnedMoves)
       .sort()
       .join(",")}-${current.abi.toFixed(1)}`;
 
-    if (visited.has(stateKey) && (visited.get(stateKey) as number) <= current.cost)
+    if (
+      visited.has(stateKey) &&
+      (visited.get(stateKey) as number) <= current.cost
+    )
       continue;
     visited.set(stateKey, current.cost);
 
@@ -102,6 +141,8 @@ export const findPath = (
       newPath[newPath.length - 1] = {
         digimonId: current.digimonId,
         learnedMoves: movesLearnedHere,
+        abi: current.abi,
+        requirements: current.requirements,
       };
     }
 
@@ -109,49 +150,60 @@ export const findPath = (
       current.digimonId === targetDigimon.id.toString() &&
       skills.every((move) => newLearnedMoves.has(move))
     ) {
-      return newPath;
+      // Found a path, update best if it's better
+      if (!bestPath || current.cost < minAbiCost) {
+        bestPath = newPath;
+        minAbiCost = current.cost;
+      }
+      continue;
     }
 
     for (const evo of getDigivolutions(currentDigimon.id)) {
       if (excludedDigimonIds.includes(evo.to.toString())) continue;
-      const requiredAbi = evo.requirements.abi ?? 0;
-      if (current.abi < requiredAbi) continue;
-      for (const lvl of LEVELS) {
-        const gain = abiGain(currentDigimon.stage, "digivolve", lvl);
-        if (gain === null) continue;
-        queue.push({
-          digimonId: evo.to.toString(),
-          learnedMoves: new Set(newLearnedMoves),
-          path: [
-            ...newPath,
-            { digimonId: evo.to.toString(), learnedMoves: [] },
-          ],
-          abi: current.abi + gain,
-          cost: current.cost + requiredAbi,
-        });
-      }
+      const newCost = current.cost + (evo.requirements.abi ?? 0);
+      // Skip if we already have a better path
+      if (bestPath && newCost >= minAbiCost) continue;
+      queue.push({
+        digimonId: evo.to.toString(),
+        learnedMoves: new Set(newLearnedMoves),
+        path: [
+          ...newPath,
+          {
+            digimonId: evo.to.toString(),
+            learnedMoves: [],
+            abi: current.abi,
+            requirements: evo.requirements,
+          },
+        ],
+        abi: current.abi,
+        cost: newCost,
+        requirements: evo.requirements,
+      });
     }
 
     for (const evo of getDedigivolutions(currentDigimon.id)) {
       if (excludedDigimonIds.includes(evo.from.toString())) continue;
-      const requiredAbi = evo.requirements.abi ?? 0;
-      if (current.abi < requiredAbi) continue;
-      for (const lvl of LEVELS) {
-        const gain = abiGain(currentDigimon.stage, "dedigivolve", lvl);
-        if (gain === null) continue;
-        queue.push({
-          digimonId: evo.from.toString(),
-          learnedMoves: new Set(newLearnedMoves),
-          path: [
-            ...newPath,
-            { digimonId: evo.from.toString(), learnedMoves: [] },
-          ],
-          abi: current.abi + gain,
-          cost: current.cost + requiredAbi,
-        });
-      }
+      const newCost = current.cost + (evo.requirements.abi ?? 0);
+      // Skip if we already have a better path
+      if (bestPath && newCost >= minAbiCost) continue;
+      queue.push({
+        digimonId: evo.from.toString(),
+        learnedMoves: new Set(newLearnedMoves),
+        path: [
+          ...newPath,
+          {
+            digimonId: evo.from.toString(),
+            learnedMoves: [],
+            abi: current.abi,
+            requirements: evo.requirements,
+          },
+        ],
+        abi: current.abi,
+        cost: newCost,
+        requirements: evo.requirements,
+      });
     }
   }
 
-  return null;
+  return bestPath;
 };
