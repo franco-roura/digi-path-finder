@@ -64,8 +64,8 @@ describe("Path Finder", () => {
     expect(path?.[1].digimonId).toBe("17");
     expect(path?.[1].abi).toBe(2);
     expect(path?.[2].digimonId).toBe("261");
-    expect(path?.[2].abi).toBe(4);
+    expect(path?.[2].abi).toBe(5);
     expect(path?.[3].digimonId).toBe("17");
-    expect(path?.[3].abi).toBe(6);
+    expect(path?.[3].abi).toBe(11);
   });
 });

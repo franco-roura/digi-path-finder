@@ -272,7 +272,15 @@ export const findPath = (
             gainedLevels: evo.level,
           },
         ],
-        abi: current.abi,
+        abi:
+          current.abi +
+          Math.ceil(
+            calculateAbiGain(
+              currentDigimon.stage as Stage,
+              "digivolve",
+              evo.level
+            ) || 0
+          ),
         cost: newCost,
         requirements: evo.requirements,
       });
@@ -304,7 +312,15 @@ export const findPath = (
             gainedLevels: 0,
           },
         ],
-        abi: current.abi,
+        abi:
+          current.abi +
+          Math.ceil(
+            calculateAbiGain(
+              currentDigimon.stage as Stage,
+              "dedigivolve",
+              evo.level
+            ) || 0
+          ),
         cost: newCost,
         requirements: evo.requirements,
       });
