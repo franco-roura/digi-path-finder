@@ -48,7 +48,7 @@ const EvolutionPathStep = (props: Props) => {
       </div>
       <h3 className="text-center font-bold text-sm truncate">{digimon.name}</h3>
       <p className="text-xs text-center text-blue-700 dark:text-blue-300 font-medium">
-        ABI: {props.step.abi}
+        ABI: {props.step.abiThusFar}
       </p>
       <div className="flex flex-col items-center gap-1 justify-center mt-1">
         <ul className="flex items-center flex-col gap-1">
@@ -58,7 +58,10 @@ const EvolutionPathStep = (props: Props) => {
                 <div className="flex items-center gap-1 text-amber-600 dark:text-amber-400">
                   <AlertTriangle className="w-3 h-3" />
                   <p className="text-xs font-medium">
-                    Requires {parseMiscRequirement(requirement)}
+                    Requires&nbsp;
+                    <span className="font-bold">
+                      {parseMiscRequirement(requirement)}
+                    </span>
                   </p>
                 </div>
               </li>

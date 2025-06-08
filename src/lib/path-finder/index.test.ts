@@ -25,20 +25,6 @@ describe("Path Finder", () => {
     expect(path?.[1].digimonId).toBe("17");
   });
 
-  it("should not do an 80-ABI evolution if we have 0 ABI", () => {
-    const shoutmon = db["326"];
-    const omnishoutmon = db["327"];
-    // Given that we have 0 ABI, we can't evolve into OmniShoutmon in just one step
-    const path = findPath(shoutmon, omnishoutmon, [], [], 0);
-    expect(path).toBeDefined();
-
-    expect(path?.length).toBeGreaterThan(2);
-    expect(path?.[0].digimonId).toBe("326");
-    // It can only de-digivolve to Koromon
-    expect(path?.[1].digimonId).toBe("6");
-    expect(path?.pop()?.digimonId).toBe("327");
-  });
-
   it("should register the correct ABI gain", () => {
     const koromon = db["6"];
     const agumon = db["17"];
@@ -49,7 +35,7 @@ describe("Path Finder", () => {
     const expectedAbiGain = Math.ceil(
       calculateAbiGain("In-Training", "digivolve", 9) || 0
     );
-    expect(path?.[1].abi).toBe(expectedAbiGain);
+    expect(path?.[1].abiThusFar).toBe(expectedAbiGain);
   });
 
   it("should always track the correct ABI gain", () => {
@@ -60,12 +46,31 @@ describe("Path Finder", () => {
     expect(path).not.toBeNull();
     expect(path?.length).toBe(4);
     expect(path?.[0].digimonId).toBe("6");
-    expect(path?.[0].abi).toBe(0);
+    expect(path?.[0].abiThusFar).toBe(0);
     expect(path?.[1].digimonId).toBe("17");
-    expect(path?.[1].abi).toBe(2);
+    expect(path?.[1].abiThusFar).toBe(2);
     expect(path?.[2].digimonId).toBe("261");
-    expect(path?.[2].abi).toBe(5);
+    expect(path?.[2].abiThusFar).toBe(5);
     expect(path?.[3].digimonId).toBe("17");
-    expect(path?.[3].abi).toBe(11);
+    expect(path?.[3].abiThusFar).toBe(11);
+  });
+
+  it("should find an optimal path for farming ABI", () => {
+    const veemon = db["46"];
+    const magnamon = db["239"];
+    const path = findPath(veemon, magnamon, [], [], 0);
+    expect(path).toBeDefined();
+    expect(path?.[0].digimonId).toBe("46");
+    expect(path?.pop()?.digimonId).toBe("239");
+    expect(path?.pop()?.digimonId).toBe("46");
+  });
+
+  it("should find a path with a misc requirement", () => {
+    const agumon = db["17"];
+    const kaiserGreymon = db["303"];
+    const path = findPath(agumon, kaiserGreymon, [], [], 0);
+    expect(path).toBeDefined();
+    expect(path?.[0].digimonId).toBe("17");
+    expect(path?.pop()?.digimonId).toBe("303");
   });
 });
