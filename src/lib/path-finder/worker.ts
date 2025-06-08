@@ -5,7 +5,8 @@ self.onmessage = function (e) {
     e.data.originDigimon,
     e.data.targetDigimon,
     e.data.skills,
-    e.data.excludedDigimonIds
+    e.data.excludedDigimonIds,
+    e.data.initialAbi
   );
   self.postMessage(result);
 };

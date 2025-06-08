@@ -30,6 +30,7 @@ async function fetchPage(url: string): Promise<string> {
 
 async function scrape() {
   const html = await fetchPage(URL);
+  // const html = fs.readFileSync("src/scripts/digidb.html", "utf8");
   console.log("Parsing HTML");
   const $ = cheerio.load(html);
   const rows = $("tbody tr");
@@ -37,7 +38,9 @@ async function scrape() {
   const stats: Record<number, DigimonStats> = {};
   rows.each((_, row) => {
     const cells = $(row).find("td");
-    const id = parseInt(cells.eq(0).text().trim());
+    const id = parseInt(
+      cells.eq(1).find("a").first().attr("href")?.split("request=").pop() || "0"
+    );
     const name = cells.eq(1).find("a").first().text().trim();
     const icon = cells.eq(1).find("img").attr("src") || "";
     const stage = cells.eq(2).text().trim();
@@ -70,10 +73,7 @@ async function scrape() {
     };
   });
   console.log("Writing JSON file");
-  fs.writeFileSync(
-    "src/db/digimonStats.json",
-    JSON.stringify(stats, null, 2)
-  );
+  fs.writeFileSync("src/db/digimonStats.json", JSON.stringify(stats, null, 2));
   console.log("Done! Data written to src/db/digimonStats.json");
 }
 

@@ -4,6 +4,8 @@ import { Digimon } from "@/types";
 import { cn } from "@/lib/utils";
 import { Badge } from "./ui/badge";
 import moveNames from "@/db/moveNames.json";
+import { AlertTriangle } from "lucide-react";
+import { miscRequirementLabels } from "@/lib/digimonData";
 const digimons = digimonDb as Record<string, Digimon>;
 
 type Props = {
@@ -12,6 +14,7 @@ type Props = {
 
 const EvolutionPathStep = (props: Props) => {
   const digimon = digimons[props.step.digimonId];
+
   return (
     <a
       href={digimon.url}
@@ -33,6 +36,26 @@ const EvolutionPathStep = (props: Props) => {
         />
       </div>
       <h3 className="text-center font-bold text-sm truncate">{digimon.name}</h3>
+      <p className="text-xs text-center text-blue-700 dark:text-blue-300 font-medium">
+        ABI: {props.step.abiThusFar}
+      </p>
+      <div className="flex flex-col items-center gap-1 justify-center mt-1">
+        <ul className="flex items-center flex-col gap-1">
+          {props.step.requirements.misc?.map((requirement) => {
+            return (
+              <li key={requirement} className="text-xs">
+                <div className="flex items-center gap-1 text-amber-600 dark:text-amber-400">
+                  <AlertTriangle className="w-3 h-3" />
+                  <p className="text-xs font-medium">
+                    {miscRequirementLabels[requirement]}
+                  </p>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
       {props.step.learnedMoves.length > 0 && (
         <div className="flex flex-col items-center gap-1 justify-center">
           <p className="text-xs text-center text-orange-700 dark:text-orange-300 font-medium">

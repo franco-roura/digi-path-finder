@@ -4,24 +4,51 @@ import {
   getById,
   getDedigivolutions,
   getDigivolutions,
+  EvolutionRequirement,
 } from "@/lib/digimonData";
+import { calculateAbiGain } from "./optimal-abi";
+
+type Stage =
+  | "Baby"
+  | "In-Training"
+  | "Rookie"
+  | "Champion"
+  | "Ultimate"
+  | "Mega"
+  | "Ultra";
 
 export interface PathStep {
   digimonId: string;
   learnedMoves: string[];
+  abiThusFar: number;
+  gainedLevels: number;
+  requirements: EvolutionRequirement;
 }
 
 interface PathState {
   digimonId: string;
   learnedMoves: Set<string>;
   path: PathStep[];
+  accumulatedAbi: number;
+  accumulatedCost: number;
+  requirements: {
+    abi?: number;
+    level?: number;
+    hp?: number;
+    mp?: number;
+    attack?: number;
+    defense?: number;
+    speed?: number;
+    brain?: number;
+  };
 }
 
 export const findPath = (
   originDigimon: Digimon,
   targetDigimon: Digimon,
   skills: string[],
-  excludedDigimonIds: string[] = []
+  excludedDigimonIds: string[] = [],
+  initialAbi = 0
 ): PathStep[] | null => {
   if (
     excludedDigimonIds.includes(originDigimon.id.toString()) ||
@@ -29,40 +56,54 @@ export const findPath = (
   ) {
     return null;
   }
-  // If no skills required, just find shortest path
-  if (skills.length === 0) {
-    return findShortestPath(
-      originDigimon.id.toString(),
-      targetDigimon.id.toString(),
-      excludedDigimonIds
-    );
-  }
 
-  // Initialize BFS queue with starting state
   const queue: PathState[] = [
     {
       digimonId: originDigimon.id.toString(),
       learnedMoves: new Set(),
-      path: [{ digimonId: originDigimon.id.toString(), learnedMoves: [] }],
+      path: [
+        {
+          digimonId: originDigimon.id.toString(),
+          learnedMoves: [],
+          abiThusFar: initialAbi,
+          gainedLevels: 0,
+          requirements: {},
+        },
+      ],
+      accumulatedAbi: initialAbi,
+      accumulatedCost: 0,
+      requirements: {},
     },
   ];
 
-  // Track visited states to avoid cycles
-  const visited = new Set<string>();
+  const visited = new Map<string, number>();
+  let bestPath: PathStep[] | null = null;
+  let minAbiCost = Infinity;
 
   while (queue.length > 0) {
+    queue.sort((a, b) => a.accumulatedCost - b.accumulatedCost);
     const current = queue.shift()!;
-    const stateKey = `${current.digimonId}-${Array.from(current.learnedMoves).sort().join(",")}`;
 
-    // Skip if we've already visited this state
-    if (visited.has(stateKey)) continue;
-    visited.add(stateKey);
+    // Early exit if we've found a path and current cost is higher than our best
+    if (bestPath && current.accumulatedCost >= minAbiCost) {
+      continue;
+    }
 
-    // Get current digimon's data
+    const sortedMoves = Array.from(current.learnedMoves).sort(
+      (a, b) => parseInt(a, 10) - parseInt(b, 10)
+    );
+    const stateKey = `${current.digimonId}-${sortedMoves.join(",")}`;
+
+    if (
+      visited.has(stateKey) &&
+      (visited.get(stateKey) as number) <= current.accumulatedCost
+    )
+      continue;
+    visited.set(stateKey, current.accumulatedCost);
+
     const currentDigimon = getById(parseInt(current.digimonId, 10));
     if (!currentDigimon) continue;
 
-    // Check if current digimon can learn any of the required moves
     const newLearnedMoves = new Set(current.learnedMoves);
     const movesLearnedHere: string[] = [];
     for (const moveId of skills) {
@@ -72,107 +113,97 @@ export const findPath = (
       }
     }
 
-    // Create new path step with moves learned at current digimon
     const newPath = [...current.path];
     if (movesLearnedHere.length > 0) {
       newPath[newPath.length - 1] = {
         digimonId: current.digimonId,
         learnedMoves: movesLearnedHere,
+        abiThusFar: current.accumulatedAbi,
+        requirements: current.requirements,
+        gainedLevels: 0,
       };
     }
 
-    // Check if we've reached the target with all required moves
     if (
       current.digimonId === targetDigimon.id.toString() &&
       skills.every((move) => newLearnedMoves.has(move))
     ) {
-      return newPath;
+      // Found a path, update best if it's better
+      if (!bestPath || current.accumulatedCost < minAbiCost) {
+        bestPath = newPath;
+        minAbiCost = current.accumulatedCost;
+      }
+      continue;
     }
 
-    // Explore next digimon in evolution line
-    for (const possibleEvolution of getDigivolutions(currentDigimon.id)) {
-      if (excludedDigimonIds.includes(possibleEvolution.to.toString()))
-        continue;
+    for (const evo of getDigivolutions(currentDigimon.id)) {
+      if (excludedDigimonIds.includes(evo.to.toString())) continue;
+      const newCost = current.accumulatedCost + (evo.requirements.abi ?? 0);
+      // Skip if we already have a better path
+      if (bestPath && newCost >= minAbiCost) continue;
+      const newAbi =
+        current.accumulatedAbi +
+        Math.ceil(
+          calculateAbiGain(
+            currentDigimon.stage as Stage,
+            "digivolve",
+            evo.level
+          ) || 0
+        );
+
       queue.push({
-        digimonId: possibleEvolution.to.toString(),
+        digimonId: evo.to.toString(),
         learnedMoves: new Set(newLearnedMoves),
         path: [
           ...newPath,
-          { digimonId: possibleEvolution.to.toString(), learnedMoves: [] },
+          {
+            digimonId: evo.to.toString(),
+            learnedMoves: [],
+            abiThusFar: newAbi,
+            requirements: evo.requirements,
+            gainedLevels: evo.level,
+          },
         ],
+        accumulatedAbi: newAbi,
+        accumulatedCost: newCost,
+        requirements: evo.requirements,
       });
     }
 
-    // Explore previous digimon in evolution line
-    for (const possibleEvolution of getDedigivolutions(currentDigimon.id)) {
-      if (excludedDigimonIds.includes(possibleEvolution.from.toString()))
-        continue;
+    for (const evo of getDedigivolutions(currentDigimon.id)) {
+      if (excludedDigimonIds.includes(evo.from.toString())) continue;
+      const newCost = current.accumulatedCost + (evo.requirements.abi ?? 0);
+      // Skip if we already have a better path
+      if (bestPath && newCost >= minAbiCost) continue;
+      const newAbi =
+        current.accumulatedAbi +
+        Math.ceil(
+          calculateAbiGain(
+            currentDigimon.stage as Stage,
+            "dedigivolve",
+            evo.level
+          ) || 0
+        );
+
       queue.push({
-        digimonId: possibleEvolution.from.toString(),
+        digimonId: evo.from.toString(),
         learnedMoves: new Set(newLearnedMoves),
         path: [
           ...newPath,
-          { digimonId: possibleEvolution.from.toString(), learnedMoves: [] },
+          {
+            digimonId: evo.from.toString(),
+            learnedMoves: [],
+            abiThusFar: newAbi,
+            requirements: evo.requirements,
+            gainedLevels: 0,
+          },
         ],
+        accumulatedAbi: newAbi,
+        accumulatedCost: newCost,
+        requirements: evo.requirements,
       });
     }
   }
 
-  // No path found
-  return null;
+  return bestPath;
 };
-
-// Helper function to find shortest path without move requirements
-function findShortestPath(
-  originId: string,
-  targetId: string,
-  excludedDigimonIds: string[] = []
-): PathStep[] | null {
-  const queue: { digimonId: string; path: PathStep[] }[] = [
-    {
-      digimonId: originId,
-      path: [{ digimonId: originId, learnedMoves: [] }],
-    },
-  ];
-  const visited = new Set<string>();
-
-  while (queue.length > 0) {
-    const current = queue.shift()!;
-
-    if (visited.has(current.digimonId)) continue;
-    visited.add(current.digimonId);
-
-    if (current.digimonId === targetId) {
-      return current.path;
-    }
-
-    const currentDigimon = getById(parseInt(current.digimonId, 10));
-    if (!currentDigimon) continue;
-
-    for (const possibleEvolution of getDigivolutions(currentDigimon.id)) {
-      if (excludedDigimonIds.includes(possibleEvolution.to.toString()))
-        continue;
-      queue.push({
-        digimonId: possibleEvolution.to.toString(),
-        path: [
-          ...current.path,
-          { digimonId: possibleEvolution.to.toString(), learnedMoves: [] },
-        ],
-      });
-    }
-
-    for (const possibleEvolution of getDedigivolutions(currentDigimon.id)) {
-      if (excludedDigimonIds.includes(possibleEvolution.from.toString()))
-        continue;
-      queue.push({
-        digimonId: possibleEvolution.from.toString(),
-        path: [
-          ...current.path,
-          { digimonId: possibleEvolution.from.toString(), learnedMoves: [] },
-        ],
-      });
-    }
-  }
-
-  return null;
-}
