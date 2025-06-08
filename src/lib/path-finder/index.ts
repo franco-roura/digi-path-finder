@@ -5,7 +5,7 @@ import {
   getDedigivolutions,
   getDigivolutions,
 } from "@/lib/digimonData";
-import { calculateOptimalExp } from "./optimal-abi";
+import { calculateAbiGain, calculateOptimalExp } from "./optimal-abi";
 
 type Stage =
   | "Baby"
@@ -20,6 +20,7 @@ export interface PathStep {
   digimonId: string;
   learnedMoves: string[];
   abi: number;
+  gainedLevels: number;
   requirements: {
     abi?: number;
     level?: number;
@@ -73,6 +74,7 @@ export const findPath = (
           digimonId: originDigimon.id.toString(),
           learnedMoves: [],
           abi: initialAbi,
+          gainedLevels: 0,
           requirements: {},
         },
       ],
@@ -125,6 +127,7 @@ export const findPath = (
         learnedMoves: movesLearnedHere,
         abi: current.abi,
         requirements: current.requirements,
+        gainedLevels: 0,
       };
     }
 
@@ -190,6 +193,7 @@ export const findPath = (
             learnedMoves: [],
             abi: currentAbi,
             requirements: dedigiTarget.requirements,
+            gainedLevels: dedigiAbi.targetLevel,
           });
           farmingDigimon = dedigiTargetStats;
 
@@ -205,6 +209,7 @@ export const findPath = (
             learnedMoves: [],
             abi: currentAbi,
             requirements: redigiTarget.requirements,
+            gainedLevels: redigiAbi.targetLevel,
           });
           farmingDigimon = currentDigimon;
         }
@@ -215,6 +220,7 @@ export const findPath = (
           learnedMoves: [],
           abi: currentAbi,
           requirements: targetEvo.requirements,
+          gainedLevels: targetEvo.level,
         });
 
         // Check if all required skills are learned
@@ -253,8 +259,17 @@ export const findPath = (
           {
             digimonId: evo.to.toString(),
             learnedMoves: [],
-            abi: current.abi,
+            abi:
+              current.abi +
+              Math.ceil(
+                calculateAbiGain(
+                  currentDigimon.stage as Stage,
+                  "digivolve",
+                  evo.level
+                ) || 0
+              ),
             requirements: evo.requirements,
+            gainedLevels: evo.level,
           },
         ],
         abi: current.abi,
@@ -276,8 +291,17 @@ export const findPath = (
           {
             digimonId: evo.from.toString(),
             learnedMoves: [],
-            abi: current.abi,
+            abi:
+              current.abi +
+              Math.ceil(
+                calculateAbiGain(
+                  currentDigimon.stage as Stage,
+                  "dedigivolve",
+                  evo.level
+                ) || 0
+              ),
             requirements: evo.requirements,
+            gainedLevels: 0,
           },
         ],
         abi: current.abi,

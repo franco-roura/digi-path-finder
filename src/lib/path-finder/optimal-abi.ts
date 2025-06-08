@@ -37,7 +37,7 @@ interface ExpTable {
  * @param level - The level of the digimon
  * @returns The amount of ABI gained
  */
-const calculateAbiGain = (
+export const calculateAbiGain = (
   stage: Stage,
   direction: Direction,
   level: number
@@ -83,7 +83,9 @@ export const calculateOptimalExp = (
   if (stage === "Ultra") {
     return {
       targetLevel: currentLevel,
-      abiGain: calculateAbiGain(stage, "dedigivolve", currentLevel) || 0,
+      abiGain: Math.ceil(
+        calculateAbiGain(stage, "dedigivolve", currentLevel) || 0
+      ),
       expRequired: 0,
       direction: "dedigivolve",
     };
@@ -110,7 +112,9 @@ export const calculateOptimalExp = (
   };
 
   // Check digivolving to next stage
-  const nextStageAbi = calculateAbiGain(stage, "digivolve", level);
+  const nextStageAbi = Math.ceil(
+    calculateAbiGain(stage, "digivolve", level) || 0
+  );
   if (nextStageAbi !== null) {
     const expRequired = parseInt(expTableEntry[stage].nextLevel);
     const abiPerExp = nextStageAbi / expRequired;
@@ -127,7 +131,9 @@ export const calculateOptimalExp = (
   }
 
   // Check dedigivolving to previous stage
-  const prevStageAbi = calculateAbiGain(stage, "dedigivolve", level);
+  const prevStageAbi = Math.ceil(
+    calculateAbiGain(stage, "dedigivolve", level) || 0
+  );
   if (prevStageAbi !== null) {
     const expRequired = parseInt(expTableEntry[stage].nextLevel);
     const abiPerExp = prevStageAbi / expRequired;

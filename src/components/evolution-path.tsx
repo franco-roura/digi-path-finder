@@ -30,7 +30,16 @@ const EvolutionPath = (props: Props) => {
               props.path.map((step, index) => {
                 return (
                   <>
-                    {index > 0 && <ArrowRightIcon className="w-8 h-8" />}
+                    {index > 0 && (
+                      <div className="flex flex-col items-center gap-2">
+                        <ArrowRightIcon className="w-8 h-8" />
+                        {step.gainedLevels > 0 && (
+                          <p className="text-xs text-center text-blue-700 dark:text-blue-300 font-medium">
+                            Train up to Lv{step.gainedLevels}
+                          </p>
+                        )}
+                      </div>
+                    )}
                     <EvolutionPathStep key={step.digimonId} step={step} />
                   </>
                 );

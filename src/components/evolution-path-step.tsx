@@ -33,6 +33,9 @@ const EvolutionPathStep = (props: Props) => {
         />
       </div>
       <h3 className="text-center font-bold text-sm truncate">{digimon.name}</h3>
+      <p className="text-xs text-center text-blue-700 dark:text-blue-300 font-medium">
+        ABI: {props.step.abi}
+      </p>
       {props.step.learnedMoves.length > 0 && (
         <div className="flex flex-col items-center gap-1 justify-center">
           <p className="text-xs text-center text-orange-700 dark:text-orange-300 font-medium">
