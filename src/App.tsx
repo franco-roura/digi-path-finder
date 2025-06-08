@@ -11,6 +11,7 @@ import EvolutionPath from "./components/evolution-path";
 import { toast, Toaster } from "sonner";
 import pathFinderWorker from "./lib/path-finder/worker?worker&url";
 import { GithubIcon } from "./components/github-icon";
+import { Input } from "./components/ui/input";
 
 function App() {
   const [originDigimon, setOriginDigimon] = useState<Digimon | null>(null);
@@ -19,7 +20,7 @@ function App() {
   const [targetSearchValue, setTargetSearchValue] = useState("");
   const [skills, setSkills] = useState<string[]>([]);
   const [excludedDigimonIds, setExcludedDigimonIds] = useState<string[]>([]);
-
+  const [initialAbi, setInitialAbi] = useState(0);
   const [path, setPath] = useState<PathStep[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -38,6 +39,7 @@ function App() {
       targetDigimon,
       skills,
       excludedDigimonIds,
+      initialAbi,
     });
     worker.onmessage = (e: MessageEvent<PathStep[]>) => {
       const newPath = e.data;
@@ -98,6 +100,14 @@ function App() {
               excludedDigimonIds={excludedDigimonIds}
               onExcludedDigimonIdsChange={setExcludedDigimonIds}
             />
+            <div className="flex flex-col gap-2">
+              <label htmlFor="initialAbi">Initial ABI</label>
+              <Input
+                type="number"
+                value={initialAbi}
+                onChange={(e) => setInitialAbi(Number(e.target.value))}
+              />
+            </div>
             <div className="w-full flex justify-center">
               <Button
                 className="cursor-pointer h-10 bg-blue-800 hover:bg-blue-900 text-white px-8 py-2 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 border-blue-400 dark:border-blue-800"
