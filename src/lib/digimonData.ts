@@ -115,3 +115,64 @@ export function canLearnMove(digimon: DigimonStats, move: string): boolean {
     ]?.includes(digimon.id.toString()) || false
   );
 }
+
+export const miscRequirementLabels: Record<MiscRequirement, string> = {
+  [MiscRequirement.CLEAR_HACKERS_MEMORY]: "Requires clearing Hacker's Memory",
+  [MiscRequirement.ITEM__STEEL_WILL]: "Requires the Steel Will item",
+  [MiscRequirement.DLC_REQUIRED]: "Requires the DLC",
+  [MiscRequirement.ITEM__HUMAN_SPIRIT_OF_FLAME]:
+    "Human Spirit of Flame being held",
+  [MiscRequirement.ITEM__HUMAN_SPIRIT_OF_LIGHT]:
+    "Human Spirit of Light being held",
+  [MiscRequirement.ITEM__DIGI_EGG_OF_DESTINY]: "Digi Egg of Destiny being held",
+  [MiscRequirement.ITEM__DIGI_EGG_OF_COURAGE]: "Digi Egg of Courage being held",
+  [MiscRequirement.ITEM__DIGI_EGG_OF_MIRACLES]:
+    "Digi Egg of Miracles being held",
+  [MiscRequirement.DIGIMON__GATOMON]:
+    "Requires a CAM 100% Gatomon as your friend",
+  [MiscRequirement.DIGIMON__ANGEMON]:
+    "Requires a CAM 100% Angemon as your friend",
+  [MiscRequirement.DIGIMON__STINGMON]:
+    "Requires a CAM 100% Stingmon as your friend",
+  [MiscRequirement.DIGIMON__ANKYLOMON]:
+    "Requires a CAM 100% Ankylomon as your friend",
+  [MiscRequirement.ITEM__BEAST_SPIRIT_OF_FLAME]:
+    "Requires the Beast Spirit of Flame being held",
+  [MiscRequirement.DIGIMON__EXVEEMON]:
+    "Requires a CAM 100% Exveemon as your friend",
+  [MiscRequirement.DIGIMON__AQUILAMON]:
+    "Requires a CAM 100% Aquilamon as your friend",
+  [MiscRequirement.DIGIMON__LADYDEVIMON]:
+    "Requires a CAM 100% Ladydevimon as your friend",
+  [MiscRequirement.DIGIMON__ANGEWOMON]:
+    "Requires a CAM 100% Angemon as your friend",
+  [MiscRequirement.DIGIMON__OURYUMON]:
+    "Requires a CAM 100% Ouryumon as your friend",
+  [MiscRequirement.MODE_CHANGE]: "Requires a Mode Change",
+  [MiscRequirement.DIGIMON__METALGARURUMON]:
+    "Requires a CAM 100% Metalgarurumon as your friend",
+  [MiscRequirement.DIGIMON__DARKDRAMON]:
+    "Requires a CAM 100% Darkdramon as your friend",
+  [MiscRequirement.DIGIMON__VARODURUMON]:
+    "Requires a CAM 100% Varodurumon as your friend",
+  [MiscRequirement.DIGIMON__METALGARURUMON__BLK_]:
+    "Requires a CAM 100% Metalgarurumon (Black) as your friend",
+  [MiscRequirement.DIGIMON__WARGREYMON]:
+    "Requires a CAM 100% Wargreymon as your friend",
+  [MiscRequirement.DIGIMON__BLACKWARGREYMON]:
+    "Requires a CAM 100% Blackwargreymon as your friend",
+  [MiscRequirement.DIGIMON__BANCHOLEOMON]:
+    "Requires a CAM 100% Bancholeomon as your friend",
+  [MiscRequirement.ITEM__BEAST_SPIRIT_OF_LIGHT]:
+    "Requires the Beast Spirit of Light being held",
+  [MiscRequirement.DIGIMON__MAGNAGARURUMON]:
+    "Requires a CAM 100% Magnagarurumon as your friend",
+  [MiscRequirement.DIGIMON__BREAKDRAMON]:
+    "Requires a CAM 100% Breakdramon as your friend",
+  [MiscRequirement.DIGIMON__SLAYERDRAMON]:
+    "Requires a CAM 100% Slayerdramon as your friend",
+  [MiscRequirement.DIGIMON__KAISERGREYMON]:
+    "Requires a CAM 100% Kaisergreymon as your friend",
+  [MiscRequirement.DIGIMON__ALPHAMON]:
+    "Requires a CAM 100% Alphamon as your friend",
+};

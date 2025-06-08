@@ -5,22 +5,11 @@ import { cn } from "@/lib/utils";
 import { Badge } from "./ui/badge";
 import moveNames from "@/db/moveNames.json";
 import { AlertTriangle } from "lucide-react";
+import { miscRequirementLabels } from "@/lib/digimonData";
 const digimons = digimonDb as Record<string, Digimon>;
 
 type Props = {
   step: PathStep;
-};
-
-const parseMiscRequirement = (requirement: string) => {
-  if (requirement.startsWith("DIGIMON__")) {
-    const digimonName = requirement.split("__")[1].replace(/_/g, " ");
-    return `a Lv100 ${digimonName} as your friend`;
-  }
-  if (requirement.startsWith("ITEM__")) {
-    const itemName = requirement.split("__")[1].replace(/_/g, " ");
-    return `the ${itemName}`;
-  }
-  return `"${requirement.replace("_", " ").toLowerCase()}"`;
 };
 
 const EvolutionPathStep = (props: Props) => {
@@ -58,10 +47,7 @@ const EvolutionPathStep = (props: Props) => {
                 <div className="flex items-center gap-1 text-amber-600 dark:text-amber-400">
                   <AlertTriangle className="w-3 h-3" />
                   <p className="text-xs font-medium">
-                    Requires&nbsp;
-                    <span className="font-bold">
-                      {parseMiscRequirement(requirement)}
-                    </span>
+                    {miscRequirementLabels[requirement]}
                   </p>
                 </div>
               </li>
