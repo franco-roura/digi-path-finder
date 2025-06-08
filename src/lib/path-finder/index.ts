@@ -4,6 +4,7 @@ import {
   getById,
   getDedigivolutions,
   getDigivolutions,
+  EvolutionRequirement,
 } from "@/lib/digimonData";
 import { calculateAbiGain, calculateOptimalExp } from "./optimal-abi";
 
@@ -21,16 +22,7 @@ export interface PathStep {
   learnedMoves: string[];
   abi: number;
   gainedLevels: number;
-  requirements: {
-    abi?: number;
-    level?: number;
-    hp?: number;
-    mp?: number;
-    attack?: number;
-    defense?: number;
-    speed?: number;
-    brain?: number;
-  };
+  requirements: EvolutionRequirement;
 }
 
 interface PathState {

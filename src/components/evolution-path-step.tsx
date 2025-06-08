@@ -4,14 +4,28 @@ import { Digimon } from "@/types";
 import { cn } from "@/lib/utils";
 import { Badge } from "./ui/badge";
 import moveNames from "@/db/moveNames.json";
+import { AlertTriangle } from "lucide-react";
 const digimons = digimonDb as Record<string, Digimon>;
 
 type Props = {
   step: PathStep;
 };
 
+const parseMiscRequirement = (requirement: string) => {
+  if (requirement.startsWith("DIGIMON__")) {
+    const digimonName = requirement.split("__")[1].replace(/_/g, " ");
+    return `a Lv100 ${digimonName} as your friend`;
+  }
+  if (requirement.startsWith("ITEM__")) {
+    const itemName = requirement.split("__")[1].replace(/_/g, " ");
+    return `the ${itemName}`;
+  }
+  return `"${requirement.replace("_", " ").toLowerCase()}"`;
+};
+
 const EvolutionPathStep = (props: Props) => {
   const digimon = digimons[props.step.digimonId];
+
   return (
     <a
       href={digimon.url}
@@ -36,6 +50,23 @@ const EvolutionPathStep = (props: Props) => {
       <p className="text-xs text-center text-blue-700 dark:text-blue-300 font-medium">
         ABI: {props.step.abi}
       </p>
+      <div className="flex flex-col items-center gap-1 justify-center mt-1">
+        <ul className="flex items-center flex-col gap-1">
+          {props.step.requirements.misc?.map((requirement) => {
+            return (
+              <li key={requirement} className="text-xs">
+                <div className="flex items-center gap-1 text-amber-600 dark:text-amber-400">
+                  <AlertTriangle className="w-3 h-3" />
+                  <p className="text-xs font-medium">
+                    Requires {parseMiscRequirement(requirement)}
+                  </p>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+
       {props.step.learnedMoves.length > 0 && (
         <div className="flex flex-col items-center gap-1 justify-center">
           <p className="text-xs text-center text-orange-700 dark:text-orange-300 font-medium">
