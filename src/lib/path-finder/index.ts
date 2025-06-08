@@ -5,6 +5,16 @@ import {
   getDedigivolutions,
   getDigivolutions,
 } from "@/lib/digimonData";
+import { calculateOptimalExp } from "./optimal-abi";
+
+type Stage =
+  | "Baby"
+  | "In-Training"
+  | "Rookie"
+  | "Champion"
+  | "Ultimate"
+  | "Mega"
+  | "Ultra";
 
 export interface PathStep {
   digimonId: string;
@@ -38,34 +48,6 @@ interface PathState {
     speed?: number;
     brain?: number;
   };
-}
-
-const LEVELS = [10, 20, 30, 40, 50, 60, 70, 80, 90];
-
-function abiGain(
-  stage: string,
-  direction: "digivolve" | "dedigivolve",
-  level: number
-): number | null {
-  const L = level;
-  switch (stage) {
-    case "Baby":
-      return direction === "digivolve" ? (L + 5) / 10 : null;
-    case "In-Training":
-      return direction === "digivolve" ? 1 + L / 10 : 1 + L / 5;
-    case "Rookie":
-      return direction === "digivolve" ? 1 + (L + 5) / 10 : 2 + L / 5;
-    case "Champion":
-      return direction === "digivolve" ? 2 + L / 10 : 3 + L / 5;
-    case "Ultimate":
-      return direction === "digivolve" ? 2 + (L + 5) / 10 : 4 + L / 5;
-    case "Mega":
-      return direction === "digivolve" ? 3 + L / 10 : 5 + L / 5;
-    case "Ultra":
-      return direction === "digivolve" ? null : 6 + L / 5;
-    default:
-      return 0;
-  }
 }
 
 export const findPath = (
@@ -144,6 +126,106 @@ export const findPath = (
         abi: current.abi,
         requirements: current.requirements,
       };
+    }
+
+    // Check if we're one evolution away from the target
+    const isOneEvoAway =
+      getDigivolutions(currentDigimon.id).some(
+        (evo) => evo.to.toString() === targetDigimon.id.toString()
+      ) ||
+      getDedigivolutions(currentDigimon.id).some(
+        (evo) => evo.from.toString() === targetDigimon.id.toString()
+      );
+
+    if (isOneEvoAway) {
+      // Find the evolution that leads to the target
+      const targetEvo =
+        getDigivolutions(currentDigimon.id).find(
+          (evo) => evo.to.toString() === targetDigimon.id.toString()
+        ) ||
+        getDedigivolutions(currentDigimon.id).find(
+          (evo) => evo.from.toString() === targetDigimon.id.toString()
+        );
+
+      if (
+        targetEvo &&
+        targetEvo.requirements.abi &&
+        current.abi < targetEvo.requirements.abi
+      ) {
+        // We need to farm ABI
+        let currentAbi = current.abi;
+        const farmingPath = [...newPath];
+        let farmingCost = current.cost;
+        let farmingDigimon = currentDigimon;
+        const farmingLearnedMoves = new Set(newLearnedMoves);
+
+        // Find a valid dedigivolution target
+        const dedigiOptions = getDedigivolutions(farmingDigimon.id);
+        if (dedigiOptions.length === 0) {
+          // Can't farm ABI if no dedigivolutions
+          continue;
+        }
+        const dedigiTarget = dedigiOptions[0]; // Just pick the first for now
+        const dedigiTargetStats = getById(dedigiTarget.from);
+        if (!dedigiTargetStats) continue;
+
+        // Find a valid digivolution back to the original
+        const redigiOptions = getDigivolutions(dedigiTarget.from);
+        const redigiTarget = redigiOptions.find(
+          (evo) => evo.to === farmingDigimon.id
+        );
+        if (!redigiTarget) continue;
+
+        // Farm ABI by alternating dedigivolve/digivolve
+        while (currentAbi < targetEvo.requirements.abi) {
+          // Dedigivolve
+          const dedigiAbi = calculateOptimalExp(
+            dedigiTarget.level,
+            farmingDigimon.stage as Stage
+          );
+          currentAbi += dedigiAbi.abiGain;
+          farmingCost += dedigiAbi.expRequired;
+          farmingPath.push({
+            digimonId: dedigiTarget.from.toString(),
+            learnedMoves: [],
+            abi: currentAbi,
+            requirements: dedigiTarget.requirements,
+          });
+          farmingDigimon = dedigiTargetStats;
+
+          // Digivolve back
+          const redigiAbi = calculateOptimalExp(
+            redigiTarget.level,
+            farmingDigimon.stage as Stage
+          );
+          currentAbi += redigiAbi.abiGain;
+          farmingCost += redigiAbi.expRequired;
+          farmingPath.push({
+            digimonId: current.digimonId,
+            learnedMoves: [],
+            abi: currentAbi,
+            requirements: redigiTarget.requirements,
+          });
+          farmingDigimon = currentDigimon;
+        }
+
+        // Now add the final evolution to the target
+        farmingPath.push({
+          digimonId: targetDigimon.id.toString(),
+          learnedMoves: [],
+          abi: currentAbi,
+          requirements: targetEvo.requirements,
+        });
+
+        // Check if all required skills are learned
+        if (skills.every((move) => farmingLearnedMoves.has(move))) {
+          if (!bestPath || farmingCost < minAbiCost) {
+            bestPath = farmingPath;
+            minAbiCost = farmingCost;
+          }
+        }
+        continue;
+      }
     }
 
     if (

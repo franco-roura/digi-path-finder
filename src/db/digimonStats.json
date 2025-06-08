@@ -5202,7 +5202,7 @@
   "326": {
     "id": 326,
     "name": "Shoutmon",
-    "stage": "None",
+    "stage": "Rookie",
     "type": "Free",
     "attribute": "Fire",
     "memory": 5,
@@ -5218,7 +5218,7 @@
   "327": {
     "id": 327,
     "name": "OmniShoutmon",
-    "stage": "None",
+    "stage": "Champion",
     "type": "Free",
     "attribute": "Fire",
     "memory": 20,

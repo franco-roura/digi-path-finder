@@ -1,0 +1,3040 @@
+{
+  "2": {
+    "level": "2",
+    "Baby": {
+      "nextLevel": "15",
+      "total": "15"
+    },
+    "In-Training": {
+      "nextLevel": "15",
+      "total": "15"
+    },
+    "Rookie": {
+      "nextLevel": "15",
+      "total": "15"
+    },
+    "Champion": {
+      "nextLevel": "19",
+      "total": "19"
+    },
+    "Ultimate": {
+      "nextLevel": "19",
+      "total": "19"
+    },
+    "Mega": {
+      "nextLevel": "21",
+      "total": "21"
+    },
+    "Ultra": {
+      "nextLevel": "23",
+      "total": "23"
+    }
+  },
+  "3": {
+    "level": "3",
+    "Baby": {
+      "nextLevel": "29",
+      "total": "44"
+    },
+    "In-Training": {
+      "nextLevel": "29",
+      "total": "44"
+    },
+    "Rookie": {
+      "nextLevel": "29",
+      "total": "44"
+    },
+    "Champion": {
+      "nextLevel": "37",
+      "total": "56"
+    },
+    "Ultimate": {
+      "nextLevel": "37",
+      "total": "56"
+    },
+    "Mega": {
+      "nextLevel": "42",
+      "total": "63"
+    },
+    "Ultra": {
+      "nextLevel": "46",
+      "total": "69"
+    }
+  },
+  "4": {
+    "level": "4",
+    "Baby": {
+      "nextLevel": "48",
+      "total": "92"
+    },
+    "In-Training": {
+      "nextLevel": "48",
+      "total": "92"
+    },
+    "Rookie": {
+      "nextLevel": "48",
+      "total": "92"
+    },
+    "Champion": {
+      "nextLevel": "61",
+      "total": "117"
+    },
+    "Ultimate": {
+      "nextLevel": "61",
+      "total": "117"
+    },
+    "Mega": {
+      "nextLevel": "70",
+      "total": "133"
+    },
+    "Ultra": {
+      "nextLevel": "76",
+      "total": "145"
+    }
+  },
+  "5": {
+    "level": "5",
+    "Baby": {
+      "nextLevel": "72",
+      "total": "164"
+    },
+    "In-Training": {
+      "nextLevel": "72",
+      "total": "164"
+    },
+    "Rookie": {
+      "nextLevel": "72",
+      "total": "164"
+    },
+    "Champion": {
+      "nextLevel": "91",
+      "total": "208"
+    },
+    "Ultimate": {
+      "nextLevel": "91",
+      "total": "208"
+    },
+    "Mega": {
+      "nextLevel": "104",
+      "total": "237"
+    },
+    "Ultra": {
+      "nextLevel": "113",
+      "total": "258"
+    }
+  },
+  "6": {
+    "level": "6",
+    "Baby": {
+      "nextLevel": "101",
+      "total": "265"
+    },
+    "In-Training": {
+      "nextLevel": "101",
+      "total": "265"
+    },
+    "Rookie": {
+      "nextLevel": "101",
+      "total": "265"
+    },
+    "Champion": {
+      "nextLevel": "127",
+      "total": "335"
+    },
+    "Ultimate": {
+      "nextLevel": "127",
+      "total": "335"
+    },
+    "Mega": {
+      "nextLevel": "146",
+      "total": "383"
+    },
+    "Ultra": {
+      "nextLevel": "158",
+      "total": "416"
+    }
+  },
+  "7": {
+    "level": "7",
+    "Baby": {
+      "nextLevel": "135",
+      "total": "400"
+    },
+    "In-Training": {
+      "nextLevel": "135",
+      "total": "400"
+    },
+    "Rookie": {
+      "nextLevel": "135",
+      "total": "400"
+    },
+    "Champion": {
+      "nextLevel": "169",
+      "total": "504"
+    },
+    "Ultimate": {
+      "nextLevel": "169",
+      "total": "504"
+    },
+    "Mega": {
+      "nextLevel": "194",
+      "total": "577"
+    },
+    "Ultra": {
+      "nextLevel": "211",
+      "total": "627"
+    }
+  },
+  "8": {
+    "level": "8",
+    "Baby": {
+      "nextLevel": "173",
+      "total": "573"
+    },
+    "In-Training": {
+      "nextLevel": "173",
+      "total": "573"
+    },
+    "Rookie": {
+      "nextLevel": "173",
+      "total": "573"
+    },
+    "Champion": {
+      "nextLevel": "217",
+      "total": "721"
+    },
+    "Ultimate": {
+      "nextLevel": "217",
+      "total": "721"
+    },
+    "Mega": {
+      "nextLevel": "249",
+      "total": "826"
+    },
+    "Ultra": {
+      "nextLevel": "271",
+      "total": "898"
+    }
+  },
+  "9": {
+    "level": "9",
+    "Baby": {
+      "nextLevel": "216",
+      "total": "789"
+    },
+    "In-Training": {
+      "nextLevel": "216",
+      "total": "789"
+    },
+    "Rookie": {
+      "nextLevel": "216",
+      "total": "789"
+    },
+    "Champion": {
+      "nextLevel": "271",
+      "total": "992"
+    },
+    "Ultimate": {
+      "nextLevel": "271",
+      "total": "992"
+    },
+    "Mega": {
+      "nextLevel": "311",
+      "total": "1137"
+    },
+    "Ultra": {
+      "nextLevel": "338",
+      "total": "1236"
+    }
+  },
+  "10": {
+    "level": "10",
+    "Baby": {
+      "nextLevel": "264",
+      "total": "1053"
+    },
+    "In-Training": {
+      "nextLevel": "264",
+      "total": "1053"
+    },
+    "Rookie": {
+      "nextLevel": "264",
+      "total": "1053"
+    },
+    "Champion": {
+      "nextLevel": "331",
+      "total": "1323"
+    },
+    "Ultimate": {
+      "nextLevel": "331",
+      "total": "1323"
+    },
+    "Mega": {
+      "nextLevel": "380",
+      "total": "1517"
+    },
+    "Ultra": {
+      "nextLevel": "413",
+      "total": "1649"
+    }
+  },
+  "11": {
+    "level": "11",
+    "Baby": {
+      "nextLevel": "317",
+      "total": "1370"
+    },
+    "In-Training": {
+      "nextLevel": "317",
+      "total": "1370"
+    },
+    "Rookie": {
+      "nextLevel": "317",
+      "total": "1370"
+    },
+    "Champion": {
+      "nextLevel": "397",
+      "total": "1720"
+    },
+    "Ultimate": {
+      "nextLevel": "397",
+      "total": "1720"
+    },
+    "Mega": {
+      "nextLevel": "456",
+      "total": "1973"
+    },
+    "Ultra": {
+      "nextLevel": "496",
+      "total": "2145"
+    }
+  },
+  "12": {
+    "level": "12",
+    "Baby": {
+      "nextLevel": "375",
+      "total": "1745"
+    },
+    "In-Training": {
+      "nextLevel": "375",
+      "total": "1745"
+    },
+    "Rookie": {
+      "nextLevel": "375",
+      "total": "1745"
+    },
+    "Champion": {
+      "nextLevel": "469",
+      "total": "2189"
+    },
+    "Ultimate": {
+      "nextLevel": "469",
+      "total": "2189"
+    },
+    "Mega": {
+      "nextLevel": "539",
+      "total": "2512"
+    },
+    "Ultra": {
+      "nextLevel": "586",
+      "total": "2731"
+    }
+  },
+  "13": {
+    "level": "13",
+    "Baby": {
+      "nextLevel": "437",
+      "total": "2182"
+    },
+    "In-Training": {
+      "nextLevel": "437",
+      "total": "2182"
+    },
+    "Rookie": {
+      "nextLevel": "437",
+      "total": "2182"
+    },
+    "Champion": {
+      "nextLevel": "547",
+      "total": "2736"
+    },
+    "Ultimate": {
+      "nextLevel": "547",
+      "total": "2736"
+    },
+    "Mega": {
+      "nextLevel": "629",
+      "total": "3141"
+    },
+    "Ultra": {
+      "nextLevel": "683",
+      "total": "3414"
+    }
+  },
+  "14": {
+    "level": "14",
+    "Baby": {
+      "nextLevel": "504",
+      "total": "2686"
+    },
+    "In-Training": {
+      "nextLevel": "504",
+      "total": "2686"
+    },
+    "Rookie": {
+      "nextLevel": "504",
+      "total": "2686"
+    },
+    "Champion": {
+      "nextLevel": "631",
+      "total": "3367"
+    },
+    "Ultimate": {
+      "nextLevel": "631",
+      "total": "3367"
+    },
+    "Mega": {
+      "nextLevel": "725",
+      "total": "3866"
+    },
+    "Ultra": {
+      "nextLevel": "788",
+      "total": "4202"
+    }
+  },
+  "15": {
+    "level": "15",
+    "Baby": {
+      "nextLevel": "576",
+      "total": "3262"
+    },
+    "In-Training": {
+      "nextLevel": "576",
+      "total": "3262"
+    },
+    "Rookie": {
+      "nextLevel": "576",
+      "total": "3262"
+    },
+    "Champion": {
+      "nextLevel": "721",
+      "total": "4088"
+    },
+    "Ultimate": {
+      "nextLevel": "721",
+      "total": "4088"
+    },
+    "Mega": {
+      "nextLevel": "829",
+      "total": "4695"
+    },
+    "Ultra": {
+      "nextLevel": "901",
+      "total": "5103"
+    }
+  },
+  "16": {
+    "level": "16",
+    "Baby": {
+      "nextLevel": "653",
+      "total": "3915"
+    },
+    "In-Training": {
+      "nextLevel": "653",
+      "total": "3915"
+    },
+    "Rookie": {
+      "nextLevel": "653",
+      "total": "3915"
+    },
+    "Champion": {
+      "nextLevel": "817",
+      "total": "4905"
+    },
+    "Ultimate": {
+      "nextLevel": "817",
+      "total": "4905"
+    },
+    "Mega": {
+      "nextLevel": "939",
+      "total": "5634"
+    },
+    "Ultra": {
+      "nextLevel": "1021",
+      "total": "6124"
+    }
+  },
+  "17": {
+    "level": "17",
+    "Baby": {
+      "nextLevel": "735",
+      "total": "4650"
+    },
+    "In-Training": {
+      "nextLevel": "735",
+      "total": "4650"
+    },
+    "Rookie": {
+      "nextLevel": "735",
+      "total": "4650"
+    },
+    "Champion": {
+      "nextLevel": "919",
+      "total": "5824"
+    },
+    "Ultimate": {
+      "nextLevel": "919",
+      "total": "5824"
+    },
+    "Mega": {
+      "nextLevel": "1056",
+      "total": "6690"
+    },
+    "Ultra": {
+      "nextLevel": "1148",
+      "total": "7272"
+    }
+  },
+  "18": {
+    "level": "18",
+    "Baby": {
+      "nextLevel": "821",
+      "total": "5471"
+    },
+    "In-Training": {
+      "nextLevel": "821",
+      "total": "5471"
+    },
+    "Rookie": {
+      "nextLevel": "821",
+      "total": "5471"
+    },
+    "Champion": {
+      "nextLevel": "1027",
+      "total": "6851"
+    },
+    "Ultimate": {
+      "nextLevel": "1027",
+      "total": "6851"
+    },
+    "Mega": {
+      "nextLevel": "1181",
+      "total": "7871"
+    },
+    "Ultra": {
+      "nextLevel": "1283",
+      "total": "8555"
+    }
+  },
+  "19": {
+    "level": "19",
+    "Baby": {
+      "nextLevel": "912",
+      "total": "6383"
+    },
+    "In-Training": {
+      "nextLevel": "912",
+      "total": "6383"
+    },
+    "Rookie": {
+      "nextLevel": "912",
+      "total": "6383"
+    },
+    "Champion": {
+      "nextLevel": "1141",
+      "total": "7992"
+    },
+    "Ultimate": {
+      "nextLevel": "1141",
+      "total": "7992"
+    },
+    "Mega": {
+      "nextLevel": "1312",
+      "total": "9183"
+    },
+    "Ultra": {
+      "nextLevel": "1426",
+      "total": "9981"
+    }
+  },
+  "20": {
+    "level": "20",
+    "Baby": {
+      "nextLevel": "1008",
+      "total": "7391"
+    },
+    "In-Training": {
+      "nextLevel": "1008",
+      "total": "7391"
+    },
+    "Rookie": {
+      "nextLevel": "1008",
+      "total": "7391"
+    },
+    "Champion": {
+      "nextLevel": "1261",
+      "total": "9253"
+    },
+    "Ultimate": {
+      "nextLevel": "1261",
+      "total": "9253"
+    },
+    "Mega": {
+      "nextLevel": "1450",
+      "total": "10633"
+    },
+    "Ultra": {
+      "nextLevel": "1576",
+      "total": "11557"
+    }
+  },
+  "21": {
+    "level": "21",
+    "Baby": {
+      "nextLevel": "1109",
+      "total": "8500"
+    },
+    "In-Training": {
+      "nextLevel": "1109",
+      "total": "8500"
+    },
+    "Rookie": {
+      "nextLevel": "1109",
+      "total": "8500"
+    },
+    "Champion": {
+      "nextLevel": "1387",
+      "total": "10640"
+    },
+    "Ultimate": {
+      "nextLevel": "1387",
+      "total": "10640"
+    },
+    "Mega": {
+      "nextLevel": "1595",
+      "total": "12228"
+    },
+    "Ultra": {
+      "nextLevel": "1733",
+      "total": "13290"
+    }
+  },
+  "22": {
+    "level": "22",
+    "Baby": {
+      "nextLevel": "1215",
+      "total": "9715"
+    },
+    "In-Training": {
+      "nextLevel": "1215",
+      "total": "9715"
+    },
+    "Rookie": {
+      "nextLevel": "1215",
+      "total": "9715"
+    },
+    "Champion": {
+      "nextLevel": "1519",
+      "total": "12159"
+    },
+    "Ultimate": {
+      "nextLevel": "1519",
+      "total": "12159"
+    },
+    "Mega": {
+      "nextLevel": "1746",
+      "total": "13974"
+    },
+    "Ultra": {
+      "nextLevel": "1898",
+      "total": "15188"
+    }
+  },
+  "23": {
+    "level": "23",
+    "Baby": {
+      "nextLevel": "1325",
+      "total": "11040"
+    },
+    "In-Training": {
+      "nextLevel": "1325",
+      "total": "11040"
+    },
+    "Rookie": {
+      "nextLevel": "1325",
+      "total": "11040"
+    },
+    "Champion": {
+      "nextLevel": "1657",
+      "total": "13816"
+    },
+    "Ultimate": {
+      "nextLevel": "1657",
+      "total": "13816"
+    },
+    "Mega": {
+      "nextLevel": "1905",
+      "total": "15879"
+    },
+    "Ultra": {
+      "nextLevel": "2071",
+      "total": "17259"
+    }
+  },
+  "24": {
+    "level": "24",
+    "Baby": {
+      "nextLevel": "1440",
+      "total": "12480"
+    },
+    "In-Training": {
+      "nextLevel": "1440",
+      "total": "12480"
+    },
+    "Rookie": {
+      "nextLevel": "1440",
+      "total": "12480"
+    },
+    "Champion": {
+      "nextLevel": "1801",
+      "total": "15617"
+    },
+    "Ultimate": {
+      "nextLevel": "1801",
+      "total": "15617"
+    },
+    "Mega": {
+      "nextLevel": "2071",
+      "total": "17950"
+    },
+    "Ultra": {
+      "nextLevel": "2251",
+      "total": "19510"
+    }
+  },
+  "25": {
+    "level": "25",
+    "Baby": {
+      "nextLevel": "1560",
+      "total": "14040"
+    },
+    "In-Training": {
+      "nextLevel": "1560",
+      "total": "14040"
+    },
+    "Rookie": {
+      "nextLevel": "1560",
+      "total": "14040"
+    },
+    "Champion": {
+      "nextLevel": "1951",
+      "total": "17568"
+    },
+    "Ultimate": {
+      "nextLevel": "1951",
+      "total": "17568"
+    },
+    "Mega": {
+      "nextLevel": "2243",
+      "total": "20193"
+    },
+    "Ultra": {
+      "nextLevel": "2438",
+      "total": "21948"
+    }
+  },
+  "26": {
+    "level": "26",
+    "Baby": {
+      "nextLevel": "1685",
+      "total": "15725"
+    },
+    "In-Training": {
+      "nextLevel": "1685",
+      "total": "15725"
+    },
+    "Rookie": {
+      "nextLevel": "1685",
+      "total": "15725"
+    },
+    "Champion": {
+      "nextLevel": "2107",
+      "total": "19675"
+    },
+    "Ultimate": {
+      "nextLevel": "2107",
+      "total": "19675"
+    },
+    "Mega": {
+      "nextLevel": "2423",
+      "total": "22616"
+    },
+    "Ultra": {
+      "nextLevel": "2633",
+      "total": "24581"
+    }
+  },
+  "27": {
+    "level": "27",
+    "Baby": {
+      "nextLevel": "1815",
+      "total": "17540"
+    },
+    "In-Training": {
+      "nextLevel": "1815",
+      "total": "17540"
+    },
+    "Rookie": {
+      "nextLevel": "1815",
+      "total": "17540"
+    },
+    "Champion": {
+      "nextLevel": "2269",
+      "total": "21944"
+    },
+    "Ultimate": {
+      "nextLevel": "2269",
+      "total": "21944"
+    },
+    "Mega": {
+      "nextLevel": "2609",
+      "total": "25225"
+    },
+    "Ultra": {
+      "nextLevel": "2836",
+      "total": "27417"
+    }
+  },
+  "28": {
+    "level": "28",
+    "Baby": {
+      "nextLevel": "1949",
+      "total": "19489"
+    },
+    "In-Training": {
+      "nextLevel": "1949",
+      "total": "19489"
+    },
+    "Rookie": {
+      "nextLevel": "1949",
+      "total": "19489"
+    },
+    "Champion": {
+      "nextLevel": "2437",
+      "total": "24381"
+    },
+    "Ultimate": {
+      "nextLevel": "2437",
+      "total": "24381"
+    },
+    "Mega": {
+      "nextLevel": "2802",
+      "total": "28027"
+    },
+    "Ultra": {
+      "nextLevel": "3046",
+      "total": "30463"
+    }
+  },
+  "29": {
+    "level": "29",
+    "Baby": {
+      "nextLevel": "2088",
+      "total": "21577"
+    },
+    "In-Training": {
+      "nextLevel": "2088",
+      "total": "21577"
+    },
+    "Rookie": {
+      "nextLevel": "2088",
+      "total": "21577"
+    },
+    "Champion": {
+      "nextLevel": "2611",
+      "total": "26992"
+    },
+    "Ultimate": {
+      "nextLevel": "2611",
+      "total": "26992"
+    },
+    "Mega": {
+      "nextLevel": "3002",
+      "total": "31029"
+    },
+    "Ultra": {
+      "nextLevel": "3263",
+      "total": "33726"
+    }
+  },
+  "30": {
+    "level": "30",
+    "Baby": {
+      "nextLevel": "2232",
+      "total": "23809"
+    },
+    "In-Training": {
+      "nextLevel": "2232",
+      "total": "23809"
+    },
+    "Rookie": {
+      "nextLevel": "2232",
+      "total": "23809"
+    },
+    "Champion": {
+      "nextLevel": "2791",
+      "total": "29783"
+    },
+    "Ultimate": {
+      "nextLevel": "2791",
+      "total": "29783"
+    },
+    "Mega": {
+      "nextLevel": "3209",
+      "total": "34238"
+    },
+    "Ultra": {
+      "nextLevel": "3488",
+      "total": "37214"
+    }
+  },
+  "31": {
+    "level": "31",
+    "Baby": {
+      "nextLevel": "2381",
+      "total": "26190"
+    },
+    "In-Training": {
+      "nextLevel": "2381",
+      "total": "26190"
+    },
+    "Rookie": {
+      "nextLevel": "2381",
+      "total": "26190"
+    },
+    "Champion": {
+      "nextLevel": "2977",
+      "total": "32760"
+    },
+    "Ultimate": {
+      "nextLevel": "2977",
+      "total": "32760"
+    },
+    "Mega": {
+      "nextLevel": "3423",
+      "total": "37661"
+    },
+    "Ultra": {
+      "nextLevel": "3721",
+      "total": "40935"
+    }
+  },
+  "32": {
+    "level": "32",
+    "Baby": {
+      "nextLevel": "2535",
+      "total": "28725"
+    },
+    "In-Training": {
+      "nextLevel": "2535",
+      "total": "28725"
+    },
+    "Rookie": {
+      "nextLevel": "2535",
+      "total": "28725"
+    },
+    "Champion": {
+      "nextLevel": "3169",
+      "total": "35929"
+    },
+    "Ultimate": {
+      "nextLevel": "3169",
+      "total": "35929"
+    },
+    "Mega": {
+      "nextLevel": "3644",
+      "total": "41305"
+    },
+    "Ultra": {
+      "nextLevel": "3961",
+      "total": "44896"
+    }
+  },
+  "33": {
+    "level": "33",
+    "Baby": {
+      "nextLevel": "2693",
+      "total": "31418"
+    },
+    "In-Training": {
+      "nextLevel": "2693",
+      "total": "31418"
+    },
+    "Rookie": {
+      "nextLevel": "2693",
+      "total": "31418"
+    },
+    "Champion": {
+      "nextLevel": "3367",
+      "total": "39296"
+    },
+    "Ultimate": {
+      "nextLevel": "3367",
+      "total": "39296"
+    },
+    "Mega": {
+      "nextLevel": "3872",
+      "total": "45177"
+    },
+    "Ultra": {
+      "nextLevel": "4208",
+      "total": "49104"
+    }
+  },
+  "34": {
+    "level": "34",
+    "Baby": {
+      "nextLevel": "2856",
+      "total": "34274"
+    },
+    "In-Training": {
+      "nextLevel": "2856",
+      "total": "34274"
+    },
+    "Rookie": {
+      "nextLevel": "2856",
+      "total": "34274"
+    },
+    "Champion": {
+      "nextLevel": "3571",
+      "total": "42867"
+    },
+    "Ultimate": {
+      "nextLevel": "3571",
+      "total": "42867"
+    },
+    "Mega": {
+      "nextLevel": "4106",
+      "total": "49283"
+    },
+    "Ultra": {
+      "nextLevel": "4463",
+      "total": "53567"
+    }
+  },
+  "35": {
+    "level": "35",
+    "Baby": {
+      "nextLevel": "3024",
+      "total": "37298"
+    },
+    "In-Training": {
+      "nextLevel": "3024",
+      "total": "37298"
+    },
+    "Rookie": {
+      "nextLevel": "3024",
+      "total": "37298"
+    },
+    "Champion": {
+      "nextLevel": "3781",
+      "total": "46648"
+    },
+    "Ultimate": {
+      "nextLevel": "3781",
+      "total": "46648"
+    },
+    "Mega": {
+      "nextLevel": "4348",
+      "total": "53631"
+    },
+    "Ultra": {
+      "nextLevel": "4726",
+      "total": "58293"
+    }
+  },
+  "36": {
+    "level": "36",
+    "Baby": {
+      "nextLevel": "3197",
+      "total": "40495"
+    },
+    "In-Training": {
+      "nextLevel": "3197",
+      "total": "40495"
+    },
+    "Rookie": {
+      "nextLevel": "3197",
+      "total": "40495"
+    },
+    "Champion": {
+      "nextLevel": "3997",
+      "total": "50645"
+    },
+    "Ultimate": {
+      "nextLevel": "3997",
+      "total": "50645"
+    },
+    "Mega": {
+      "nextLevel": "4596",
+      "total": "58227"
+    },
+    "Ultra": {
+      "nextLevel": "4996",
+      "total": "63289"
+    }
+  },
+  "37": {
+    "level": "37",
+    "Baby": {
+      "nextLevel": "3375",
+      "total": "43870"
+    },
+    "In-Training": {
+      "nextLevel": "3375",
+      "total": "43870"
+    },
+    "Rookie": {
+      "nextLevel": "3375",
+      "total": "43870"
+    },
+    "Champion": {
+      "nextLevel": "4219",
+      "total": "54864"
+    },
+    "Ultimate": {
+      "nextLevel": "4219",
+      "total": "54864"
+    },
+    "Mega": {
+      "nextLevel": "4851",
+      "total": "63078"
+    },
+    "Ultra": {
+      "nextLevel": "5273",
+      "total": "68562"
+    }
+  },
+  "38": {
+    "level": "38",
+    "Baby": {
+      "nextLevel": "3557",
+      "total": "47427"
+    },
+    "In-Training": {
+      "nextLevel": "3557",
+      "total": "47427"
+    },
+    "Rookie": {
+      "nextLevel": "3557",
+      "total": "47427"
+    },
+    "Champion": {
+      "nextLevel": "4447",
+      "total": "59311"
+    },
+    "Ultimate": {
+      "nextLevel": "4447",
+      "total": "59311"
+    },
+    "Mega": {
+      "nextLevel": "5114",
+      "total": "68192"
+    },
+    "Ultra": {
+      "nextLevel": "5558",
+      "total": "74120"
+    }
+  },
+  "39": {
+    "level": "39",
+    "Baby": {
+      "nextLevel": "3744",
+      "total": "51171"
+    },
+    "In-Training": {
+      "nextLevel": "3744",
+      "total": "51171"
+    },
+    "Rookie": {
+      "nextLevel": "3744",
+      "total": "51171"
+    },
+    "Champion": {
+      "nextLevel": "4681",
+      "total": "63992"
+    },
+    "Ultimate": {
+      "nextLevel": "4681",
+      "total": "63992"
+    },
+    "Mega": {
+      "nextLevel": "5383",
+      "total": "73575"
+    },
+    "Ultra": {
+      "nextLevel": "5851",
+      "total": "79971"
+    }
+  },
+  "40": {
+    "level": "40",
+    "Baby": {
+      "nextLevel": "3936",
+      "total": "55107"
+    },
+    "In-Training": {
+      "nextLevel": "3936",
+      "total": "55107"
+    },
+    "Rookie": {
+      "nextLevel": "3936",
+      "total": "55107"
+    },
+    "Champion": {
+      "nextLevel": "4921",
+      "total": "68913"
+    },
+    "Ultimate": {
+      "nextLevel": "4921",
+      "total": "68913"
+    },
+    "Mega": {
+      "nextLevel": "5659",
+      "total": "79234"
+    },
+    "Ultra": {
+      "nextLevel": "6151",
+      "total": "86122"
+    }
+  },
+  "41": {
+    "level": "41",
+    "Baby": {
+      "nextLevel": "4133",
+      "total": "59240"
+    },
+    "In-Training": {
+      "nextLevel": "4133",
+      "total": "59240"
+    },
+    "Rookie": {
+      "nextLevel": "4133",
+      "total": "59240"
+    },
+    "Champion": {
+      "nextLevel": "5167",
+      "total": "74080"
+    },
+    "Ultimate": {
+      "nextLevel": "5167",
+      "total": "74080"
+    },
+    "Mega": {
+      "nextLevel": "5942",
+      "total": "85176"
+    },
+    "Ultra": {
+      "nextLevel": "6458",
+      "total": "92580"
+    }
+  },
+  "42": {
+    "level": "42",
+    "Baby": {
+      "nextLevel": "4336",
+      "total": "63576"
+    },
+    "In-Training": {
+      "nextLevel": "4336",
+      "total": "63576"
+    },
+    "Rookie": {
+      "nextLevel": "4336",
+      "total": "63576"
+    },
+    "Champion": {
+      "nextLevel": "5419",
+      "total": "79499"
+    },
+    "Ultimate": {
+      "nextLevel": "5419",
+      "total": "79499"
+    },
+    "Mega": {
+      "nextLevel": "6231",
+      "total": "91407"
+    },
+    "Ultra": {
+      "nextLevel": "6773",
+      "total": "99353"
+    }
+  },
+  "43": {
+    "level": "43",
+    "Baby": {
+      "nextLevel": "4542",
+      "total": "68118"
+    },
+    "In-Training": {
+      "nextLevel": "4542",
+      "total": "68118"
+    },
+    "Rookie": {
+      "nextLevel": "4542",
+      "total": "68118"
+    },
+    "Champion": {
+      "nextLevel": "5677",
+      "total": "85176"
+    },
+    "Ultimate": {
+      "nextLevel": "5677",
+      "total": "85176"
+    },
+    "Mega": {
+      "nextLevel": "6528",
+      "total": "97935"
+    },
+    "Ultra": {
+      "nextLevel": "7096",
+      "total": "106449"
+    }
+  },
+  "44": {
+    "level": "44",
+    "Baby": {
+      "nextLevel": "4753",
+      "total": "72871"
+    },
+    "In-Training": {
+      "nextLevel": "4753",
+      "total": "72871"
+    },
+    "Rookie": {
+      "nextLevel": "4753",
+      "total": "72871"
+    },
+    "Champion": {
+      "nextLevel": "5941",
+      "total": "91117"
+    },
+    "Ultimate": {
+      "nextLevel": "5941",
+      "total": "91117"
+    },
+    "Mega": {
+      "nextLevel": "6832",
+      "total": "104767"
+    },
+    "Ultra": {
+      "nextLevel": "7426",
+      "total": "113875"
+    }
+  },
+  "45": {
+    "level": "45",
+    "Baby": {
+      "nextLevel": "4969",
+      "total": "77840"
+    },
+    "In-Training": {
+      "nextLevel": "4969",
+      "total": "77840"
+    },
+    "Rookie": {
+      "nextLevel": "4969",
+      "total": "77840"
+    },
+    "Champion": {
+      "nextLevel": "6211",
+      "total": "97328"
+    },
+    "Ultimate": {
+      "nextLevel": "6211",
+      "total": "97328"
+    },
+    "Mega": {
+      "nextLevel": "7142",
+      "total": "111909"
+    },
+    "Ultra": {
+      "nextLevel": "7763",
+      "total": "121638"
+    }
+  },
+  "46": {
+    "level": "46",
+    "Baby": {
+      "nextLevel": "5190",
+      "total": "83030"
+    },
+    "In-Training": {
+      "nextLevel": "5190",
+      "total": "83030"
+    },
+    "Rookie": {
+      "nextLevel": "5190",
+      "total": "83030"
+    },
+    "Champion": {
+      "nextLevel": "6487",
+      "total": "103815"
+    },
+    "Ultimate": {
+      "nextLevel": "6487",
+      "total": "103815"
+    },
+    "Mega": {
+      "nextLevel": "7460",
+      "total": "119369"
+    },
+    "Ultra": {
+      "nextLevel": "8108",
+      "total": "129746"
+    }
+  },
+  "47": {
+    "level": "47",
+    "Baby": {
+      "nextLevel": "5416",
+      "total": "88446"
+    },
+    "In-Training": {
+      "nextLevel": "5416",
+      "total": "88446"
+    },
+    "Rookie": {
+      "nextLevel": "5416",
+      "total": "88446"
+    },
+    "Champion": {
+      "nextLevel": "6769",
+      "total": "110584"
+    },
+    "Ultimate": {
+      "nextLevel": "6769",
+      "total": "110584"
+    },
+    "Mega": {
+      "nextLevel": "7784",
+      "total": "127153"
+    },
+    "Ultra": {
+      "nextLevel": "8461",
+      "total": "138207"
+    }
+  },
+  "48": {
+    "level": "48",
+    "Baby": {
+      "nextLevel": "5646",
+      "total": "94092"
+    },
+    "In-Training": {
+      "nextLevel": "5646",
+      "total": "94092"
+    },
+    "Rookie": {
+      "nextLevel": "5646",
+      "total": "94092"
+    },
+    "Champion": {
+      "nextLevel": "7057",
+      "total": "117641"
+    },
+    "Ultimate": {
+      "nextLevel": "7057",
+      "total": "117641"
+    },
+    "Mega": {
+      "nextLevel": "8115",
+      "total": "135268"
+    },
+    "Ultra": {
+      "nextLevel": "8821",
+      "total": "147028"
+    }
+  },
+  "49": {
+    "level": "49",
+    "Baby": {
+      "nextLevel": "5881",
+      "total": "99973"
+    },
+    "In-Training": {
+      "nextLevel": "5881",
+      "total": "99973"
+    },
+    "Rookie": {
+      "nextLevel": "5881",
+      "total": "99973"
+    },
+    "Champion": {
+      "nextLevel": "7351",
+      "total": "124992"
+    },
+    "Ultimate": {
+      "nextLevel": "7351",
+      "total": "124992"
+    },
+    "Mega": {
+      "nextLevel": "8453",
+      "total": "143721"
+    },
+    "Ultra": {
+      "nextLevel": "9188",
+      "total": "156216"
+    }
+  },
+  "50": {
+    "level": "50",
+    "Baby": {
+      "nextLevel": "6121",
+      "total": "106094"
+    },
+    "In-Training": {
+      "nextLevel": "6121",
+      "total": "106094"
+    },
+    "Rookie": {
+      "nextLevel": "6121",
+      "total": "106094"
+    },
+    "Champion": {
+      "nextLevel": "7651",
+      "total": "132643"
+    },
+    "Ultimate": {
+      "nextLevel": "7651",
+      "total": "132643"
+    },
+    "Mega": {
+      "nextLevel": "8798",
+      "total": "152519"
+    },
+    "Ultra": {
+      "nextLevel": "9563",
+      "total": "165779"
+    }
+  },
+  "51": {
+    "level": "51",
+    "Baby": {
+      "nextLevel": "6366",
+      "total": "112460"
+    },
+    "In-Training": {
+      "nextLevel": "6366",
+      "total": "112460"
+    },
+    "Rookie": {
+      "nextLevel": "6366",
+      "total": "112460"
+    },
+    "Champion": {
+      "nextLevel": "7957",
+      "total": "140600"
+    },
+    "Ultimate": {
+      "nextLevel": "7957",
+      "total": "140600"
+    },
+    "Mega": {
+      "nextLevel": "9150",
+      "total": "161669"
+    },
+    "Ultra": {
+      "nextLevel": "9947",
+      "total": "175726"
+    }
+  },
+  "52": {
+    "level": "52",
+    "Baby": {
+      "nextLevel": "6616",
+      "total": "119076"
+    },
+    "In-Training": {
+      "nextLevel": "6616",
+      "total": "119076"
+    },
+    "Rookie": {
+      "nextLevel": "6616",
+      "total": "119076"
+    },
+    "Champion": {
+      "nextLevel": "8269",
+      "total": "148869"
+    },
+    "Ultimate": {
+      "nextLevel": "8269",
+      "total": "148869"
+    },
+    "Mega": {
+      "nextLevel": "9509",
+      "total": "171178"
+    },
+    "Ultra": {
+      "nextLevel": "10337",
+      "total": "186063"
+    }
+  },
+  "53": {
+    "level": "53",
+    "Baby": {
+      "nextLevel": "6870",
+      "total": "125946"
+    },
+    "In-Training": {
+      "nextLevel": "6870",
+      "total": "125946"
+    },
+    "Rookie": {
+      "nextLevel": "6870",
+      "total": "125946"
+    },
+    "Champion": {
+      "nextLevel": "8587",
+      "total": "157456"
+    },
+    "Ultimate": {
+      "nextLevel": "8587",
+      "total": "157456"
+    },
+    "Mega": {
+      "nextLevel": "9875",
+      "total": "181053"
+    },
+    "Ultra": {
+      "nextLevel": "10734",
+      "total": "196797"
+    }
+  },
+  "54": {
+    "level": "54",
+    "Baby": {
+      "nextLevel": "7129",
+      "total": "133075"
+    },
+    "In-Training": {
+      "nextLevel": "7129",
+      "total": "133075"
+    },
+    "Rookie": {
+      "nextLevel": "7129",
+      "total": "133075"
+    },
+    "Champion": {
+      "nextLevel": "8911",
+      "total": "166367"
+    },
+    "Ultimate": {
+      "nextLevel": "8911",
+      "total": "166367"
+    },
+    "Mega": {
+      "nextLevel": "10247",
+      "total": "191300"
+    },
+    "Ultra": {
+      "nextLevel": "11139",
+      "total": "207936"
+    }
+  },
+  "55": {
+    "level": "55",
+    "Baby": {
+      "nextLevel": "7393",
+      "total": "140468"
+    },
+    "In-Training": {
+      "nextLevel": "7393",
+      "total": "140468"
+    },
+    "Rookie": {
+      "nextLevel": "7393",
+      "total": "140468"
+    },
+    "Champion": {
+      "nextLevel": "9241",
+      "total": "175608"
+    },
+    "Ultimate": {
+      "nextLevel": "9241",
+      "total": "175608"
+    },
+    "Mega": {
+      "nextLevel": "10627",
+      "total": "201927"
+    },
+    "Ultra": {
+      "nextLevel": "11552",
+      "total": "219488"
+    }
+  },
+  "56": {
+    "level": "56",
+    "Baby": {
+      "nextLevel": "7662",
+      "total": "148130"
+    },
+    "In-Training": {
+      "nextLevel": "7662",
+      "total": "148130"
+    },
+    "Rookie": {
+      "nextLevel": "7662",
+      "total": "148130"
+    },
+    "Champion": {
+      "nextLevel": "9577",
+      "total": "185185"
+    },
+    "Ultimate": {
+      "nextLevel": "9577",
+      "total": "185185"
+    },
+    "Mega": {
+      "nextLevel": "11013",
+      "total": "212940"
+    },
+    "Ultra": {
+      "nextLevel": "11972",
+      "total": "231460"
+    }
+  },
+  "57": {
+    "level": "57",
+    "Baby": {
+      "nextLevel": "7936",
+      "total": "156066"
+    },
+    "In-Training": {
+      "nextLevel": "7936",
+      "total": "156066"
+    },
+    "Rookie": {
+      "nextLevel": "7936",
+      "total": "156066"
+    },
+    "Champion": {
+      "nextLevel": "9919",
+      "total": "195104"
+    },
+    "Ultimate": {
+      "nextLevel": "9919",
+      "total": "195104"
+    },
+    "Mega": {
+      "nextLevel": "11406",
+      "total": "224346"
+    },
+    "Ultra": {
+      "nextLevel": "12399",
+      "total": "243859"
+    }
+  },
+  "58": {
+    "level": "58",
+    "Baby": {
+      "nextLevel": "8214",
+      "total": "164280"
+    },
+    "In-Training": {
+      "nextLevel": "8214",
+      "total": "164280"
+    },
+    "Rookie": {
+      "nextLevel": "8214",
+      "total": "164280"
+    },
+    "Champion": {
+      "nextLevel": "10267",
+      "total": "205371"
+    },
+    "Ultimate": {
+      "nextLevel": "10267",
+      "total": "205371"
+    },
+    "Mega": {
+      "nextLevel": "11807",
+      "total": "236153"
+    },
+    "Ultra": {
+      "nextLevel": "12834",
+      "total": "256693"
+    }
+  },
+  "59": {
+    "level": "59",
+    "Baby": {
+      "nextLevel": "8497",
+      "total": "172777"
+    },
+    "In-Training": {
+      "nextLevel": "8497",
+      "total": "172777"
+    },
+    "Rookie": {
+      "nextLevel": "8497",
+      "total": "172777"
+    },
+    "Champion": {
+      "nextLevel": "10621",
+      "total": "215992"
+    },
+    "Ultimate": {
+      "nextLevel": "10621",
+      "total": "215992"
+    },
+    "Mega": {
+      "nextLevel": "12214",
+      "total": "248367"
+    },
+    "Ultra": {
+      "nextLevel": "13277",
+      "total": "269970"
+    }
+  },
+  "60": {
+    "level": "60",
+    "Baby": {
+      "nextLevel": "8785",
+      "total": "181562"
+    },
+    "In-Training": {
+      "nextLevel": "8785",
+      "total": "181562"
+    },
+    "Rookie": {
+      "nextLevel": "8785",
+      "total": "181562"
+    },
+    "Champion": {
+      "nextLevel": "10981",
+      "total": "226973"
+    },
+    "Ultimate": {
+      "nextLevel": "10981",
+      "total": "226973"
+    },
+    "Mega": {
+      "nextLevel": "12629",
+      "total": "260996"
+    },
+    "Ultra": {
+      "nextLevel": "13727",
+      "total": "283697"
+    }
+  },
+  "61": {
+    "level": "61",
+    "Baby": {
+      "nextLevel": "9078",
+      "total": "190640"
+    },
+    "In-Training": {
+      "nextLevel": "9078",
+      "total": "190640"
+    },
+    "Rookie": {
+      "nextLevel": "9078",
+      "total": "190640"
+    },
+    "Champion": {
+      "nextLevel": "11347",
+      "total": "238320"
+    },
+    "Ultimate": {
+      "nextLevel": "11347",
+      "total": "238320"
+    },
+    "Mega": {
+      "nextLevel": "13050",
+      "total": "274046"
+    },
+    "Ultra": {
+      "nextLevel": "14184",
+      "total": "297881"
+    }
+  },
+  "62": {
+    "level": "62",
+    "Baby": {
+      "nextLevel": "9376",
+      "total": "200016"
+    },
+    "In-Training": {
+      "nextLevel": "9376",
+      "total": "200016"
+    },
+    "Rookie": {
+      "nextLevel": "9376",
+      "total": "200016"
+    },
+    "Champion": {
+      "nextLevel": "11719",
+      "total": "250039"
+    },
+    "Ultimate": {
+      "nextLevel": "11719",
+      "total": "250039"
+    },
+    "Mega": {
+      "nextLevel": "13477",
+      "total": "287523"
+    },
+    "Ultra": {
+      "nextLevel": "14649",
+      "total": "312530"
+    }
+  },
+  "63": {
+    "level": "63",
+    "Baby": {
+      "nextLevel": "9678",
+      "total": "209694"
+    },
+    "In-Training": {
+      "nextLevel": "9678",
+      "total": "209694"
+    },
+    "Rookie": {
+      "nextLevel": "9678",
+      "total": "209694"
+    },
+    "Champion": {
+      "nextLevel": "12097",
+      "total": "262136"
+    },
+    "Ultimate": {
+      "nextLevel": "12097",
+      "total": "262136"
+    },
+    "Mega": {
+      "nextLevel": "13912",
+      "total": "301435"
+    },
+    "Ultra": {
+      "nextLevel": "15122",
+      "total": "327652"
+    }
+  },
+  "64": {
+    "level": "64",
+    "Baby": {
+      "nextLevel": "9985",
+      "total": "219679"
+    },
+    "In-Training": {
+      "nextLevel": "9985",
+      "total": "219679"
+    },
+    "Rookie": {
+      "nextLevel": "9985",
+      "total": "219679"
+    },
+    "Champion": {
+      "nextLevel": "12481",
+      "total": "274617"
+    },
+    "Ultimate": {
+      "nextLevel": "12481",
+      "total": "274617"
+    },
+    "Mega": {
+      "nextLevel": "14354",
+      "total": "315789"
+    },
+    "Ultra": {
+      "nextLevel": "15602",
+      "total": "343254"
+    }
+  },
+  "65": {
+    "level": "65",
+    "Baby": {
+      "nextLevel": "10297",
+      "total": "229976"
+    },
+    "In-Training": {
+      "nextLevel": "10297",
+      "total": "229976"
+    },
+    "Rookie": {
+      "nextLevel": "10297",
+      "total": "229976"
+    },
+    "Champion": {
+      "nextLevel": "12871",
+      "total": "287488"
+    },
+    "Ultimate": {
+      "nextLevel": "12871",
+      "total": "287488"
+    },
+    "Mega": {
+      "nextLevel": "14802",
+      "total": "330591"
+    },
+    "Ultra": {
+      "nextLevel": "16089",
+      "total": "359343"
+    }
+  },
+  "66": {
+    "level": "66",
+    "Baby": {
+      "nextLevel": "10614",
+      "total": "240590"
+    },
+    "In-Training": {
+      "nextLevel": "10614",
+      "total": "240590"
+    },
+    "Rookie": {
+      "nextLevel": "10614",
+      "total": "240590"
+    },
+    "Champion": {
+      "nextLevel": "13267",
+      "total": "300755"
+    },
+    "Ultimate": {
+      "nextLevel": "13267",
+      "total": "300755"
+    },
+    "Mega": {
+      "nextLevel": "15258",
+      "total": "345849"
+    },
+    "Ultra": {
+      "nextLevel": "16584",
+      "total": "375927"
+    }
+  },
+  "67": {
+    "level": "67",
+    "Baby": {
+      "nextLevel": "10936",
+      "total": "251526"
+    },
+    "In-Training": {
+      "nextLevel": "10936",
+      "total": "251526"
+    },
+    "Rookie": {
+      "nextLevel": "10936",
+      "total": "251526"
+    },
+    "Champion": {
+      "nextLevel": "13669",
+      "total": "314424"
+    },
+    "Ultimate": {
+      "nextLevel": "13669",
+      "total": "314424"
+    },
+    "Mega": {
+      "nextLevel": "15720",
+      "total": "361569"
+    },
+    "Ultra": {
+      "nextLevel": "17087",
+      "total": "393014"
+    }
+  },
+  "68": {
+    "level": "68",
+    "Baby": {
+      "nextLevel": "11262",
+      "total": "262788"
+    },
+    "In-Training": {
+      "nextLevel": "11262",
+      "total": "262788"
+    },
+    "Rookie": {
+      "nextLevel": "11262",
+      "total": "262788"
+    },
+    "Champion": {
+      "nextLevel": "14077",
+      "total": "328501"
+    },
+    "Ultimate": {
+      "nextLevel": "14077",
+      "total": "328501"
+    },
+    "Mega": {
+      "nextLevel": "16189",
+      "total": "377758"
+    },
+    "Ultra": {
+      "nextLevel": "17597",
+      "total": "410611"
+    }
+  },
+  "69": {
+    "level": "69",
+    "Baby": {
+      "nextLevel": "11593",
+      "total": "274381"
+    },
+    "In-Training": {
+      "nextLevel": "11593",
+      "total": "274381"
+    },
+    "Rookie": {
+      "nextLevel": "11593",
+      "total": "274381"
+    },
+    "Champion": {
+      "nextLevel": "14491",
+      "total": "342992"
+    },
+    "Ultimate": {
+      "nextLevel": "14491",
+      "total": "342992"
+    },
+    "Mega": {
+      "nextLevel": "16665",
+      "total": "394423"
+    },
+    "Ultra": {
+      "nextLevel": "18114",
+      "total": "428725"
+    }
+  },
+  "70": {
+    "level": "70",
+    "Baby": {
+      "nextLevel": "11929",
+      "total": "286310"
+    },
+    "In-Training": {
+      "nextLevel": "11929",
+      "total": "286310"
+    },
+    "Rookie": {
+      "nextLevel": "11929",
+      "total": "286310"
+    },
+    "Champion": {
+      "nextLevel": "14911",
+      "total": "357903"
+    },
+    "Ultimate": {
+      "nextLevel": "14911",
+      "total": "357903"
+    },
+    "Mega": {
+      "nextLevel": "17148",
+      "total": "411571"
+    },
+    "Ultra": {
+      "nextLevel": "18639",
+      "total": "447364"
+    }
+  },
+  "71": {
+    "level": "71",
+    "Baby": {
+      "nextLevel": "12270",
+      "total": "298580"
+    },
+    "In-Training": {
+      "nextLevel": "12270",
+      "total": "298580"
+    },
+    "Rookie": {
+      "nextLevel": "12270",
+      "total": "298580"
+    },
+    "Champion": {
+      "nextLevel": "15337",
+      "total": "373240"
+    },
+    "Ultimate": {
+      "nextLevel": "15337",
+      "total": "373240"
+    },
+    "Mega": {
+      "nextLevel": "17638",
+      "total": "429209"
+    },
+    "Ultra": {
+      "nextLevel": "19172",
+      "total": "466536"
+    }
+  },
+  "72": {
+    "level": "72",
+    "Baby": {
+      "nextLevel": "12616",
+      "total": "311196"
+    },
+    "In-Training": {
+      "nextLevel": "12616",
+      "total": "311196"
+    },
+    "Rookie": {
+      "nextLevel": "12616",
+      "total": "311196"
+    },
+    "Champion": {
+      "nextLevel": "15769",
+      "total": "389009"
+    },
+    "Ultimate": {
+      "nextLevel": "15769",
+      "total": "389009"
+    },
+    "Mega": {
+      "nextLevel": "18135",
+      "total": "447344"
+    },
+    "Ultra": {
+      "nextLevel": "19712",
+      "total": "486248"
+    }
+  },
+  "73": {
+    "level": "73",
+    "Baby": {
+      "nextLevel": "12966",
+      "total": "324162"
+    },
+    "In-Training": {
+      "nextLevel": "12966",
+      "total": "324162"
+    },
+    "Rookie": {
+      "nextLevel": "12966",
+      "total": "324162"
+    },
+    "Champion": {
+      "nextLevel": "16207",
+      "total": "405216"
+    },
+    "Ultimate": {
+      "nextLevel": "16207",
+      "total": "405216"
+    },
+    "Mega": {
+      "nextLevel": "18639",
+      "total": "465983"
+    },
+    "Ultra": {
+      "nextLevel": "20259",
+      "total": "506507"
+    }
+  },
+  "74": {
+    "level": "74",
+    "Baby": {
+      "nextLevel": "13321",
+      "total": "337483"
+    },
+    "In-Training": {
+      "nextLevel": "13321",
+      "total": "337483"
+    },
+    "Rookie": {
+      "nextLevel": "13321",
+      "total": "337483"
+    },
+    "Champion": {
+      "nextLevel": "16651",
+      "total": "421867"
+    },
+    "Ultimate": {
+      "nextLevel": "16651",
+      "total": "421867"
+    },
+    "Mega": {
+      "nextLevel": "19149",
+      "total": "485132"
+    },
+    "Ultra": {
+      "nextLevel": "20814",
+      "total": "527321"
+    }
+  },
+  "75": {
+    "level": "75",
+    "Baby": {
+      "nextLevel": "13681",
+      "total": "351164"
+    },
+    "In-Training": {
+      "nextLevel": "13681",
+      "total": "351164"
+    },
+    "Rookie": {
+      "nextLevel": "13681",
+      "total": "351164"
+    },
+    "Champion": {
+      "nextLevel": "17101",
+      "total": "438968"
+    },
+    "Ultimate": {
+      "nextLevel": "17101",
+      "total": "438968"
+    },
+    "Mega": {
+      "nextLevel": "19667",
+      "total": "504799"
+    },
+    "Ultra": {
+      "nextLevel": "21377",
+      "total": "548698"
+    }
+  },
+  "76": {
+    "level": "76",
+    "Baby": {
+      "nextLevel": "14046",
+      "total": "365210"
+    },
+    "In-Training": {
+      "nextLevel": "14046",
+      "total": "365210"
+    },
+    "Rookie": {
+      "nextLevel": "14046",
+      "total": "365210"
+    },
+    "Champion": {
+      "nextLevel": "17557",
+      "total": "456525"
+    },
+    "Ultimate": {
+      "nextLevel": "17557",
+      "total": "456525"
+    },
+    "Mega": {
+      "nextLevel": "20191",
+      "total": "524990"
+    },
+    "Ultra": {
+      "nextLevel": "21947",
+      "total": "570645"
+    }
+  },
+  "77": {
+    "level": "77",
+    "Baby": {
+      "nextLevel": "14416",
+      "total": "379626"
+    },
+    "In-Training": {
+      "nextLevel": "14416",
+      "total": "379626"
+    },
+    "Rookie": {
+      "nextLevel": "14416",
+      "total": "379626"
+    },
+    "Champion": {
+      "nextLevel": "18019",
+      "total": "474544"
+    },
+    "Ultimate": {
+      "nextLevel": "18019",
+      "total": "474544"
+    },
+    "Mega": {
+      "nextLevel": "20722",
+      "total": "545712"
+    },
+    "Ultra": {
+      "nextLevel": "22524",
+      "total": "593169"
+    }
+  },
+  "78": {
+    "level": "78",
+    "Baby": {
+      "nextLevel": "14790",
+      "total": "394416"
+    },
+    "In-Training": {
+      "nextLevel": "14790",
+      "total": "394416"
+    },
+    "Rookie": {
+      "nextLevel": "14790",
+      "total": "394416"
+    },
+    "Champion": {
+      "nextLevel": "18487",
+      "total": "493031"
+    },
+    "Ultimate": {
+      "nextLevel": "18487",
+      "total": "493031"
+    },
+    "Mega": {
+      "nextLevel": "21261",
+      "total": "566973"
+    },
+    "Ultra": {
+      "nextLevel": "23109",
+      "total": "616278"
+    }
+  },
+  "79": {
+    "level": "79",
+    "Baby": {
+      "nextLevel": "15169",
+      "total": "409585"
+    },
+    "In-Training": {
+      "nextLevel": "15169",
+      "total": "409585"
+    },
+    "Rookie": {
+      "nextLevel": "15169",
+      "total": "409585"
+    },
+    "Champion": {
+      "nextLevel": "18961",
+      "total": "511992"
+    },
+    "Ultimate": {
+      "nextLevel": "18961",
+      "total": "511992"
+    },
+    "Mega": {
+      "nextLevel": "21806",
+      "total": "588779"
+    },
+    "Ultra": {
+      "nextLevel": "23702",
+      "total": "639980"
+    }
+  },
+  "80": {
+    "level": "80",
+    "Baby": {
+      "nextLevel": "15553",
+      "total": "425138"
+    },
+    "In-Training": {
+      "nextLevel": "15553",
+      "total": "425138"
+    },
+    "Rookie": {
+      "nextLevel": "15553",
+      "total": "425138"
+    },
+    "Champion": {
+      "nextLevel": "19441",
+      "total": "531433"
+    },
+    "Ultimate": {
+      "nextLevel": "19441",
+      "total": "531433"
+    },
+    "Mega": {
+      "nextLevel": "22358",
+      "total": "611137"
+    },
+    "Ultra": {
+      "nextLevel": "24302",
+      "total": "664282"
+    }
+  },
+  "81": {
+    "level": "81",
+    "Baby": {
+      "nextLevel": "15942",
+      "total": "441080"
+    },
+    "In-Training": {
+      "nextLevel": "15942",
+      "total": "441080"
+    },
+    "Rookie": {
+      "nextLevel": "15942",
+      "total": "441080"
+    },
+    "Champion": {
+      "nextLevel": "19927",
+      "total": "551360"
+    },
+    "Ultimate": {
+      "nextLevel": "19927",
+      "total": "551360"
+    },
+    "Mega": {
+      "nextLevel": "22917",
+      "total": "634054"
+    },
+    "Ultra": {
+      "nextLevel": "24909",
+      "total": "689191"
+    }
+  },
+  "82": {
+    "level": "82",
+    "Baby": {
+      "nextLevel": "16336",
+      "total": "457416"
+    },
+    "In-Training": {
+      "nextLevel": "16336",
+      "total": "457416"
+    },
+    "Rookie": {
+      "nextLevel": "16336",
+      "total": "457416"
+    },
+    "Champion": {
+      "nextLevel": "20419",
+      "total": "571779"
+    },
+    "Ultimate": {
+      "nextLevel": "20419",
+      "total": "571779"
+    },
+    "Mega": {
+      "nextLevel": "23482",
+      "total": "657536"
+    },
+    "Ultra": {
+      "nextLevel": "25524",
+      "total": "714715"
+    }
+  },
+  "83": {
+    "level": "83",
+    "Baby": {
+      "nextLevel": "16734",
+      "total": "474150"
+    },
+    "In-Training": {
+      "nextLevel": "16734",
+      "total": "474150"
+    },
+    "Rookie": {
+      "nextLevel": "16734",
+      "total": "474150"
+    },
+    "Champion": {
+      "nextLevel": "20917",
+      "total": "592696"
+    },
+    "Ultimate": {
+      "nextLevel": "20917",
+      "total": "592696"
+    },
+    "Mega": {
+      "nextLevel": "24055",
+      "total": "681591"
+    },
+    "Ultra": {
+      "nextLevel": "26147",
+      "total": "740862"
+    }
+  },
+  "84": {
+    "level": "84",
+    "Baby": {
+      "nextLevel": "17137",
+      "total": "491287"
+    },
+    "In-Training": {
+      "nextLevel": "17137",
+      "total": "491287"
+    },
+    "Rookie": {
+      "nextLevel": "17137",
+      "total": "491287"
+    },
+    "Champion": {
+      "nextLevel": "21421",
+      "total": "614117"
+    },
+    "Ultimate": {
+      "nextLevel": "21421",
+      "total": "614117"
+    },
+    "Mega": {
+      "nextLevel": "24635",
+      "total": "706226"
+    },
+    "Ultra": {
+      "nextLevel": "26777",
+      "total": "767639"
+    }
+  },
+  "85": {
+    "level": "85",
+    "Baby": {
+      "nextLevel": "17545",
+      "total": "508832"
+    },
+    "In-Training": {
+      "nextLevel": "17545",
+      "total": "508832"
+    },
+    "Rookie": {
+      "nextLevel": "17545",
+      "total": "508832"
+    },
+    "Champion": {
+      "nextLevel": "21931",
+      "total": "636048"
+    },
+    "Ultimate": {
+      "nextLevel": "21931",
+      "total": "636048"
+    },
+    "Mega": {
+      "nextLevel": "25221",
+      "total": "731447"
+    },
+    "Ultra": {
+      "nextLevel": "27414",
+      "total": "795053"
+    }
+  },
+  "86": {
+    "level": "86",
+    "Baby": {
+      "nextLevel": "17958",
+      "total": "526790"
+    },
+    "In-Training": {
+      "nextLevel": "17958",
+      "total": "526790"
+    },
+    "Rookie": {
+      "nextLevel": "17958",
+      "total": "526790"
+    },
+    "Champion": {
+      "nextLevel": "22447",
+      "total": "658495"
+    },
+    "Ultimate": {
+      "nextLevel": "22447",
+      "total": "658495"
+    },
+    "Mega": {
+      "nextLevel": "25815",
+      "total": "757262"
+    },
+    "Ultra": {
+      "nextLevel": "28059",
+      "total": "823112"
+    }
+  },
+  "87": {
+    "level": "87",
+    "Baby": {
+      "nextLevel": "18376",
+      "total": "545166"
+    },
+    "In-Training": {
+      "nextLevel": "18376",
+      "total": "545166"
+    },
+    "Rookie": {
+      "nextLevel": "18376",
+      "total": "545166"
+    },
+    "Champion": {
+      "nextLevel": "22969",
+      "total": "681464"
+    },
+    "Ultimate": {
+      "nextLevel": "22969",
+      "total": "681464"
+    },
+    "Mega": {
+      "nextLevel": "26415",
+      "total": "783677"
+    },
+    "Ultra": {
+      "nextLevel": "28712",
+      "total": "851824"
+    }
+  },
+  "88": {
+    "level": "88",
+    "Baby": {
+      "nextLevel": "18798",
+      "total": "563964"
+    },
+    "In-Training": {
+      "nextLevel": "18798",
+      "total": "563964"
+    },
+    "Rookie": {
+      "nextLevel": "18798",
+      "total": "563964"
+    },
+    "Champion": {
+      "nextLevel": "23497",
+      "total": "704961"
+    },
+    "Ultimate": {
+      "nextLevel": "23497",
+      "total": "704961"
+    },
+    "Mega": {
+      "nextLevel": "27022",
+      "total": "810699"
+    },
+    "Ultra": {
+      "nextLevel": "29372",
+      "total": "881196"
+    }
+  },
+  "89": {
+    "level": "89",
+    "Baby": {
+      "nextLevel": "19225",
+      "total": "583189"
+    },
+    "In-Training": {
+      "nextLevel": "19225",
+      "total": "583189"
+    },
+    "Rookie": {
+      "nextLevel": "19225",
+      "total": "583189"
+    },
+    "Champion": {
+      "nextLevel": "24031",
+      "total": "728992"
+    },
+    "Ultimate": {
+      "nextLevel": "24031",
+      "total": "728992"
+    },
+    "Mega": {
+      "nextLevel": "27636",
+      "total": "838335"
+    },
+    "Ultra": {
+      "nextLevel": "30039",
+      "total": "911235"
+    }
+  },
+  "90": {
+    "level": "90",
+    "Baby": {
+      "nextLevel": "19657",
+      "total": "602846"
+    },
+    "In-Training": {
+      "nextLevel": "19657",
+      "total": "602846"
+    },
+    "Rookie": {
+      "nextLevel": "19657",
+      "total": "602846"
+    },
+    "Champion": {
+      "nextLevel": "24571",
+      "total": "753563"
+    },
+    "Ultimate": {
+      "nextLevel": "24571",
+      "total": "753563"
+    },
+    "Mega": {
+      "nextLevel": "28257",
+      "total": "866592"
+    },
+    "Ultra": {
+      "nextLevel": "30714",
+      "total": "941949"
+    }
+  },
+  "91": {
+    "level": "91",
+    "Baby": {
+      "nextLevel": "20094",
+      "total": "622940"
+    },
+    "In-Training": {
+      "nextLevel": "20094",
+      "total": "622940"
+    },
+    "Rookie": {
+      "nextLevel": "20094",
+      "total": "622940"
+    },
+    "Champion": {
+      "nextLevel": "25117",
+      "total": "778680"
+    },
+    "Ultimate": {
+      "nextLevel": "25117",
+      "total": "778680"
+    },
+    "Mega": {
+      "nextLevel": "28885",
+      "total": "895477"
+    },
+    "Ultra": {
+      "nextLevel": "31397",
+      "total": "973346"
+    }
+  },
+  "92": {
+    "level": "92",
+    "Baby": {
+      "nextLevel": "20536",
+      "total": "643476"
+    },
+    "In-Training": {
+      "nextLevel": "20536",
+      "total": "643476"
+    },
+    "Rookie": {
+      "nextLevel": "20536",
+      "total": "643476"
+    },
+    "Champion": {
+      "nextLevel": "25669",
+      "total": "804349"
+    },
+    "Ultimate": {
+      "nextLevel": "25669",
+      "total": "804349"
+    },
+    "Mega": {
+      "nextLevel": "29520",
+      "total": "924997"
+    },
+    "Ultra": {
+      "nextLevel": "32087",
+      "total": "1005433"
+    }
+  },
+  "93": {
+    "level": "93",
+    "Baby": {
+      "nextLevel": "20982",
+      "total": "664458"
+    },
+    "In-Training": {
+      "nextLevel": "20982",
+      "total": "664458"
+    },
+    "Rookie": {
+      "nextLevel": "20982",
+      "total": "664458"
+    },
+    "Champion": {
+      "nextLevel": "26227",
+      "total": "830576"
+    },
+    "Ultimate": {
+      "nextLevel": "26227",
+      "total": "830576"
+    },
+    "Mega": {
+      "nextLevel": "30162",
+      "total": "955159"
+    },
+    "Ultra": {
+      "nextLevel": "32784",
+      "total": "1038217"
+    }
+  },
+  "94": {
+    "level": "94",
+    "Baby": {
+      "nextLevel": "21433",
+      "total": "685891"
+    },
+    "In-Training": {
+      "nextLevel": "21433",
+      "total": "685891"
+    },
+    "Rookie": {
+      "nextLevel": "21433",
+      "total": "685891"
+    },
+    "Champion": {
+      "nextLevel": "26791",
+      "total": "857367"
+    },
+    "Ultimate": {
+      "nextLevel": "26791",
+      "total": "857367"
+    },
+    "Mega": {
+      "nextLevel": "30810",
+      "total": "985969"
+    },
+    "Ultra": {
+      "nextLevel": "33489",
+      "total": "1071706"
+    }
+  },
+  "95": {
+    "level": "95",
+    "Baby": {
+      "nextLevel": "21889",
+      "total": "707780"
+    },
+    "In-Training": {
+      "nextLevel": "21889",
+      "total": "707780"
+    },
+    "Rookie": {
+      "nextLevel": "21889",
+      "total": "707780"
+    },
+    "Champion": {
+      "nextLevel": "27361",
+      "total": "884728"
+    },
+    "Ultimate": {
+      "nextLevel": "27361",
+      "total": "884728"
+    },
+    "Mega": {
+      "nextLevel": "31466",
+      "total": "1017435"
+    },
+    "Ultra": {
+      "nextLevel": "34202",
+      "total": "1105908"
+    }
+  },
+  "96": {
+    "level": "96",
+    "Baby": {
+      "nextLevel": "22350",
+      "total": "730130"
+    },
+    "In-Training": {
+      "nextLevel": "22350",
+      "total": "730130"
+    },
+    "Rookie": {
+      "nextLevel": "22350",
+      "total": "730130"
+    },
+    "Champion": {
+      "nextLevel": "27937",
+      "total": "912665"
+    },
+    "Ultimate": {
+      "nextLevel": "27937",
+      "total": "912665"
+    },
+    "Mega": {
+      "nextLevel": "32128",
+      "total": "1049563"
+    },
+    "Ultra": {
+      "nextLevel": "34922",
+      "total": "1140830"
+    }
+  },
+  "97": {
+    "level": "97",
+    "Baby": {
+      "nextLevel": "22816",
+      "total": "752946"
+    },
+    "In-Training": {
+      "nextLevel": "22816",
+      "total": "752946"
+    },
+    "Rookie": {
+      "nextLevel": "22816",
+      "total": "752946"
+    },
+    "Champion": {
+      "nextLevel": "28519",
+      "total": "941184"
+    },
+    "Ultimate": {
+      "nextLevel": "28519",
+      "total": "941184"
+    },
+    "Mega": {
+      "nextLevel": "32797",
+      "total": "1082360"
+    },
+    "Ultra": {
+      "nextLevel": "35649",
+      "total": "1176479"
+    }
+  },
+  "98": {
+    "level": "98",
+    "Baby": {
+      "nextLevel": "23286",
+      "total": "776232"
+    },
+    "In-Training": {
+      "nextLevel": "23286",
+      "total": "776232"
+    },
+    "Rookie": {
+      "nextLevel": "23286",
+      "total": "776232"
+    },
+    "Champion": {
+      "nextLevel": "29107",
+      "total": "970291"
+    },
+    "Ultimate": {
+      "nextLevel": "29107",
+      "total": "970291"
+    },
+    "Mega": {
+      "nextLevel": "33474",
+      "total": "1115834"
+    },
+    "Ultra": {
+      "nextLevel": "36384",
+      "total": "1212863"
+    }
+  },
+  "99": {
+    "level": "99",
+    "Baby": {
+      "nextLevel": "23768",
+      "total": "800000"
+    },
+    "In-Training": {
+      "nextLevel": "23768",
+      "total": "800000"
+    },
+    "Rookie": {
+      "nextLevel": "23768",
+      "total": "800000"
+    },
+    "Champion": {
+      "nextLevel": "29709",
+      "total": "1000000"
+    },
+    "Ultimate": {
+      "nextLevel": "29709",
+      "total": "1000000"
+    },
+    "Mega": {
+      "nextLevel": "34166",
+      "total": "1150000"
+    },
+    "Ultra": {
+      "nextLevel": "37137",
+      "total": "1250000"
+    }
+  }
+}

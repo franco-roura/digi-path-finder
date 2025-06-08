@@ -101,7 +101,7 @@ function App() {
             <div className="w-full flex justify-center">
               <Button
                 className="cursor-pointer h-10 bg-blue-800 hover:bg-blue-900 text-white px-8 py-2 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 border-blue-400 dark:border-blue-800"
-                disabled={!originDigimon || !targetDigimon}
+                disabled={!originDigimon || !targetDigimon || isLoading}
                 onClick={handleFindPath}
               >
                 Find Evolution Path
