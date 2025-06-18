@@ -12,6 +12,9 @@ import { toast, Toaster } from "sonner";
 import pathFinderWorker from "./lib/path-finder/worker?worker&url";
 import { GithubIcon } from "./components/github-icon";
 import { Input } from "./components/ui/input";
+import dbJson from "@/db/db.json";
+
+const digimonDb = dbJson as Record<string, Digimon>;
 
 function App() {
   const [originDigimon, setOriginDigimon] = useState<Digimon | null>(null);
@@ -110,7 +113,8 @@ function App() {
             </div>
             <div className="w-full flex justify-center">
               <Button
-                className="cursor-pointer h-10 bg-blue-800 hover:bg-blue-900 text-white px-8 py-2 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 border-blue-400 dark:border-blue-800"
+                size="lg"
+                className="text-lg"
                 disabled={!originDigimon || !targetDigimon || isLoading}
                 onClick={handleFindPath}
               >
@@ -118,7 +122,16 @@ function App() {
               </Button>
             </div>
           </div>
-          {path && <EvolutionPath isLoading={isLoading} path={path} />}
+          {path && (
+            <EvolutionPath
+              isLoading={isLoading}
+              path={path}
+              setOriginStep={(step, index) => {
+                setOriginDigimon(digimonDb[step.digimonId]);
+                setPath((prev) => prev?.slice(index, prev.length) ?? null);
+              }}
+            />
+          )}
         </div>
       </div>
     </ThemeProvider>

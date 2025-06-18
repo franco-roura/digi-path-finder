@@ -6,6 +6,7 @@ import { ArrowRightIcon, Loader2 } from "lucide-react";
 type Props = {
   isLoading: boolean;
   path: PathStep[];
+  setOriginStep: (step: PathStep, index: number) => void;
 };
 
 const EvolutionPath = (props: Props) => {
@@ -40,7 +41,11 @@ const EvolutionPath = (props: Props) => {
                         )}
                       </div>
                     )}
-                    <EvolutionPathStep key={step.digimonId} step={step} />
+                    <EvolutionPathStep
+                      key={step.digimonId}
+                      step={step}
+                      setOriginStep={() => props.setOriginStep(step, index)}
+                    />
                   </>
                 );
               })}
