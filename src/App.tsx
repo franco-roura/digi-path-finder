@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { ThemeProvider } from "./components/theme-provider";
 import { ThemeToggle } from "./components/theme-toggle";
 import { Button } from "./components/ui/button";
@@ -26,6 +26,12 @@ function App() {
   const [initialAbi, setInitialAbi] = useState(0);
   const [path, setPath] = useState<PathStep[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+
+  // Refs for auto-focus functionality
+  const targetDigimonRef = useRef<HTMLInputElement>(null);
+  const skillsRef = useRef<HTMLInputElement>(null);
+  const excludedDigimonRef = useRef<HTMLInputElement>(null);
+  const initialAbiRef = useRef<HTMLInputElement>(null);
 
   const handleFindPath = () => {
     if (!originDigimon || !targetDigimon) {
@@ -86,6 +92,8 @@ function App() {
                 setSelectedDigimon={setOriginDigimon}
                 searchValue={originSearchValue}
                 setSearchValue={setOriginSearchValue}
+                onSelectionComplete={() => targetDigimonRef.current?.focus()}
+                tabIndex={1}
               />
               <DigimonSelector
                 label="Target Digimon"
@@ -93,22 +101,33 @@ function App() {
                 setSelectedDigimon={setTargetDigimon}
                 searchValue={targetSearchValue}
                 setSearchValue={setTargetSearchValue}
+                onSelectionComplete={() => skillsRef.current?.focus()}
+                tabIndex={2}
+                ref={targetDigimonRef}
               />
             </div>
             <SkillsSelector
               selectedSkills={skills}
               onSelectedSkillsChange={setSkills}
+              onSelectionComplete={() => excludedDigimonRef.current?.focus()}
+              tabIndex={3}
+              ref={skillsRef}
             />
             <ExcludedDigimonSelector
               excludedDigimonIds={excludedDigimonIds}
               onExcludedDigimonIdsChange={setExcludedDigimonIds}
+              onSelectionComplete={() => initialAbiRef.current?.focus()}
+              tabIndex={4}
+              ref={excludedDigimonRef}
             />
             <div className="flex flex-col gap-2">
               <label htmlFor="initialAbi">Initial ABI</label>
               <Input
+                ref={initialAbiRef}
                 type="number"
                 value={initialAbi}
                 onChange={(e) => setInitialAbi(Number(e.target.value))}
+                tabIndex={5}
               />
             </div>
             <div className="w-full flex justify-center">
@@ -117,6 +136,7 @@ function App() {
                 className="text-lg"
                 disabled={!originDigimon || !targetDigimon || isLoading}
                 onClick={handleFindPath}
+                tabIndex={6}
               >
                 Find Evolution Path
               </Button>
