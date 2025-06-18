@@ -46,6 +46,7 @@ const SkillsSelector = ({
       </label>
       <div className="space-y-2">
         <AutoComplete
+          clearOnSelect
           selectedValue={selectedValue}
           onSelectedValueChange={(value) => {
             setSelectedValue(value);

@@ -22,6 +22,7 @@ type Props<T extends string> = {
   emptyMessage?: string;
   placeholder?: string;
   renderLabel?: (value: T) => React.ReactNode;
+  clearOnSelect?: boolean;
 };
 
 export const AutoComplete = <T extends string>(props: Props<T>) => {
@@ -56,10 +57,14 @@ export const AutoComplete = <T extends string>(props: Props<T>) => {
   };
 
   const onSelectItem = (inputValue: string) => {
-    if (inputValue === props.selectedValue) {
-      reset();
-    } else {
+    if (inputValue !== props.selectedValue) {
       props.onSelectedValueChange(inputValue as T);
+    } else {
+      reset();
+    }
+    if (props.clearOnSelect) {
+      props.onSearchValueChange("");
+    } else {
       props.onSearchValueChange(labels[inputValue] ?? "");
     }
     setOpen(false);
