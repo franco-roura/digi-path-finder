@@ -1,7 +1,7 @@
 import { PathStep } from "@/lib/path-finder";
 import EvolutionPathStep from "./evolution-path-step";
 import { useEffect } from "react";
-import { ArrowRightIcon, Loader2 } from "lucide-react";
+import { ArrowRightIcon, Loader2, AlertTriangle } from "lucide-react";
 
 type Props = {
   isLoading: boolean;
@@ -29,6 +29,13 @@ const EvolutionPath = (props: Props) => {
             )}
             {!props.isLoading &&
               props.path.map((step, index) => {
+                const nextStep = props.path[index + 1];
+                const prevStep = props.path[index - 1];
+                const currentAbi =
+                  index === 0 ? step.abiThusFar : prevStep.abiThusFar;
+                const abiRequired = nextStep?.requirements.abi;
+                const hasAbiWarning = abiRequired && currentAbi < abiRequired;
+
                 return (
                   <>
                     {index > 0 && (
@@ -38,6 +45,19 @@ const EvolutionPath = (props: Props) => {
                           <p className="text-xs text-center text-blue-700 dark:text-blue-300 font-medium">
                             Train up to Lv{step.gainedLevels}
                           </p>
+                        )}
+                        {hasAbiWarning && (
+                          <div className="flex flex-col items-center text-red-600 dark:text-red-400">
+                            <div className="flex items-center gap-1">
+                              <AlertTriangle className="w-3 h-3" />
+                              <p className="text-xs font-medium">
+                                ABI will not suffice
+                              </p>
+                            </div>
+                            <p className="text-xs font-medium">
+                              (Needs {abiRequired}, has {currentAbi})
+                            </p>
+                          </div>
                         )}
                       </div>
                     )}
