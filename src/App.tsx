@@ -125,8 +125,13 @@ function App() {
               <Input
                 ref={initialAbiRef}
                 type="number"
+                max={200}
+                min={0}
                 value={initialAbi}
-                onChange={(e) => setInitialAbi(Number(e.target.value))}
+                onChange={(e) => {
+                  const value = Number(e.target.value);
+                  setInitialAbi(Math.min(Math.max(value, 0), 200));
+                }}
                 tabIndex={5}
               />
             </div>

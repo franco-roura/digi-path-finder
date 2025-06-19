@@ -141,7 +141,7 @@ export const findPath = (
       const newCost = current.accumulatedCost + (evo.requirements.abi ?? 0);
       // Skip if we already have a better path
       if (bestPath && newCost >= minAbiCost) continue;
-      const newAbi =
+      let newAbi =
         current.accumulatedAbi +
         Math.ceil(
           calculateAbiGain(
@@ -150,7 +150,7 @@ export const findPath = (
             evo.level
           ) || 0
         );
-
+      newAbi = Math.min(newAbi, 200);
       queue.push({
         digimonId: evo.to.toString(),
         learnedMoves: new Set(newLearnedMoves),
@@ -175,7 +175,7 @@ export const findPath = (
       const newCost = current.accumulatedCost + (evo.requirements.abi ?? 0);
       // Skip if we already have a better path
       if (bestPath && newCost >= minAbiCost) continue;
-      const newAbi =
+      let newAbi =
         current.accumulatedAbi +
         Math.ceil(
           calculateAbiGain(
@@ -184,7 +184,7 @@ export const findPath = (
             evo.level
           ) || 0
         );
-
+      newAbi = Math.min(newAbi, 200);
       queue.push({
         digimonId: evo.from.toString(),
         learnedMoves: new Set(newLearnedMoves),
